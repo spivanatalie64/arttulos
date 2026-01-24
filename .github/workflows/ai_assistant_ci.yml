@@ -23,11 +23,10 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
-      - name: Install Docker
+      - name: Install Docker (official script)
         run: |
-          sudo apt-get update
-          sudo apt-get install -y docker.io
-          sudo systemctl start docker
+          curl -fsSL https://get.docker.com -o get-docker.sh
+          sh get-docker.sh
           sudo usermod -aG docker $USER
       - name: Run AI Assistant Docker Compatibility Tests
         run: |
