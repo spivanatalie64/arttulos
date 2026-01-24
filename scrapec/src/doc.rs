@@ -7,6 +7,7 @@ pub fn extract_docs(_source: &str) -> String {
 }
 
 pub fn run_tests() {
-    // Minimal stub: does nothing
+    // Example test runner
     println!("Running ScrapeC tests (stub)");
+    // Here you would iterate over test cases and report results
 }
