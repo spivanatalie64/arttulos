@@ -1,3 +1,18 @@
+# ScrapeC Language
+
+ScrapeC is a modern systems programming language combining the best of C and Rust, designed for ArttulOS and PacNixum. It features strong typing, FFI, async, macros, and binary compatibility with C/Rust.
+
+## Features
+- Modern syntax, type inference, and ownership
+- FFI with C and Rust
+- Async, macros, smart pointers, pattern matching
+- Minimal runtime and standard library
+- Language server, package manager, and test suite
+
+See `scrapec/SPEC.md` and `scrapec/ROADMAP.md` for details.
+
+---
+
 # Why ScrapeC?
 
 ScrapeC is a new systems programming language designed for ArttulOS and PacNixum. It combines the performance, low-level control, and portability of C with the safety, concurrency, and modern tooling of Rust.
@@ -11,7 +26,3 @@ ScrapeC is a new systems programming language designed for ArttulOS and PacNixum
 - **Tooling:** Modern build system, package manager, and language server support.
 
 ScrapeC is the ideal language for building secure, high-performance, and maintainable system tools for ArttulOS.
-
----
-
-See `scrapec/` for language source, documentation, and examples.

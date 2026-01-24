@@ -6,26 +6,59 @@ use std::process::Command;
 use serde_json::Value;
 
 fn main() {
-    print!("[PLUGIN LOADER] Scanning for plugins...\n");
+    print!("[PLUGIN LOADER] Plugin Management Menu\n");
     let plugin_dir = "ai_assistant/plugins";
+    let mut plugins = Vec::new();
     let entries = fs::read_dir(plugin_dir).unwrap();
     for entry in entries {
         let path = entry.path();
         if path.extension().unwrap_or("") == "json" {
             let manifest_str = fs::read_to_string(&path).unwrap();
-            print!("[PLUGIN] Found manifest: {}\n", path.display());
             let manifest: Value = serde_json::from_str(&manifest_str).unwrap();
+            let name = manifest["name"].as_str().unwrap_or("");
             let entry = manifest["entry"].as_str().unwrap_or("");
-            if entry.ends_with(".scrapec") {
-                let plugin_path = format!("{}/{}", plugin_dir, entry);
-                print!("[PLUGIN] Executing {}...\n", plugin_path);
-                // In a real implementation, use the ScrapeC runtime to execute
-                // Here, just print the command for demonstration
-                print!("[PLUGIN] (Simulated) scrapec {}\n", plugin_path);
-                // Example: Command::new("scrapec").arg(&plugin_path).status().unwrap();
-            } else {
-                print!("[PLUGIN] Unsupported plugin type: {}\n", entry);
-            }
+            plugins.push((name.to_string(), entry.to_string()));
+        }
+    }
+    loop {
+        print!("\nAvailable plugins:\n");
+        for (i, (name, entry)) in plugins.iter().enumerate() {
+            print!("  {}. {} ({})\n", i + 1, name, entry);
+        }
+        print!("Select a plugin to enable/disable/execute (number), or 'q' to quit: ");
+        let mut input = String::new();
+        std::io::stdin().read_line(&mut input).unwrap();
+        let trimmed = input.trim();
+        if trimmed == "q" { break; }
+        let idx: usize = match trimmed.parse() {
+            Ok(n) if n > 0 && n <= plugins.len() => n - 1,
+            _ => { print!("Invalid selection.\n"); continue; }
+        };
+        let (name, entry) = &plugins[idx];
+        print!("[PLUGIN] '{}' selected.\n", name);
+        print!("Options: 1) Enable/Run  2) Disable (not implemented)  3) Back\nSelect: ");
+        let mut opt = String::new();
+        std::io::stdin().read_line(&mut opt).unwrap();
+        match opt.trim() {
+            "1" => {
+                if entry.ends_with(".scrapec") {
+                    let plugin_path = format!("{}/{}", plugin_dir, entry);
+                    print!("[PLUGIN] Executing {}...\n", plugin_path);
+                    // Actually execute the plugin using the ScrapeC runtime
+                    let status = std::process::Command::new("scrapec").arg(&plugin_path).status();
+                    match status {
+                        Ok(s) if s.success() => print!("[PLUGIN] {} executed successfully.\n", name),
+                        Ok(s) => print!("[PLUGIN] {} exited with code {:?}.\n", name, s.code()),
+                        Err(e) => print!("[PLUGIN] Failed to execute: {}\n", e),
+                    }
+                } else {
+                    print!("[PLUGIN] Unsupported plugin type: {}\n", entry);
+                }
+            },
+            "2" => {
+                print!("[PLUGIN] Disable is not yet implemented.\n");
+            },
+            _ => {},
         }
     }
     print!("[PLUGIN LOADER] Done.\n");
