@@ -10,3 +10,8 @@ impl<T> Boxed<T> {
         Boxed { value }
     }
 }
+
+pub fn vec_example() {
+    let v = vec![1, 2, 3];
+    println!("Vector: {:?}", v);
+}

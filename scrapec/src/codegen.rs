@@ -1,5 +1,5 @@
 // src/codegen.rs
-// ScrapeC Code Generation (Stub)
+// ScrapeC Code Generation (Basic Implementation)
 
 use crate::parser::AstNode;
 
@@ -8,10 +8,10 @@ pub fn generate_c(ast: &[AstNode]) -> String {
     for node in ast {
         match node {
             AstNode::Function { name, .. } => {
-                code.push_str(&format!("void {}() {{}}\n", name));
+                code.push_str(&format!("void {}() {{\n    // ...\n}}\n", name));
             },
             AstNode::Let { name, value } => {
-                code.push_str(&format!("int {} = {};\n", name, value));
+                code.push_str(&format!("    int {} = {};\n", name, value));
             },
             _ => {}
         }

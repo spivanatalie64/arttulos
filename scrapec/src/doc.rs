@@ -8,4 +8,5 @@ pub fn extract_docs(_source: &str) -> String {
 
 pub fn run_tests() {
     // Minimal stub: does nothing
+    println!("Running ScrapeC tests (stub)");
 }
