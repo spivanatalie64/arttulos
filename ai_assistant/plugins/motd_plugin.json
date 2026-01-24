@@ -1,0 +1,7 @@
+{
+  "name": "motd-plugin",
+  "version": "1.0.0",
+  "entry": "motd_plugin.scrapec",
+  "permissions": ["log"],
+  "author": "ArttulOS Team"
+}

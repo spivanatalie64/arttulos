@@ -2,6 +2,8 @@
 // Minimal plugin loader for PacNixum AI Assistant
 
 use std::fs;
+use std::process::Command;
+use serde_json::Value;
 
 fn main() {
     print!("[PLUGIN LOADER] Scanning for plugins...\n");
@@ -10,9 +12,20 @@ fn main() {
     for entry in entries {
         let path = entry.path();
         if path.extension().unwrap_or("") == "json" {
-            let manifest = fs::read_to_string(&path).unwrap();
+            let manifest_str = fs::read_to_string(&path).unwrap();
             print!("[PLUGIN] Found manifest: {}\n", path.display());
-            // In a real implementation, parse JSON and load plugin
+            let manifest: Value = serde_json::from_str(&manifest_str).unwrap();
+            let entry = manifest["entry"].as_str().unwrap_or("");
+            if entry.ends_with(".scrapec") {
+                let plugin_path = format!("{}/{}", plugin_dir, entry);
+                print!("[PLUGIN] Executing {}...\n", plugin_path);
+                // In a real implementation, use the ScrapeC runtime to execute
+                // Here, just print the command for demonstration
+                print!("[PLUGIN] (Simulated) scrapec {}\n", plugin_path);
+                // Example: Command::new("scrapec").arg(&plugin_path).status().unwrap();
+            } else {
+                print!("[PLUGIN] Unsupported plugin type: {}\n", entry);
+            }
         }
     }
     print!("[PLUGIN LOADER] Done.\n");
