@@ -1,0 +1,26 @@
+// ScrapeC: Minimal Language Specification and Example
+
+// Hello World in ScrapeC
+fn main() {
+    print!("Hello, world from ScrapeC!\n");
+}
+
+// Key Features:
+// - C-like syntax with Rust-style safety
+// - Ownership and borrowing
+// - Type inference
+// - Direct FFI to C and Rust
+// - Modern error handling (Result, Option)
+// - Safe concurrency primitives
+
+// Example: Safe pointer usage
+fn safe_add(a: &int, b: &int) -> int {
+    return *a + *b;
+}
+
+// Example: Thread spawn
+thread::spawn(|| {
+    print!("Running in a thread!\n");
+});
+
+// More details in the language reference coming soon.
