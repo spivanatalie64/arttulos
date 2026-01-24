@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ArttulOS App Store
+Exec=python3 /home/builder/appstore/frontend/appstore.py
+Icon=system-software-install
+Terminal=false
+Categories=System;Utility;

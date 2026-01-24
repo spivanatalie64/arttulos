@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ArttulOS AI Assistant
+Exec=python3 /home/builder/ai_assistant/main.scrapec
+Icon=applications-education
+Terminal=false
+Categories=Utility;System;
