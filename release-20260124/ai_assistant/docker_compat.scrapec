@@ -1,0 +1,88 @@
+// docker_compat.scrapec
+// Docker compatibility layer for AI Assistant
+
+// This module provides functions to pull, run, and interface with AI assistants as Docker containers.
+// The AI assistant itself is not implemented here; this only manages container lifecycle and communication.
+
+fn pull_ai_image(image: &str) -> bool {
+    let output = std::run_command("docker", &["pull", image]);
+    match output {
+        Ok(out) => out.status.success(),
+        Err(_) => false,
+    }
+}
+
+
+fn run_ai_container(image: &str, name: &str, ports: &[&str], env: &[(&str, &str)]) -> bool {
+    run_ai_container_with_args(image, name, ports, env, &[])
+}
+
+fn run_ai_container_with_args(image: &str, name: &str, ports: &[&str], env: &[(&str, &str)], extra_args: &[&str]) -> bool {
+    let mut args = vec!["run", "-d", "--rm", "--name", name];
+    for port in ports {
+        args.push("-p");
+        args.push(port);
+    }
+    for (key, val) in env {
+        args.push("-e");
+        args.push(&format!("{}={}", key, val));
+    }
+    for arg in extra_args {
+        args.push(arg);
+    }
+    args.push(image);
+    let output = std::run_command("docker", &args);
+    match output {
+        Ok(out) => out.status.success(),
+        Err(_) => false,
+    }
+}
+
+    fn run_ai_container_with_args_and_volumes(image: &str, name: &str, ports: &[&str], env: &[(&str, &str)], extra_args: &[&str], volumes: &[(String, &str)]) -> bool {
+        let mut args = vec!["run", "-d", "--rm", "--name", name];
+        for port in ports {
+            args.push("-p");
+            args.push(port);
+        }
+        for (key, val) in env {
+            args.push("-e");
+            args.push(&format!("{}={}", key, val));
+        }
+        for arg in extra_args {
+            args.push(arg);
+        }
+        for (host, container) in volumes {
+            args.push("-v");
+            args.push(&format!("{}:{}", host, container));
+        }
+        args.push(image);
+        let output = std::run_command("docker", &args);
+        match output {
+            Ok(out) => out.status.success(),
+            Err(_) => false,
+        }
+    }
+
+fn exec_in_container(name: &str, cmd: &str, args: &[&str]) -> Option<String> {
+    let mut docker_args = vec!["exec", name, cmd];
+    docker_args.extend_from_slice(args);
+    let output = std::run_command("docker", &docker_args);
+    match output {
+        Ok(out) => {
+            if out.status.success() {
+                Some(String::from_utf8_lossy(&out.stdout).to_string())
+            } else {
+                None
+            }
+        },
+        Err(_) => None,
+    }
+}
+
+fn stop_container(name: &str) -> bool {
+    let output = std::run_command("docker", &["stop", name]);
+    match output {
+        Ok(out) => out.status.success(),
+        Err(_) => false,
+    }
+}

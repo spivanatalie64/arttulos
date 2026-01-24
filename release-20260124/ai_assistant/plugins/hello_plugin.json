@@ -1,0 +1,7 @@
+{
+  "name": "hello-plugin",
+  "version": "1.0.0",
+  "entry": "hello_plugin.scrapec",
+  "permissions": ["query", "log"],
+  "author": "ArttulOS Team"
+}

@@ -1,0 +1,15 @@
+// test_ai_assistant.scrapec
+// Automated tests for PacNixum AI Assistant integration
+
+fn test_ai_basic_query() {
+    let output = run_ai_assistant(["query", "What is PacNixum?"]);
+    assert(output.contains("package manager"));
+}
+
+fn test_ai_plugin_list() {
+    let output = run_ai_assistant(["plugins", "list"]);
+    assert(output.contains("sysinfo"));
+    assert(output.contains("motd"));
+}
+
+// Add more AI assistant integration tests as needed

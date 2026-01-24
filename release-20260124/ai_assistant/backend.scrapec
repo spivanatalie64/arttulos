@@ -1,0 +1,17 @@
+// backend.scrapec
+// Backend logic for the PacNixum Local AI Assistant
+
+// This is a stub for future LLM or rules engine integration.
+// For now, it provides simple pattern-matching Q&A.
+
+fn answer(query: &str) -> &str {
+    if query.contains("rollback") {
+        "To rollback, use: pacnixum rollback --to <snapshot>"
+    } else if query.contains("install") {
+        "To install a package, use: pacnixum install --pkg <name> [--layer=arch|rhel|nix] [options]"
+    } else if query.contains("update") {
+        "To update, use: pacnixum update [--system|--pkg <name>] [options]"
+    } else {
+        "[AI] Sorry, I don't know how to help with that yet."
+    }
+}

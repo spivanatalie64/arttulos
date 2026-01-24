@@ -1,0 +1,12 @@
+// sysinfo_plugin.scrapec
+// Plugin: System Info Reporter for PacNixum AI Assistant
+
+fn main() {
+    print!("[PLUGIN: sysinfo] Gathering system information...\n");
+    let uname = std::run_command("uname", &["-a"]).unwrap();
+    let os = String::from_utf8_lossy(&uname.stdout);
+    print!("[PLUGIN: sysinfo] OS: {}\n", os.trim());
+    let meminfo = std::run_command("cat", &["/proc/meminfo"]).unwrap();
+    let mem = String::from_utf8_lossy(&meminfo.stdout);
+    print!("[PLUGIN: sysinfo] Memory Info:\n{}\n", mem.lines().take(5).collect::<Vec<_>>().join("\n"));
+}

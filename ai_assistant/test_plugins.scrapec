@@ -1,0 +1,19 @@
+// test_plugins.scrapec
+// Automated tests for AI Assistant plugins
+
+fn test_hello_plugin() {
+    let output = plugins::run("hello_plugin");
+    assert(output.contains("Hello"));
+}
+
+fn test_sysinfo_plugin() {
+    let output = plugins::run("sysinfo_plugin");
+    assert(output.contains("CPU"));
+}
+
+fn test_motd_plugin() {
+    let output = plugins::run("motd_plugin");
+    assert(output.contains("Message of the Day"));
+}
+
+// Add more plugin tests as needed
