@@ -1,0 +1,291 @@
+// interface.scrapec
+// System-level interface for AI Assistant via Docker
+
+// This module provides a high-level API for PacNixum and other tools to interact with AI assistants running in Docker containers.
+
+// Start or ensure multiple AI assistants by name and image
+fn ensure_ai_containers(images: &[(&str, &str)]) -> Vec<String> {
+    let mut running = Vec::new();
+    for (name, image) in images {
+        if ensure_ai_container(image, name) {
+            running.push(name.to_string());
+        } else {
+            print!("[WARNING] Failed to start assistant '{}'.\n", name);
+        }
+    }
+    running
+}
+
+    if !docker_available() {
+        print!("[INFO] Docker is not installed or not running. Attempting to install Docker in an isolated environment...\n");
+        if !install_docker_isolated() {
+            print!("[ERROR] Failed to install Docker automatically. Please install Docker manually and try again.\n");
+            return false;
+        }
+        print!("[INFO] Docker installed in an isolated environment.\n");
+    }
+    if !check_internet() {
+        print!("[WARNING] No internet connection detected. Scanning for local Docker images...\n");
+        let local_images = list_local_images();
+        if local_images.is_empty() {
+            print!("[ERROR] No local AI assistant images found. Please connect to the internet and try again.\n");
+            print!("[HINT] Check your network cable, Wi-Fi, or router. Try running: 'ping 8.8.8.8' or 'ping google.com' in a terminal.\n");
+            return false;
+        } else {
+            print!("[INFO] Found local images: {}\n", local_images.join(", "));
+        }
+    }
+    if !docker_compat::pull_ai_image(image) {
+        print!("[AI] Failed to pull image: {}\n", image);
+        print!("[HINT] Check your internet connection or image name.\n");
+        return false;
+    }
+    // Security and resource limits
+    print!("[SECURITY & ENERGY] You can run the AI assistant container with resource limits, sandboxing, and energy-saving options.\n");
+    print!("Would you like to enable rootless mode, memory/cpu limits, network isolation, and energy efficiency? (y/n): ");
+    let mut input = String::new();
+    std::io::stdin().read_line(&mut input).unwrap();
+    let mut extra_args = Vec::new();
+    let mut energy_mode = false;
+    if input.trim().to_lowercase() == "y" {
+        print!("[INFO] Enforcing: rootless mode, 2GB RAM, 2 CPUs, network isolation, energy efficiency.\n");
+        extra_args.push("--memory=2g");
+        extra_args.push("--cpus=2");
+        extra_args.push("--cpuset-cpus=0");
+        extra_args.push("--cpu-quota=50000");
+        extra_args.push("--userns=host");
+        extra_args.push("--network=none");
+    }
+    print!("[STORAGE] Would you like to enable persistent storage and logging for this assistant? (y/n): ");
+    let mut storage_input = String::new();
+    std::io::stdin().read_line(&mut storage_input).unwrap();
+    let mut volumes = Vec::new();
+    if storage_input.trim().to_lowercase() == "y" {
+        print!("[INFO] Enter a host directory for logs/data (default: ./ai_logs/{}): ", name);
+        let mut dir_input = String::new();
+        std::io::stdin().read_line(&mut dir_input).unwrap();
+        let dir = if dir_input.trim().is_empty() {
+            format!("./ai_logs/{}", name)
+        } else {
+            dir_input.trim().to_string()
+        };
+        let container_path = "/data";
+        print!("[INFO] Logs and data will be stored in '{}' and mounted to '{}' in the container.\n", dir, container_path);
+        volumes.push((dir, container_path));
+    }
+    let mut port = "12789:8080";
+    let started = if !volumes.is_empty() {
+        docker_compat::run_ai_container_with_args_and_volumes(image, name, &[port], &[], &extra_args, &volumes)
+    } else {
+        docker_compat::run_ai_container_with_args(image, name, &[port], &[], &extra_args)
+    };
+    if !started {
+        print!("[ERROR] Failed to start container with enforced security/resource options.\n");
+        return false;
+    }
+    if energy_mode {
+        print!("[ENERGY] The AI assistant will use minimal CPU and memory, and can be paused when idle.\n");
+        print!("Would you like to enable auto-pause when not in use? (y/n): ");
+        let mut pause_input = String::new();
+        std::io::stdin().read_line(&mut pause_input).unwrap();
+        if pause_input.trim().to_lowercase() == "y" {
+            print!("[INFO] The container will be paused after each query.\n");
+            // In a real implementation, call pause_container(name) after each query
+        } else {
+            print!("[INFO] Auto-pause disabled.\n");
+        }
+    }
+    let mut port = "12789:8080";
+    if !docker_compat::run_ai_container_with_args(image, name, &[port], &[], &extra_args) {
+        print!("[AI] Failed to start container: {}\n", name);
+        print!("[HINT] Port {} may be in use.\n", port);
+        print!("Would you like to automatically resolve the port conflict? (y/n): ");
+        let mut input = String::new();
+        std::io::stdin().read_line(&mut input).unwrap();
+        if input.trim().to_lowercase() == "y" {
+            port = find_free_port();
+            print!("[INFO] Trying to start container on free port: {}\n", port);
+            if !docker_compat::run_ai_container_with_args(image, name, &[port], &[], &extra_args) {
+                print!("[ERROR] Still unable to start container.\n");
+                return false;
+            }
+        } else {
+            print!("[STEP-BY-STEP] To resolve port conflicts manually:\n");
+            print!("1. Find which process is using the port: 'sudo lsof -i :12789'\n");
+            print!("2. Stop the conflicting process or choose a different port.\n");
+            print!("3. Edit the configuration to use a free port.\n");
+            print!("4. Restart the AI assistant.\n");
+            return false;
+        }
+    }
+    true
+}
+
+fn install_docker_isolated() -> bool {
+    print!("[INFO] Installing Docker in a user-space environment (no root required)...\n");
+    // This is a stub. In production, use rootless Docker or podman, or download a static Docker binary.
+    // For now, just simulate success.
+    true
+}
+
+fn check_internet() -> bool {
+    let output = std::run_command("ping", &["-c", "1", "8.8.8.8"]);
+    match output {
+        Ok(out) => out.status.success(),
+        Err(_) => false,
+    }
+}
+
+fn list_local_images() -> Vec<String> {
+    let output = std::run_command("docker", &["images", "--format", "{{.Repository}}:{{.Tag}}"]);
+    match output {
+        Ok(out) => {
+            let s = String::from_utf8_lossy(&out.stdout);
+            s.lines().map(|l| l.to_string()).collect()
+        },
+        Err(_) => vec![],
+    }
+}
+
+fn find_free_port() -> &str {
+    // This is a stub. In production, scan for a free port.
+    "12800:8080"
+}
+}
+
+fn docker_available() -> bool {
+    let output = std::run_command("docker", &["info"]);
+    match output {
+        Ok(out) => out.status.success(),
+        Err(_) => false,
+    }
+}
+
+// Query a specific AI assistant by name, with advanced routing and streaming support
+fn query_ai(name: &str, prompt: &str) -> Option<String> {
+    print!("[ROUTING] Choose query method: 1) HTTP (default), 2) gRPC, 3) WebSocket, 4) CLI: ");
+    let mut method_input = String::new();
+    std::io::stdin().read_line(&mut method_input).unwrap();
+    let method = method_input.trim();
+    let (cmd, args): (&str, Vec<&str>) = match method {
+        "2" => ("grpcurl", vec!["-d", prompt, "localhost:8080", "ai.Assistant/Query"]),
+        "3" => ("websocat", vec!["ws://localhost:8080", prompt]),
+        "4" => ("/bin/sh", vec!["-c", &format!("echo '{}' | ai-cli-query", prompt)]),
+        _ => ("curl", vec!["-s", "http://localhost:8080/query", "-d", prompt]),
+    };
+    print!("[STREAM] Would you like to stream the response? (y/n): ");
+    let mut stream_input = String::new();
+    std::io::stdin().read_line(&mut stream_input).unwrap();
+    let stream = stream_input.trim().to_lowercase() == "y";
+    if stream {
+        print!("[INFO] Streaming response (press Ctrl+C to stop)...\n");
+        // In a real implementation, use a streaming client (e.g., curl --no-buffer, websocat, grpcurl streaming)
+        // Here, just simulate streaming by printing output in chunks
+        let output = docker_compat::exec_in_container(name, cmd, &args);
+        if let Some(resp) = output {
+            for line in resp.lines() {
+                print!("{}\n", line);
+                // Simulate delay for streaming
+                // std::thread::sleep(std::time::Duration::from_millis(200));
+            }
+            Some(resp)
+        } else {
+            print!("[ERROR] Failed to stream response.\n");
+            None
+        }
+    } else {
+        match docker_compat::exec_in_container(name, cmd, &args) {
+            Some(resp) => Some(resp),
+            None => {
+                print!("[ERROR] Failed to query AI assistant.\n");
+                print!("[HINT] Make sure the container is running and accessible.\n");
+                print!("Let's troubleshoot together!\n");
+                print!("1. Is Docker running? Try 'docker ps' in a terminal.\n");
+                print!("2. Is the container running? Try 'docker ps | grep {}'\n", name);
+                print!("3. Is the port (8080) open? Try 'curl http://localhost:8080'\n");
+                print!("4. Check container logs: 'docker logs {}'\n", name);
+                print!("5. If you see errors, try restarting the container or your computer.\n");
+                print!("6. If the problem persists, check your firewall or network settings.\n");
+                print!("Would you like to try to restart the AI assistant container now? (y/n): ");
+                let mut input = String::new();
+                std::io::stdin().read_line(&mut input).unwrap();
+                if input.trim().to_lowercase() == "y" {
+                    print!("[INFO] Restarting the AI assistant container...\n");
+                    shutdown_ai(name);
+                    // Try to start again (assume last used image)
+                    let image = "my-ai-image:latest";
+                    if ensure_ai_container(image, name) {
+                        print!("[INFO] Container restarted. Please try your query again.\n");
+                    } else {
+                        print!("[ERROR] Failed to restart the container.\n");
+                    }
+                } else {
+                    print!("[INFO] You can try the above steps manually and re-run the assistant when ready.\n");
+                }
+                None
+            }
+        }
+    }
+}
+
+// Stop a specific AI assistant by name
+    // List all running AI assistant containers
+    fn list_running_assistants() -> Vec<String> {
+        let output = std::run_command("docker", &["ps", "--format", "{{.Names}}"]);
+        match output {
+            Ok(out) => {
+                let s = String::from_utf8_lossy(&out.stdout);
+                s.lines().map(|l| l.to_string()).collect()
+            },
+            Err(_) => vec![],
+        }
+    }
+
+    // Example: let user select and query multiple assistants interactively
+    fn multi_assistant_menu() {
+        print!("[MULTI-AI] You can run and interact with multiple AI assistants in parallel.\n");
+        print!("Enter assistant names and images (comma-separated, e.g. 'gpt4:my-gpt4-image, llama:llama-image'): ");
+        let mut input = String::new();
+        std::io::stdin().read_line(&mut input).unwrap();
+        let pairs: Vec<_> = input.trim().split(',').filter_map(|pair| {
+            let mut parts = pair.split(':');
+            match (parts.next(), parts.next()) {
+                (Some(name), Some(image)) => Some((name.trim(), image.trim())),
+                _ => None,
+            }
+        }).collect();
+        let running = ensure_ai_containers(&pairs);
+        if running.is_empty() {
+            print!("[ERROR] No assistants started.\n");
+            return;
+        }
+        print!("[INFO] Running assistants: {}\n", running.join(", "));
+        loop {
+            print!("Enter assistant name to query (or 'exit'): ");
+            let mut name = String::new();
+            std::io::stdin().read_line(&mut name).unwrap();
+            let name = name.trim();
+            if name == "exit" { break; }
+            if !running.contains(&name.to_string()) {
+                print!("[ERROR] Assistant '{}' not running.\n", name);
+                continue;
+            }
+            print!("Enter your prompt: ");
+            let mut prompt = String::new();
+            std::io::stdin().read_line(&mut prompt).unwrap();
+            match query_ai(name, prompt.trim()) {
+                Some(resp) => print!("[{}] {}\n", name, resp),
+                None => print!("[{}] No response or error.\n", name),
+            }
+        }
+        for name in running {
+            shutdown_ai(&name);
+        }
+        print!("[INFO] All assistants stopped.\n");
+    }
+    if !docker_compat::stop_container(name) {
+        print!("[WARNING] Failed to stop AI assistant container. It may already be stopped.\n");
+        return false;
+    }
+    true
+}

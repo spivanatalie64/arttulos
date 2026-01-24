@@ -1,0 +1,34 @@
+// frontend.scrapec
+// Simple frontend interface for running AI assistants via Docker
+
+fn main() {
+    print!("\x1b[1;36mPacNixum AI Assistant Frontend\x1b[0m\n");
+    print!("\x1b[1mEnter the Docker image for the AI assistant (default: my-ai-image:latest):\x1b[0m ");
+    let mut image = String::new();
+    std::io::stdin().read_line(&mut image).unwrap();
+    let image = if image.trim().is_empty() { "my-ai-image:latest" } else { image.trim() };
+    let name = "ai-assistant";
+    if !interface::ensure_ai_container(image, name) {
+        print!("\x1b[31m[ERROR] Failed to start AI assistant container.\x1b[0m\n");
+        return;
+    }
+    print!("\x1b[32m[AI] Assistant is running! Type your question (or 'exit', 'h' for help):\x1b[0m\n");
+    loop {
+        let mut prompt = String::new();
+        std::io::stdin().read_line(&mut prompt).unwrap();
+        let trimmed = prompt.trim();
+        if trimmed == "exit" {
+            break;
+        }
+        if trimmed == "h" {
+            print!("\n\x1b[1mPrompt Help:\x1b[0m\n- Type your question for the AI\n- 'exit' to stop\n- 'h' for this help\n");
+            continue;
+        }
+        match interface::query_ai(name, trimmed) {
+            Some(resp) => print!("\x1b[32m[AI] {}\x1b[0m\n", resp),
+            None => print!("\x1b[31m[AI] No response or error.\x1b[0m\n"),
+        }
+    }
+    interface::shutdown_ai(name);
+    print!("\x1b[34m[AI] Assistant stopped.\x1b[0m\n");
+}

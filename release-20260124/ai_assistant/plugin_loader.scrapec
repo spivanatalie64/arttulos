@@ -1,0 +1,90 @@
+// plugin_loader.scrapec
+// Minimal plugin loader for PacNixum AI Assistant
+
+use std::fs;
+use std::process::Command;
+use serde_json::Value;
+
+fn main() {
+    print!("[PLUGIN LOADER] Plugin Management Menu\n");
+    let plugin_dir = "ai_assistant/plugins";
+    let mut plugins = Vec::new();
+    let entries = fs::read_dir(plugin_dir).unwrap();
+    for entry in entries {
+        let path = entry.path();
+        if path.extension().unwrap_or("") == "json" {
+            let manifest_str = fs::read_to_string(&path).unwrap();
+            let manifest: Value = serde_json::from_str(&manifest_str).unwrap();
+            let name = manifest["name"].as_str().unwrap_or("");
+            let entry = manifest["entry"].as_str().unwrap_or("");
+            let permissions = manifest["permissions"].as_array().map(|arr| arr.iter().filter_map(|v| v.as_str()).map(|s| s.to_string()).collect::<Vec<_>>()).unwrap_or(vec![]);
+            plugins.push((name.to_string(), entry.to_string(), permissions));
+        }
+    }
+    loop {
+        print!("\nAvailable plugins:\n");
+        for (i, (name, entry, permissions)) in plugins.iter().enumerate() {
+            print!("  {}. {} ({}) [permissions: {}]\n", i + 1, name, entry, permissions.join(", "));
+        }
+        print!("Select a plugin to enable/disable/execute (number), or 'q' to quit: ");
+        let mut input = String::new();
+        std::io::stdin().read_line(&mut input).unwrap();
+        let trimmed = input.trim();
+        if trimmed == "q" { break; }
+        let idx: usize = match trimmed.parse() {
+            Ok(n) if n > 0 && n <= plugins.len() => n - 1,
+            _ => { print!("Invalid selection.\n"); continue; }
+        };
+        let (name, entry, permissions) = &plugins[idx];
+        print!("[PLUGIN] '{}' selected.\n", name);
+        print!("Options: 1) Enable/Run  2) Disable (not implemented)  3) Back\nSelect: ");
+        let mut opt = String::new();
+        std::io::stdin().read_line(&mut opt).unwrap();
+        match opt.trim() {
+            "1" => {
+                // Permission enforcement: block or prompt for dangerous permissions
+                let mut blocked = false;
+                let mut needs_confirm = false;
+                for perm in permissions {
+                    if perm == "system" {
+                        print!("[SECURITY] Plugin requests 'system' permission. This can access your system. Allow? (y/n): ");
+                        let mut confirm = String::new();
+                        std::io::stdin().read_line(&mut confirm).unwrap();
+                        if confirm.trim().to_lowercase() != "y" {
+                            print!("[SECURITY] Execution blocked.\n");
+                            blocked = true;
+                        }
+                    }
+                    if perm == "query" {
+                        print!("[SECURITY] Plugin requests 'query' permission. Allow network/AI queries? (y/n): ");
+                        let mut confirm = String::new();
+                        std::io::stdin().read_line(&mut confirm).unwrap();
+                        if confirm.trim().to_lowercase() != "y" {
+                            print!("[SECURITY] Execution blocked.\n");
+                            blocked = true;
+                        }
+                    }
+                }
+                if blocked { continue; }
+                if entry.ends_with(".scrapec") {
+                    let plugin_path = format!("{}/{}", plugin_dir, entry);
+                    print!("[PLUGIN] Executing {}...\n", plugin_path);
+                    // Actually execute the plugin using the ScrapeC runtime
+                    let status = std::process::Command::new("scrapec").arg(&plugin_path).status();
+                    match status {
+                        Ok(s) if s.success() => print!("[PLUGIN] {} executed successfully.\n", name),
+                        Ok(s) => print!("[PLUGIN] {} exited with code {:?}.\n", name, s.code()),
+                        Err(e) => print!("[PLUGIN] Failed to execute: {}\n", e),
+                    }
+                } else {
+                    print!("[PLUGIN] Unsupported plugin type: {}\n", entry);
+                }
+            },
+            "2" => {
+                print!("[PLUGIN] Disable is not yet implemented.\n");
+            },
+            _ => {},
+        }
+    }
+    print!("[PLUGIN LOADER] Done.\n");
+}

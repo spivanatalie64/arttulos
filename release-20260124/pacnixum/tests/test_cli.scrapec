@@ -1,0 +1,15 @@
+// test_cli.scrapec
+// Automated tests for PacNixum CLI
+
+fn test_help_menu() {
+    let output = run_cli(["--help"]);
+    assert(output.contains("PacNixum"));
+    assert(output.contains("--advanced"));
+}
+
+fn test_invalid_command() {
+    let output = run_cli(["nonsensecmd"]);
+    assert(output.contains("Unknown command"));
+}
+
+// Add more CLI tests as needed

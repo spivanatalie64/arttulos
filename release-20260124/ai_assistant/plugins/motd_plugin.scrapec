@@ -1,0 +1,7 @@
+// motd_plugin.scrapec
+// Plugin: Message of the Day for PacNixum AI Assistant
+
+fn main() {
+    print!("[PLUGIN: motd] Welcome to ArttulOS and PacNixum!\n");
+    print!("[PLUGIN: motd] Today's tip: Use 'pacnixum ai-assist launch' for advanced help.\n");
+}

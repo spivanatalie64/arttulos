@@ -1,0 +1,51 @@
+// gui_frontend.scrapec
+// Simple TUI/GUI frontend for the AI assistant system (prototype)
+
+fn main() {
+    print!("\x1b[1;36m\n=== PacNixum AI Assistant GUI (Prototype) ===\x1b[0m\n");
+    print!("\x1b[1mSelect an AI assistant to launch or manage:\x1b[0m\n");
+    let assistants = [
+        ("gpt4", "my-gpt4-image:latest"),
+        ("llama", "llama-image:latest"),
+        ("custom", "custom-ai-image:latest"),
+    ];
+    for (i, (name, _)) in assistants.iter().enumerate() {
+        print!("  \x1b[33m{}. {}\x1b[0m\n", i + 1, name);
+    }
+    print!("\x1b[2mEnter number to launch, 'h' for help, or 'q' to quit:\x1b[0m ");
+    let mut input = String::new();
+    std::io::stdin().read_line(&mut input).unwrap();
+    let trimmed = input.trim();
+    if trimmed == "q" { return; }
+    if trimmed == "h" {
+        print!("\n\x1b[1mHelp:\x1b[0m\n- Enter a number to launch an assistant\n- 'q' to quit\n- 'h' for this help\n- After launch, type 'exit' to stop the assistant\n");
+        return;
+    }
+    let idx: usize = match trimmed.parse() {
+        Ok(n) if n > 0 && n <= assistants.len() => n - 1,
+        _ => { print!("\x1b[31mInvalid selection.\x1b[0m\n"); return; }
+    };
+    let (name, image) = assistants[idx];
+    print!("[INFO] Launching '{}'...\n", name);
+    if !interface::ensure_ai_container(image, name) {
+        print!("\x1b[31m[ERROR] Failed to launch assistant.\x1b[0m\n");
+        return;
+    }
+    loop {
+        print!("\n[{}] Enter your prompt (or 'exit', 'h' for help): ", name);
+        let mut prompt = String::new();
+        std::io::stdin().read_line(&mut prompt).unwrap();
+        let prompt = prompt.trim();
+        if prompt == "exit" { break; }
+        if prompt == "h" {
+            print!("\n\x1b[1mPrompt Help:\x1b[0m\n- Type your question for the AI\n- 'exit' to stop\n- 'h' for this help\n");
+            continue;
+        }
+        match interface::query_ai(name, prompt) {
+            Some(resp) => print!("\x1b[32m[{}] {}\x1b[0m\n", name, resp),
+            None => print!("\x1b[31m[{}] No response or error.\x1b[0m\n", name),
+        }
+    }
+    interface::shutdown_ai(name);
+    print!("\x1b[34m[INFO] Assistant stopped.\x1b[0m\n");
+}

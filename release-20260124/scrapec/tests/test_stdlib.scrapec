@@ -1,0 +1,23 @@
+// test_stdlib.scrapec
+// Automated tests for ScrapeC standard library
+
+fn test_vec() {
+    let v = std::vec::new();
+    assert(v.is_empty());
+}
+
+fn test_string() {
+    let s = std::string::from("hello");
+    assert(s.len() == 5);
+}
+
+fn test_pattern_match() {
+    let x = 42;
+    let result = match x {
+        42 => "ok",
+        _ => "fail"
+    };
+    assert(result == "ok");
+}
+
+// Add more stdlib tests as needed

@@ -1,0 +1,14 @@
+// test_frontend.scrapec
+// Automated tests for AI Assistant frontend
+
+fn test_frontend_startup() {
+    let result = frontend::start();
+    assert(result.is_ok());
+}
+
+fn test_frontend_query_routing() {
+    let response = frontend::route_query("sysinfo");
+    assert(response.contains("CPU"));
+}
+
+// Add more frontend tests as needed

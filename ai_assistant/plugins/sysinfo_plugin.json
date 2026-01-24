@@ -1,0 +1,7 @@
+{
+  "name": "sysinfo-plugin",
+  "version": "1.0.0",
+  "entry": "sysinfo_plugin.scrapec",
+  "permissions": ["query", "log", "system"],
+  "author": "ArttulOS Team"
+}

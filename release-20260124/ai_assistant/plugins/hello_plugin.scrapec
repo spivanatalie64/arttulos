@@ -1,0 +1,7 @@
+// hello_plugin.scrapec
+// Example plugin for PacNixum AI Assistant
+
+fn main() {
+    print!("[PLUGIN] Hello from the AI Assistant plugin system!\n");
+    print!("This plugin can add new commands, skills, or workflows.\n");
+}

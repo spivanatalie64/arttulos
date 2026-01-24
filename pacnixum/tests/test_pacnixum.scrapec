@@ -1,0 +1,19 @@
+// test_pacnixum.scrapec
+// Automated tests for PacNixum core logic
+
+fn test_package_install() {
+    let result = pacnixum::install("nano");
+    assert(result.is_ok());
+}
+
+fn test_package_remove() {
+    let result = pacnixum::remove("nano");
+    assert(result.is_ok());
+}
+
+fn test_package_search() {
+    let results = pacnixum::search("nano");
+    assert(results.contains("nano"));
+}
+
+// Add more package manager tests as needed

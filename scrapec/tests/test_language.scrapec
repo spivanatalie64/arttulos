@@ -1,0 +1,24 @@
+// test_language.scrapec
+// Automated tests for ScrapeC language features
+
+fn test_ffi_c() {
+    let result = scrapec::ffi::call_c("puts", ["Hello from C"]);
+    assert(result.is_ok());
+}
+
+fn test_ffi_rust() {
+    let result = scrapec::ffi::call_rust("hello_rust", []);
+    assert(result.is_ok());
+}
+
+fn test_async() {
+    let result = scrapec::async::run(async { 42 });
+    assert(result == 42);
+}
+
+fn test_macros() {
+    let expanded = scrapec::macros::expand("repeat!(3, foo)");
+    assert(expanded.contains("foo"));
+}
+
+// Add more language feature tests as needed

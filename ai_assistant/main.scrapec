@@ -1,0 +1,25 @@
+// main.scrapec
+// Standalone entry point for the PacNixum Local AI Assistant
+
+fn main() {
+    print!("[AI Assistant] PacNixum Local AI Assistant\n");
+    print!("Type your question or command (type 'exit' to quit):\n");
+    loop {
+        let mut input = String::new();
+        std::io::stdin().read_line(&mut input).unwrap();
+        let trimmed = input.trim();
+        if trimmed == "exit" {
+            print!("Exiting AI Assistant.\n");
+            break;
+        }
+        if trimmed.contains("rollback") {
+            print!("To rollback, use: pacnixum rollback --to <snapshot>\n");
+        } else if trimmed.contains("install") {
+            print!("To install a package, use: pacnixum install --pkg <name> [--layer=arch|rhel|nix] [options]\n");
+        } else if trimmed.contains("update") {
+            print!("To update, use: pacnixum update [--system|--pkg <name>] [options]\n");
+        } else {
+            print!("[AI] Sorry, I don't know how to help with that yet.\n");
+        }
+    }
+}

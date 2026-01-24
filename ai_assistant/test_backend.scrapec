@@ -1,0 +1,15 @@
+// test_backend.scrapec
+// Automated tests for AI Assistant backend
+
+fn test_backend_startup() {
+    let result = backend::start();
+    assert(result.is_ok());
+}
+
+fn test_backend_plugin_loading() {
+    let plugins = backend::list_plugins();
+    assert(plugins.contains("sysinfo_plugin"));
+    assert(plugins.contains("motd_plugin"));
+}
+
+// Add more backend tests as needed
