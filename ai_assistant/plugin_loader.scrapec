@@ -1,0 +1,19 @@
+// plugin_loader.scrapec
+// Minimal plugin loader for PacNixum AI Assistant
+
+use std::fs;
+
+fn main() {
+    print!("[PLUGIN LOADER] Scanning for plugins...\n");
+    let plugin_dir = "ai_assistant/plugins";
+    let entries = fs::read_dir(plugin_dir).unwrap();
+    for entry in entries {
+        let path = entry.path();
+        if path.extension().unwrap_or("") == "json" {
+            let manifest = fs::read_to_string(&path).unwrap();
+            print!("[PLUGIN] Found manifest: {}\n", path.display());
+            // In a real implementation, parse JSON and load plugin
+        }
+    }
+    print!("[PLUGIN LOADER] Done.\n");
+}

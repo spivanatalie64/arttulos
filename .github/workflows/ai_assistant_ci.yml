@@ -36,7 +36,7 @@ jobs:
           # scrapec ai_assistant/test_docker_compat.scrapec || true
       - name: Archive logs
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: ai-assistant-logs
           path: ai_logs/
