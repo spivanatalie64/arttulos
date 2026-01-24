@@ -8,6 +8,7 @@ fn main() {
         print!("Usage: pacnixum <command> [options]\n");
         print!("Commands: install, remove, update, search, info, rollback\n");
         print!("Options: --layer=<rhel|arch|nix>\n");
+        print!("Special: ai-assist [launch|query] [prompt]\n");
         return;
     }
     // Default layer is 'rhel' unless specified
@@ -22,6 +23,22 @@ fn main() {
         } else {
             cmd_args.push(arg.clone());
         }
+    }
+    if cmd == "ai-assist" {
+        if cmd_args.is_empty() || cmd_args[0] == "launch" {
+            print!("[PacNixum] Launching AI assistant interactive session...\n");
+            interface::multi_assistant_menu();
+        } else if cmd_args[0] == "query" && cmd_args.len() > 2 {
+            let name = &cmd_args[1];
+            let prompt = &cmd_args[2..].join(" ");
+            match interface::query_ai(name, prompt) {
+                Some(resp) => print!("[AI:{}] {}\n", name, resp),
+                None => print!("[AI:{}] No response or error.\n", name),
+            }
+        } else {
+            print!("Usage: pacnixum ai-assist [launch|query <assistant> <prompt>]\n");
+        }
+        return;
     }
     let advanced_mode = args.contains(&"--advanced".to_string());
     match cmd {

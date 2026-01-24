@@ -1,0 +1,30 @@
+// test_docker_compat.scrapec
+// Automated tests for docker_compat.scrapec
+
+fn main() {
+    print!("[TEST] Pulling valid image (should succeed or be skipped in dry-run)...\n");
+    let ok = docker_compat::pull_ai_image("hello-world:latest");
+    print!("Result: {}\n", ok);
+
+    print!("[TEST] Pulling invalid image (should fail)...\n");
+    let fail = docker_compat::pull_ai_image("notarealimage:fake");
+    print!("Result: {}\n", fail);
+
+    print!("[TEST] Running container with ports and env...\n");
+    let ok = docker_compat::run_ai_container("hello-world:latest", "test1", &["12345:80"], &[("FOO", "bar")]);
+    print!("Result: {}\n", ok);
+
+    print!("[TEST] Running container with extra args and volumes...\n");
+    let ok = docker_compat::run_ai_container_with_args_and_volumes(
+        "hello-world:latest", "test2", &["12346:80"], &[], &["--cpus=1"], &[("/tmp", "/data")]
+    );
+    print!("Result: {}\n", ok);
+
+    print!("[TEST] Executing command in container (should fail if not running)...\n");
+    let out = docker_compat::exec_in_container("test1", "echo", &["hi"]);
+    print!("Result: {:?}\n", out);
+
+    print!("[TEST] Stopping container (should succeed or be skipped)...\n");
+    let ok = docker_compat::stop_container("test1");
+    print!("Result: {}\n", ok);
+}

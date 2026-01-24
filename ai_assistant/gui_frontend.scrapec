@@ -1,0 +1,43 @@
+// gui_frontend.scrapec
+// Simple TUI/GUI frontend for the AI assistant system (prototype)
+
+fn main() {
+    print!("\n=== PacNixum AI Assistant GUI (Prototype) ===\n");
+    print!("Select an AI assistant to launch or manage:\n");
+    let assistants = [
+        ("gpt4", "my-gpt4-image:latest"),
+        ("llama", "llama-image:latest"),
+        ("custom", "custom-ai-image:latest"),
+    ];
+    for (i, (name, _)) in assistants.iter().enumerate() {
+        print!("  {}. {}\n", i + 1, name);
+    }
+    print!("Enter number to launch, or 'q' to quit: ");
+    let mut input = String::new();
+    std::io::stdin().read_line(&mut input).unwrap();
+    let trimmed = input.trim();
+    if trimmed == "q" { return; }
+    let idx: usize = match trimmed.parse() {
+        Ok(n) if n > 0 && n <= assistants.len() => n - 1,
+        _ => { print!("Invalid selection.\n"); return; }
+    };
+    let (name, image) = assistants[idx];
+    print!("[INFO] Launching '{}'...\n", name);
+    if !interface::ensure_ai_container(image, name) {
+        print!("[ERROR] Failed to launch assistant.\n");
+        return;
+    }
+    loop {
+        print!("\n[{}] Enter your prompt (or 'exit'): ", name);
+        let mut prompt = String::new();
+        std::io::stdin().read_line(&mut prompt).unwrap();
+        let prompt = prompt.trim();
+        if prompt == "exit" { break; }
+        match interface::query_ai(name, prompt) {
+            Some(resp) => print!("[{}] {}\n", name, resp),
+            None => print!("[{}] No response or error.\n", name),
+        }
+    }
+    interface::shutdown_ai(name);
+    print!("[INFO] Assistant stopped.\n");
+}

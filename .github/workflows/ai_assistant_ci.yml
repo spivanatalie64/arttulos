@@ -1,0 +1,42 @@
+# .github/workflows/ai_assistant_ci.yml
+# GitHub Actions CI for PacNixum AI Assistant System
+
+name: AI Assistant CI
+
+on:
+  push:
+    paths:
+      - 'ai_assistant/**'
+      - 'pacnixum/**'
+  pull_request:
+    paths:
+      - 'ai_assistant/**'
+      - 'pacnixum/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Set up Python (for test runner, if needed)
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Install Docker
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker.io
+          sudo systemctl start docker
+          sudo usermod -aG docker $USER
+      - name: Run AI Assistant Docker Compatibility Tests
+        run: |
+          # Replace with actual test runner for ScrapeC if available
+          echo "Running docker_compat.scrapec tests (mock/dry-run)"
+          # scrapec ai_assistant/test_docker_compat.scrapec || true
+      - name: Archive logs
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: ai-assistant-logs
+          path: ai_logs/

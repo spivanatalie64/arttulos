@@ -155,41 +155,69 @@ fn docker_available() -> bool {
     }
 }
 
-// Query a specific AI assistant by name
+// Query a specific AI assistant by name, with advanced routing and streaming support
 fn query_ai(name: &str, prompt: &str) -> Option<String> {
-    // Example: send prompt to AI container via HTTP or CLI
-    // Here we use curl inside the container for demonstration
-    let args = ["curl", "-s", "http://localhost:8080/query", "-d", prompt];
-    match docker_compat::exec_in_container(name, args[0], &args[1..]) {
-        Some(resp) => Some(resp),
-        None => {
-            print!("[ERROR] Failed to query AI assistant.\n");
-            print!("[HINT] Make sure the container is running and accessible.\n");
-            print!("Let's troubleshoot together!\n");
-            print!("1. Is Docker running? Try 'docker ps' in a terminal.\n");
-            print!("2. Is the container running? Try 'docker ps | grep {}'\n", name);
-            print!("3. Is the port (8080) open? Try 'curl http://localhost:8080'\n");
-            print!("4. Check container logs: 'docker logs {}'\n", name);
-            print!("5. If you see errors, try restarting the container or your computer.\n");
-            print!("6. If the problem persists, check your firewall or network settings.\n");
-            print!("Would you like to try to restart the AI assistant container now? (y/n): ");
-            let mut input = String::new();
-            std::io::stdin().read_line(&mut input).unwrap();
-            if input.trim().to_lowercase() == "y" {
-                print!("[INFO] Restarting the AI assistant container...\n");
-                shutdown_ai(name);
-                // Try to start again (assume last used image)
-                // In a real implementation, track the image name
-                let image = "my-ai-image:latest";
-                if ensure_ai_container(image, name) {
-                    print!("[INFO] Container restarted. Please try your query again.\n");
-                } else {
-                    print!("[ERROR] Failed to restart the container.\n");
-                }
-            } else {
-                print!("[INFO] You can try the above steps manually and re-run the assistant when ready.\n");
+    print!("[ROUTING] Choose query method: 1) HTTP (default), 2) gRPC, 3) WebSocket, 4) CLI: ");
+    let mut method_input = String::new();
+    std::io::stdin().read_line(&mut method_input).unwrap();
+    let method = method_input.trim();
+    let (cmd, args): (&str, Vec<&str>) = match method {
+        "2" => ("grpcurl", vec!["-d", prompt, "localhost:8080", "ai.Assistant/Query"]),
+        "3" => ("websocat", vec!["ws://localhost:8080", prompt]),
+        "4" => ("/bin/sh", vec!["-c", &format!("echo '{}' | ai-cli-query", prompt)]),
+        _ => ("curl", vec!["-s", "http://localhost:8080/query", "-d", prompt]),
+    };
+    print!("[STREAM] Would you like to stream the response? (y/n): ");
+    let mut stream_input = String::new();
+    std::io::stdin().read_line(&mut stream_input).unwrap();
+    let stream = stream_input.trim().to_lowercase() == "y";
+    if stream {
+        print!("[INFO] Streaming response (press Ctrl+C to stop)...\n");
+        // In a real implementation, use a streaming client (e.g., curl --no-buffer, websocat, grpcurl streaming)
+        // Here, just simulate streaming by printing output in chunks
+        let output = docker_compat::exec_in_container(name, cmd, &args);
+        if let Some(resp) = output {
+            for line in resp.lines() {
+                print!("{}\n", line);
+                // Simulate delay for streaming
+                // std::thread::sleep(std::time::Duration::from_millis(200));
             }
+            Some(resp)
+        } else {
+            print!("[ERROR] Failed to stream response.\n");
             None
+        }
+    } else {
+        match docker_compat::exec_in_container(name, cmd, &args) {
+            Some(resp) => Some(resp),
+            None => {
+                print!("[ERROR] Failed to query AI assistant.\n");
+                print!("[HINT] Make sure the container is running and accessible.\n");
+                print!("Let's troubleshoot together!\n");
+                print!("1. Is Docker running? Try 'docker ps' in a terminal.\n");
+                print!("2. Is the container running? Try 'docker ps | grep {}'\n", name);
+                print!("3. Is the port (8080) open? Try 'curl http://localhost:8080'\n");
+                print!("4. Check container logs: 'docker logs {}'\n", name);
+                print!("5. If you see errors, try restarting the container or your computer.\n");
+                print!("6. If the problem persists, check your firewall or network settings.\n");
+                print!("Would you like to try to restart the AI assistant container now? (y/n): ");
+                let mut input = String::new();
+                std::io::stdin().read_line(&mut input).unwrap();
+                if input.trim().to_lowercase() == "y" {
+                    print!("[INFO] Restarting the AI assistant container...\n");
+                    shutdown_ai(name);
+                    // Try to start again (assume last used image)
+                    let image = "my-ai-image:latest";
+                    if ensure_ai_container(image, name) {
+                        print!("[INFO] Container restarted. Please try your query again.\n");
+                    } else {
+                        print!("[ERROR] Failed to restart the container.\n");
+                    }
+                } else {
+                    print!("[INFO] You can try the above steps manually and re-run the assistant when ready.\n");
+                }
+                None
+            }
         }
     }
 }
