@@ -1,0 +1,129 @@
+// cli.scrapec
+// PacNixum CLI and skeleton implementation
+
+fn main() {
+    print!("PacNixum (ScrapeC) - Unified Package Manager\n");
+    let args = std::env::args().collect::<Vec<_>>();
+    if args.len() < 2 || args.contains(&"--help".to_string()) || args.contains(&"-h".to_string()) {
+        print!("Usage: pacnixum <command> [options]\n");
+        print!("Commands: install, remove, update, search, info, rollback\n");
+        print!("Options: --layer=<rhel|arch|nix>\n");
+        return;
+    }
+    // Default layer is 'rhel' unless specified
+    let mut layer = "rhel";
+    let mut cmd = "";
+    let mut cmd_args: Vec<String> = Vec::new();
+    for arg in &args[1..] {
+        if arg.starts_with("--layer=") {
+            layer = &arg[8..];
+        } else if cmd.is_empty() {
+            cmd = arg;
+        } else {
+            cmd_args.push(arg.clone());
+        }
+    }
+    let advanced_mode = args.contains(&"--advanced".to_string());
+    match cmd {
+        "install" => {
+            print!("[{}] Install command\n", layer);
+            print!("Options: --pkg <name> [--version <ver>] [--repo <repo>] [--force] [--dry-run] [--downloadonly] [--resolve-deps] [--no-confirm] [--rollback-on-fail]\n");
+            if advanced_mode {
+                print!("[ADVANCED] Enterprise install options: --chroot, --root, --download-path, --gpg-check, --skip-broken, --noconfirm, --parallel, --debug, --logfile, --hook, --script, --ai-assist\n");
+                ai_assistant_menu();
+            }
+            // TODO: Dispatch to backend install logic for layer
+        },
+        "remove" => {
+            print!("[{}] Remove command\n", layer);
+            print!("Options: --pkg <name> [--cascade] [--nosave] [--dry-run] [--no-confirm] [--rollback-on-fail]\n");
+            if advanced_mode {
+                print!("[ADVANCED] Enterprise remove options: --chroot, --root, --force, --nodeps, --debug, --logfile, --hook, --script, --ai-assist\n");
+                ai_assistant_menu();
+            }
+            // TODO: Dispatch to backend remove logic for layer
+        },
+        "update" => {
+            print!("[{}] Update command\n", layer);
+            print!("Options: [--system] [--pkg <name>] [--repo <repo>] [--dry-run] [--no-confirm] [--rollback-on-fail]\n");
+            if advanced_mode {
+                print!("[ADVANCED] Enterprise update options: --chroot, --root, --parallel, --debug, --logfile, --hook, --script, --ai-assist\n");
+                ai_assistant_menu();
+            }
+            // TODO: Dispatch to backend update logic for layer
+        },
+        "search" => {
+            print!("[{}] Search command\n", layer);
+            print!("Options: --pkg <name> [--repo <repo>] [--regex] [--provides] [--desc] [--all]\n");
+            if advanced_mode {
+                print!("[ADVANCED] Enterprise search options: --chroot, --root, --debug, --logfile, --hook, --script, --ai-assist\n");
+                ai_assistant_menu();
+            }
+            // TODO: Dispatch to backend search logic for layer
+        },
+        "info" => {
+            print!("[{}] Info command\n", layer);
+            print!("Options: --pkg <name> [--repo <repo>] [--all]\n");
+            if advanced_mode {
+                print!("[ADVANCED] Enterprise info options: --chroot, --root, --debug, --logfile, --hook, --script, --ai-assist\n");
+                ai_assistant_menu();
+            }
+            // TODO: Dispatch to backend info logic for layer
+        },
+        "rollback" => {
+            print!("[{}] Rollback command\n", layer);
+            print!("Options: --to <snapshot> [--dry-run] [--no-confirm]\n");
+            if advanced_mode {
+                print!("[ADVANCED] Enterprise rollback options: --chroot, --root, --debug, --logfile, --hook, --script, --ai-assist\n");
+                ai_assistant_menu();
+            }
+            // TODO: Dispatch to backend rollback logic for layer
+        },
+        _ => {
+            print!("Unknown command: {}\n", cmd);
+        }
+    }
+}
+
+// Hidden advanced AI assistant menu
+fn ai_assistant_menu() {
+    print!("\n[AI Assistant] You can now interact with the local AI to walk through advanced package management tasks.\n");
+    print!("Type your question or command (e.g., 'How do I rollback to a previous state?')\n");
+    print!("Type 'launch' to start the interactive AI assistant, or 'exit' to leave advanced mode.\n");
+    let mut input = String::new();
+    std::io::stdin().read_line(&mut input).unwrap();
+    let trimmed = input.trim();
+    if trimmed == "launch" {
+        // In a real implementation, this would spawn the AI assistant process or module
+        print!("[AI] Launching local AI assistant...\n");
+        // Simulate calling the AI assistant main()
+        ai_assistant_main();
+    } else {
+        print!("[AI] Exiting advanced menu.\n");
+    }
+}
+
+// Simulated call to the AI assistant module
+fn ai_assistant_main() {
+    // In a real implementation, this would import and run ai_assistant.scrapec
+    print!("[AI Assistant] PacNixum Local AI Assistant\n");
+    print!("Type your question or command (type 'exit' to quit):\n");
+    loop {
+        let mut input = String::new();
+        std::io::stdin().read_line(&mut input).unwrap();
+        let trimmed = input.trim();
+        if trimmed == "exit" {
+            print!("Exiting AI Assistant.\n");
+            break;
+        }
+        if trimmed.contains("rollback") {
+            print!("To rollback, use: pacnixum rollback --to <snapshot>\n");
+        } else if trimmed.contains("install") {
+            print!("To install a package, use: pacnixum install --pkg <name> [--layer=arch|rhel|nix] [options]\n");
+        } else if trimmed.contains("update") {
+            print!("To update, use: pacnixum update [--system|--pkg <name>] [options]\n");
+        } else {
+            print!("[AI] Sorry, I don't know how to help with that yet.\n");
+        }
+    }
+}

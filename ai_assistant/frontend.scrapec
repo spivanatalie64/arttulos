@@ -1,0 +1,30 @@
+// frontend.scrapec
+// Simple frontend interface for running AI assistants via Docker
+
+fn main() {
+    print!("PacNixum AI Assistant Frontend\n");
+    print!("Enter the Docker image for the AI assistant (default: my-ai-image:latest): ");
+    let mut image = String::new();
+    std::io::stdin().read_line(&mut image).unwrap();
+    let image = if image.trim().is_empty() { "my-ai-image:latest" } else { image.trim() };
+    let name = "ai-assistant";
+    if !interface::ensure_ai_container(image, name) {
+        print!("[ERROR] Failed to start AI assistant container.\n");
+        return;
+    }
+    print!("[AI] Assistant is running! Type your question (or 'exit' to quit):\n");
+    loop {
+        let mut prompt = String::new();
+        std::io::stdin().read_line(&mut prompt).unwrap();
+        let trimmed = prompt.trim();
+        if trimmed == "exit" {
+            break;
+        }
+        match interface::query_ai(name, trimmed) {
+            Some(resp) => print!("[AI] {}\n", resp),
+            None => print!("[AI] No response or error.\n"),
+        }
+    }
+    interface::shutdown_ai(name);
+    print!("[AI] Assistant stopped.\n");
+}
