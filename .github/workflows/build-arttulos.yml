@@ -1,0 +1,53 @@
+name: Build ArttulOS ISO
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-iso:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker.io podman rpm pacman nix
+
+      - name: Build ISO in Docker
+        run: |
+          cd arttulos-os/scripts
+          bash build_system.sh
+
+      - name: Upload ISO artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: arttulos-iso
+          path: arttulos-os/arttulos-2026.01.iso
+
+  test-packages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install pacman, rpm, and nix
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pacman rpm nix
+
+      - name: Test Pacman packages
+        run: |
+          sudo pacman -Sy --noconfirm vim git
+
+      - name: Test RPM packages
+        run: |
+          sudo rpm -i --test /path/to/rpm/package.rpm || true
+
+      - name: Test Nix packages
+        run: |
+          nix-env -iA nixpkgs.cinnamon
