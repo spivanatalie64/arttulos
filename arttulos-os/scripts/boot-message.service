@@ -1,0 +1,12 @@
+[Unit]
+Description=Show ArttulOS Boot Message in Kiosk Mode
+After=graphical.target
+Before=display-manager.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/chromium-browser --kiosk --app=file:///home/builder/branding/boot-message.html
+Restart=no
+
+[Install]
+WantedBy=graphical.target

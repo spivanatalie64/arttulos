@@ -1,0 +1,11 @@
+[Unit]
+Description=ArttulOS Custom Login Manager
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/builder/login_manager/login_manager.py
+Restart=no
+
+[Install]
+WantedBy=graphical.target

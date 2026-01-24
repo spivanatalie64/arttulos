@@ -1,0 +1,6 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#181818"/>
+  <rect x="200" y="200" width="1520" height="680" rx="80" fill="#232323"/>
+  <path d="M400 900L960 180L1520 900H1360L960 420L560 900H400Z" fill="#00FFD0"/>
+  <text x="960" y="1040" text-anchor="middle" font-family="monospace" font-size="72" fill="#fff" font-weight="bold">ArttulOS</text>
+</svg>
