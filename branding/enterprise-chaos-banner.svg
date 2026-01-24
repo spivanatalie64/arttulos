@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="260" rx="32" fill="#181C23"/>
+  <!-- Glitch/3D effect for ENTERPRISE STABILITY. -->
+  <text x="50%" y="90" text-anchor="middle" font-family="'Montserrat', 'Arial', sans-serif" font-size="72" font-weight="bold" fill="#fff" font-style="italic" style="letter-spacing:0.04em;">
+    <tspan dx="-4" dy="0" fill="#FF3C3C" opacity="0.7">ENTERPRISE </tspan>
+    <tspan dx="-4" dy="0" fill="#00D1FF" opacity="0.7">STABILITY.</tspan>
+  </text>
+  <text x="50%" y="90" text-anchor="middle" font-family="'Montserrat', 'Arial', sans-serif" font-size="72" font-weight="bold" fill="#fff" font-style="italic" style="letter-spacing:0.04em;">
+    ENTERPRISE STABILITY.
+  </text>
+  <!-- Glitch/3D effect for CHAOS DRIVEN. -->
+  <text x="50%" y="180" text-anchor="middle" font-family="'Montserrat', 'Arial', sans-serif" font-size="72" font-weight="bold" font-style="italic" fill="#00D1FF" style="letter-spacing:0.04em;">
+    <tspan dx="-4" dy="0" fill="#FF3C3C" opacity="0.7">CHAOS </tspan>
+    <tspan dx="-4" dy="0" fill="#fff" opacity="0.7">DRIVEN.</tspan>
+  </text>
+  <text x="50%" y="180" text-anchor="middle" font-family="'Montserrat', 'Arial', sans-serif" font-size="72" font-weight="bold" font-style="italic" fill="#00D1FF" style="letter-spacing:0.04em;">
+    CHAOS DRIVEN.
+  </text>
+</svg>
