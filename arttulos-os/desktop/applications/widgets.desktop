@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ArttulOS Widgets
+Exec=python3 /home/builder/desktop/widgets_launcher.py
+Icon=preferences-desktop
+Terminal=false
+Categories=Utility;System;
