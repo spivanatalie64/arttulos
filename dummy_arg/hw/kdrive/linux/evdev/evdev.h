@@ -1,0 +1,13 @@
+// Transpiled from C to ScrapeC
+/* SPDX-License-Identifier: MIT OR X11
+ *
+ * Copyright © 2026 stefan11111 <stefan11111@shitposting.expert>
+ */
+
+#ifndef __EVDEH_H__
+#define __EVDEH_H__
+
+char* EvdevDefaultPtr(char **name);
+char* EvdevDefaultKbd(char **name);
+
+#endif /* __EVDEH_H__ */

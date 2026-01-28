@@ -1,0 +1,1870 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Nicolas Escobar <blade.liger1313@gmail.com>, 2024.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024, 2025.
+# Javier Francisco <fserrador@gmail.com>, 2025.
+# gossypium <gossypium@users.noreply.translate.fedoraproject.org>, 2025.
+# "Fco. Javier F. Serrador" <fserrador@gmail.com>, 2025.
+# Emilio Herrera <ehespinosa57@gmail.com>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-26 03:48+0000\n"
+"PO-Revision-Date: 2025-07-25 17:09+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf5/"
+"dnf5/es/>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.2\n"
+
+#: cmdline_aliases.cpp:84 context.cpp:301 main.cpp:1357
+msgid ", "
+msgstr ", "
+
+#: cmdline_aliases.cpp:145
+msgid ""
+"Attached named argument \"{}\" not found: {}: Requested in file \"{}\" on "
+"line {}: {}"
+msgstr ""
+"Adjuntado argumento \"{}\" nombrado no encontrado: {}: Solicitado dentro del "
+"archivo \"{}\" en línea {}: {}"
+
+#: cmdline_aliases.cpp:159
+msgid ""
+"Unknown attribute \"{}\" of attached named argument for alias \"{}\" in file "
+"\"{}\" on line {}: {}"
+msgstr ""
+"Atributo \"{}\" desconocido de argumento nombrado adjuntado para alias "
+"\"{}\" dentro del archivo \"{}\" en la línea {}: {}"
+
+#: cmdline_aliases.cpp:171
+msgid "Missing attribute \"id_path\" for alias \"{}\" in file \"{}\""
+msgstr "Falta atributo \"id_path\" para alias \"{}\" interno al archivo \"{}\""
+
+#: cmdline_aliases.cpp:208
+msgid "Unsupported version \"{}\" in file \"{}\". Supported versions: {}"
+msgstr ""
+"Versión \"{}\" no mantenida dentro del archivo \"{}\". Versiones mantenidas: "
+"{}"
+
+#: cmdline_aliases.cpp:218
+msgid "Bad value type of attribute \"version\" in file \"{}\" on line {}: {}"
+msgstr ""
+"Valor de tipo de atributo con \"version\" incorrecto dentro del archivo "
+"\"{}\" en la línea {}: {}"
+
+#: cmdline_aliases.cpp:224
+msgid "Missing attribute \"version\" in file \"{}\""
+msgstr "Falta atributo en \"versión\" dentro del archivo \"{}\""
+
+#: cmdline_aliases.cpp:236
+msgid "Unknown key \"{}\" in file \"{}\" on line {}: {}"
+msgstr "Clave \"{}\" desconocida dentro del archivo \"{}\" en la línea {}: {}"
+
+#: cmdline_aliases.cpp:253
+msgid "Empty or bad element id path in file \"{}\" on line {}: {}"
+msgstr ""
+"ID de elemento vacío o incorrecto de la ruta dentro del archivo \"{}\" en la "
+"línea {}: {}"
+
+#: cmdline_aliases.cpp:272
+msgid ""
+"Parent command \"{}\" not found: {}: Requested in file \"{}\" on line {}: {}"
+msgstr ""
+"Instrucción anterior \"{}\" no encontrada: {}: Solicitada dentro del archivo "
+"\"{}\" en línea {}: {}"
+
+#: cmdline_aliases.cpp:301
+msgid "Unknown type \"{}\" of element \"{}\" in file \"{}\" on line {}: {}"
+msgstr ""
+"Tipo \"{}\" desconocido del elemento \"{}\" dentro del archivo \"{}\" en la "
+"línea {}: {}"
+
+#: cmdline_aliases.cpp:312
+msgid "Missing attribute \"type\" for element \"{}\" in file \"{}\""
+msgstr ""
+"Falta el atributo \"type\" para elemento \"{}\" dentro del archivo \"{}\""
+
+#: cmdline_aliases.cpp:331
+msgid ""
+"Named argument \"{}\" already registered. Requested in file \"{}\" on line "
+"{}: {}"
+msgstr ""
+"Argumento nombrado \"{}\" ya registrado. Solicitado dentro del archivo "
+"\"{}\" en línea {}: {}"
+
+#: cmdline_aliases.cpp:347
+msgid ""
+"Command \"{}\" already registered. Requested in file \"{}\" on line {}: {}"
+msgstr ""
+"Instrucción \"{}\" ya registrada. Solicitado dentro del archivo \"{}\" en la "
+"línea {}: {}"
+
+#: cmdline_aliases.cpp:375
+msgid "Unknown attribute \"{}\" of group \"{}\" in file \"{}\" on line {}: {}"
+msgstr ""
+"Atributo \"{}\" desconocido de grupo \"{}\" dentro del archivo \"{}\" en "
+"línea {}: {}"
+
+#: cmdline_aliases.cpp:387
+msgid "Missing attribute \"header\" for element \"{}\" in file \"{}\""
+msgstr ""
+"Atributo de \"header\" ausente para elemento \"{}\" dentro de archivo \"{}\""
+
+#: cmdline_aliases.cpp:428 cmdline_aliases.cpp:538
+msgid ""
+"The \"short_name\" attribute of named argument \"{}\" must be one character "
+"long in file \"{}\" on line {}: {}"
+msgstr ""
+"El atributo \"short_name\" de argumento nombrado \"{}\" debe ser un carácter "
+"largo en archivo \"{}\" en línea {}: {}"
+
+#: cmdline_aliases.cpp:446
+msgid "Source \"{}\" not found: {}: Requested in file \"{}\" on line {}: {}"
+msgstr ""
+"Origen \"{}\" no encontrado: {}: Solicitado dentro del archivo \"{}\" en la "
+"línea {}: {}"
+
+#: cmdline_aliases.cpp:462 cmdline_aliases.cpp:563 cmdline_aliases.cpp:676
+msgid "Group \"{}\" not found: {}: Requested in file \"{}\" on line {}: {}"
+msgstr ""
+"Grupo \"{}\" no encontrado: {}: Solicitado en el archivo \"{}\" en la línea "
+"{}: {}"
+
+#: cmdline_aliases.cpp:476 cmdline_aliases.cpp:579
+msgid ""
+"Unknown attribute \"{}\" of named argument \"{}\" in file \"{}\" on line {}: "
+"{}"
+msgstr ""
+"Atributo \"{}\" desconocido de argumento nombrado \"{}\" dentro del archivo "
+"\"{}\" en línea {}: {}"
+
+#: cmdline_aliases.cpp:489
+msgid "Missing attribute \"source\" for named argument \"{}\" in file \"{}\""
+msgstr ""
+"Falta el atributo \"source\" para argumento nombrado \"{}\" dentro del "
+"archivo \"{}\""
+
+#: cmdline_aliases.cpp:498 cmdline_aliases.cpp:592
+msgid ""
+"At least one of the attributes \"long_name\" and \"short_name\" must be set "
+"for named argument \"{}\" in file \"{}\""
+msgstr ""
+"Al menos uno de los atributos \"long_name\" y \"short_name\" debe ser fijado "
+"para argumento nombrado \"{}\" dentro de archivo \"{}\""
+
+#: cmdline_aliases.cpp:657
+msgid ""
+"Attached command \"{}\" not found: {}: Requested in file \"{}\" on line {}: "
+"{}"
+msgstr ""
+"Instrucción adjunta \"{}\" no encontrada: {}: Solicitaba en el archivo "
+"\"{}\" en línea {}: {}"
+
+#: cmdline_aliases.cpp:691
+msgid ""
+"Used config file version \"1.0\" for attribute \"{}\" of command \"{}\" in "
+"file \"{}\" on line {}: {}"
+msgstr ""
+"Versión \"1.0\" de archivo config utilizado para atributo \"{}\" de "
+"instrucción \"{}\" dentro de archivo \"{}\" sobre línea {}: {}"
+
+#: cmdline_aliases.cpp:713
+msgid ""
+"Unknown attribute \"{}\" of required value for alias \"{}\" in file \"{}\" "
+"on line {}: {}"
+msgstr ""
+"Atributo \"{}\" no conocido de valor requerido para alias \"{}\" dentro del "
+"archivo \"{}\" sobre la línea {}: {}"
+
+#: cmdline_aliases.cpp:726
+msgid ""
+"Missing attribute \"value_help\" of required value for alias \"{}\" in file "
+"\"{}\""
+msgstr ""
+"Atributo \"value_help\" ausente de valor requerido para alias \"{}\" dentro "
+"del archivo \"{}\""
+
+#: cmdline_aliases.cpp:740
+msgid ""
+"Unknown attribute \"{}\" of command \"{}\" in file \"{}\" on line {}: {}"
+msgstr ""
+"Atributo \"{}\" desconocido de instrucción \"{}\" interno al archivo \"{}\" "
+"en la línea {}: {}"
+
+#: cmdline_aliases.cpp:756
+msgid ""
+"Missing attribute \"attached_command\" for command \"{}\" in file \"{}\""
+msgstr ""
+"Atributo \"attached_command\" ausente para instrucción \"{}\" interna al "
+"archivo \"{}\""
+
+#: cmdline_aliases.cpp:791
+msgid "Bad value type in file \"{}\" on line {}: {}"
+msgstr "Tipo de valor incorrecto en archivo \"{}\" en línea {}: {}"
+
+#: cmdline_aliases.cpp:804
+msgid "Syntax error in file \"{}\" on line {}:"
+msgstr "Error sintáctico dentro del archivo \"{}\" en línea {}:"
+
+#: commands/advisory/advisory.cpp:36
+msgid "Manage advisories"
+msgstr "Gestionar avisos"
+
+#: commands/advisory/advisory_info.hpp:35
+msgid "Print details about advisories"
+msgstr "Mostrar detalles sobre avisos"
+
+#: commands/advisory/advisory_list.hpp:35
+msgid "List advisories"
+msgstr "Listar avisos"
+
+#: commands/advisory/advisory_summary.cpp:44
+msgid "All"
+msgstr "Todos"
+
+#: commands/advisory/advisory_summary.cpp:48
+msgid "Installed"
+msgstr "Instalados"
+
+#: commands/advisory/advisory_summary.cpp:52
+msgid "Updates"
+msgstr "Actualizaciones"
+
+#: commands/advisory/advisory_summary.cpp:65
+msgid "Available"
+msgstr "Disponibles"
+
+#: commands/advisory/advisory_summary.hpp:33
+msgid "Print summary of advisories"
+msgstr "Imprimir resumen de avisos"
+
+#: commands/advisory/arguments.hpp:34
+msgid "Show advisories containing any version of installed packages."
+msgstr "Mostrar avisos que contienen cualquier versión de paquetes instalados."
+
+#: commands/advisory/arguments.hpp:45
+msgid ""
+"Show advisories containing newer versions of installed packages. This is the "
+"default behavior."
+msgstr ""
+"Mostrar avisos que contienen versiones nuevas de paquetes instalados. Este "
+"es el comportamiento predeterminado."
+
+#: commands/advisory/arguments.hpp:57
+msgid ""
+"Show advisories containing equal and older versions of installed packages."
+msgstr ""
+"Mostrar avisos que contienen versiones iguales y antiguas de paquetes "
+"instalados."
+
+#: commands/advisory/arguments.hpp:69
+msgid ""
+"Show advisories containing newer versions of installed packages for which a "
+"newer version is available."
+msgstr ""
+"Mostrar avisos que contienen versiones nuevas de paquetes instalados para "
+"los cuales hay una versión más nueva disponible."
+
+#: commands/advisory/arguments.hpp:82
+msgid ""
+"Show only advisories containing packages with specified names. List option, "
+"supports globs."
+msgstr ""
+"Mostrar solo avisos que contienen paquetes con nombres especificados. Opción "
+"de lista, compatible con globs."
+
+#: commands/advisory/arguments.hpp:83 commands/history/arguments.hpp:81
+msgid "PACKAGE_NAME,..."
+msgstr "NOMBRE_DEL_PAQUETE,..."
+
+#: commands/advisory/arguments.hpp:90
+msgid "List of patterns matched against advisory names."
+msgstr "Lista de patrones coincidentes a los nombres de avisos."
+
+#: commands/advisory/arguments.hpp:100
+msgid "Show only advisories referencing a bugzilla."
+msgstr "Solo mostrar avisos que hacen referencia a un bugzilla."
+
+#: commands/advisory/arguments.hpp:107
+msgid "Show only advisories referencing a CVE."
+msgstr "Solo mostrar avisos que hacen referencia a un CVE."
+
+#: commands/advisory_shared.hpp:76
+msgid "No advisory found matching the requested name: \"{}\""
+msgstr "Ningún aviso encontrado que coincida con el nombre solicitado: «{}»"
+
+#: commands/advisory_shared.hpp:109
+msgid "No advisory found fixing the Bugzilla ID: \"{}\""
+msgstr "Ningún aviso encontrado al corregir la ID de Bugzilla: «{}»"
+
+#: commands/advisory_shared.hpp:128
+msgid "No advisory found fixing the CVE ID: \"{}\""
+msgstr "Ningún aviso encontrado al corregir la ID de CVE: «{}»"
+
+#: commands/advisory_shared.hpp:143
+msgid "No advisory found matching the specified filters."
+msgstr "Ningún aviso encontrado que coincida con los filtros especificados."
+
+#: commands/advisory_shared.hpp:158
+msgid ""
+"Include content contained in advisories with specified name. List option."
+msgstr ""
+"Incluir el contenido presente en los avisos con el nombre especificado. "
+"Opción de lista."
+
+#: commands/advisory_shared.hpp:159
+msgid "ADVISORY_NAME,..."
+msgstr "NOMBRE_DEL_AVISO,..."
+
+#: commands/advisory_shared.hpp:166
+msgid "Include content contained in security advisories."
+msgstr "Incluir el contenido presente en los avisos de seguridad."
+
+#: commands/advisory_shared.hpp:173
+msgid "Include content contained in bugfix advisories."
+msgstr ""
+"Incluir el contenido presente en los avisos de correcciones de errores."
+
+#: commands/advisory_shared.hpp:180
+msgid "Include content contained in enhancement advisories."
+msgstr "Incluir el contenido presente en los avisos de mejoras."
+
+#: commands/advisory_shared.hpp:187
+msgid "Include content contained in newpackage advisories."
+msgstr "Incluir el contenido de los avisos de paquetes nuevos."
+
+#: commands/advisory_shared.hpp:198
+msgid ""
+"Include content contained in advisories with specified severity. List "
+"option. Can be \"critical\", \"important\", \"moderate\", \"low\", \"none\"."
+msgstr ""
+"Incluir el contenido presente en los avisos con severidad especificada. "
+"Opción de lista. Puede ser «critical», «important», «moderate», «low» o "
+"«none»."
+
+#: commands/advisory_shared.hpp:200
+msgid "ADVISORY_SEVERITY,..."
+msgstr "SEVERIDAD_DE_AVISO,..."
+
+#: commands/advisory_shared.hpp:212
+msgid ""
+"Include content contained in advisories that fix a Bugzilla ID, Eg. 123123. "
+"List option."
+msgstr ""
+"Incluir el contenido presente en los avisos que corrigen un ID de Bugzilla, "
+"p. ej. 123123. Opción de lista."
+
+#: commands/advisory_shared.hpp:213
+msgid "BUGZILLA_ID,..."
+msgstr "ID_DE_BUGZILLA,..."
+
+#: commands/advisory_shared.hpp:223
+msgid ""
+"Include content contained in advisories that fix a CVE (Common "
+"Vulnerabilities and Exposures) ID, Eg. CVE-2201-0123. List option."
+msgstr ""
+"Incluir el contenido presente en los avisos que corrigen una ID de CVE "
+"(«vulnerabilidades y exposiciones comunes»), p. ej. CVE-2201-0123. Opción de "
+"lista."
+
+#: commands/advisory_shared.hpp:225
+msgid "CVE_ID,..."
+msgstr "ID_DE_CVE,..."
+
+#: commands/autoremove/autoremove.cpp:38
+msgid "Remove all unneeded packages originally installed as dependencies."
+msgstr ""
+"Quitar todos los paquetes innecesarios instalados originalmente como "
+"dependencias."
+
+#: commands/check-upgrade/check-upgrade.cpp:47
+msgid "Check for available package upgrades"
+msgstr "Comprueba si hay actualizaciones disponibles"
+
+#: commands/check-upgrade/check-upgrade.cpp:54
+msgid ""
+"Reports the lowest versions of packages that fix advisories of type bugfix, "
+"enhancement, security, or newpackage. In case that any option limiting "
+"advisories is used it reports the lowest versions of packages that fix "
+"advisories matching selected advisory properties"
+msgstr ""
+"Reporta las versiones más bajas de paquetes que arreglan avisos de tipo "
+"bugfix, enhancement, security, o newpackage. En caso de que cualquier opción "
+"que limite los avisos esté en uso reporta las versiones más bajas de "
+"paquetes que arreglan avisos coincidentes con las propiedades de avisos "
+"seleccionados"
+
+#: commands/check/check.cpp:247
+msgid "Check for problems in the packagedb"
+msgstr "Comprobar problemas en la base de datos de paquetes"
+
+#: commands/check/check.cpp:335
+msgid "Check discovered {} problem(s) in {} package(s)"
+msgstr "Comprobar {} problema(s) descubierto(s) en {} paquete(s)"
+
+#: commands/clean/clean.cpp:91
+msgid "List of cache types to clean up. Supported types: {0}"
+msgstr "Lista de tipos de caché para limpiar. Tipos soportados: {0}"
+
+#: commands/clean/clean.cpp:109
+msgid "Unknown cache type \"{0}\". Supported types: {1}"
+msgstr "Tipo de caché desconocido \"{0}\". Tipos soportados: {1}"
+
+#: commands/clean/clean.cpp:166
+msgid "Failed to cleanup repository cache in path \"{0}\": {1}"
+msgstr "Fallo al vaciar caché de repositorio en la ruta \"{0}\": {1}"
+
+#: commands/clean/clean.cpp:176
+msgid "Cache directory \"{}\" does not exist. Nothing to clean."
+msgstr "Directorio de caché «{}» no existe. Nada que vaciar."
+
+#: commands/clean/clean.cpp:181
+msgid "Cannot iterate cache directory \"{}\": {}"
+msgstr "No se puede iterar el directorio de caché «{}»: {}"
+
+#: commands/debuginfo-install/debuginfo-install.cpp:45
+msgid "Install debuginfo packages."
+msgstr "Instalar paquetes con información debug."
+
+#: commands/distro-sync/distro-sync.cpp:44
+msgid ""
+"Upgrade or downgrade installed software to the latest available versions"
+msgstr ""
+"Actualizar o degradar software instalado a las versiones más recientes "
+"disponibles"
+
+#: commands/do/do.cpp:44
+msgid "Do transaction"
+msgstr "Realizar transacción"
+
+#: commands/do/do.cpp:49
+msgid "Action to be done on the following items."
+msgstr "Acción a ser hecha en los elementos siguientes."
+
+#: commands/do/do.cpp:63
+msgid "Unsupported action \"{}\""
+msgstr "Acción no admitida “{}”"
+
+#: commands/do/do.cpp:73
+msgid "Type of the following items."
+msgstr "Tipo de los siguientes elementos."
+
+#: commands/do/do.cpp:86
+msgid "Unsupported item type \"{}\""
+msgstr "Tipo “{}” de elemento no admitido"
+
+#: commands/do/do.cpp:99
+msgid "List of items to take action on"
+msgstr "Listado de elementos para tomar acción"
+
+#: commands/do/do.cpp:131 commands/do/do.cpp:135
+msgid "Only package downgrade is supported."
+msgstr "Solo está soportado el degradado de paquete."
+
+#: commands/do/do.cpp:142 commands/do/do.cpp:146
+msgid "Only package reinstall is supported."
+msgstr "Solo está soportada la reinstalación del paquete."
+
+#: commands/do/do.cpp:152
+msgid "Action was not defined"
+msgstr "La acción no fue definida"
+
+#: commands/do/do.cpp:230
+msgid "Invalid Environmet/Group specification: {}"
+msgstr "Entorno/Grupoo de especificación no válida: {}"
+
+#: commands/do/do.cpp:314
+msgid "Downgrading environments and groups is not supported."
+msgstr "Entornos y grupos degradados no están mantenidos."
+
+#: commands/do/do.cpp:330
+msgid "Reinstaling environments and groups is not supported."
+msgstr "Entonos y grupos de reinstalación no están mantenidos."
+
+#: commands/downgrade/downgrade.cpp:42
+msgid "Downgrade software"
+msgstr "Degradar software"
+
+#: commands/download/download.cpp:106
+msgid "When running with --url, prints URLs from all available mirrors"
+msgstr ""
+"Al ejecutar con --url, imprime las URL de todos los espejos disponibles"
+
+#: commands/download/download.cpp:122
+msgid "Invalid urlprotocol option: {}"
+msgstr "Opción urlprotocol inválida: {}"
+
+#: commands/download/download.cpp:149 main.cpp:627
+msgid "Unsupported architecture \"{0}\". Please choose one from {1}"
+msgstr "Arquitectura no soportada \"{0}\". Escoja una desde {1}"
+
+#. TODO(jrohel): Add support for requiring an argument by another argument in ArgumentParser?
+#: commands/download/download.cpp:186
+msgid "Option \"--alldeps\" should be used with \"--resolve\""
+msgstr "Opción \"--alldeps\" debería ser usada con \"--resolve\""
+
+#: commands/download/download.cpp:226
+msgid ""
+"No package \"{}\" available; You might want to use --skip-unavailable option."
+msgstr ""
+"Ningún paquete «{}» disponible; quizá desea utilizar la opción --skip-"
+"unavailable."
+
+#: commands/environment/arguments.hpp:33
+msgid "Show only available environments."
+msgstr "Mostrar solo entornos disponibles."
+
+#: commands/environment/arguments.hpp:40
+msgid "Show only installed environments."
+msgstr "Mostrar solo entornos instalados."
+
+#: commands/environment/arguments.hpp:47
+msgid "Pattern matching environment IDs."
+msgstr "IDs de entorno de coincidencia de patrones."
+
+#: commands/environment/environment.cpp:35
+msgid "Manage comps environments"
+msgstr "Gestiona entornos comps"
+
+#: commands/from_repo.cpp:35
+msgid ""
+"The following items can be selected only from the specified repositories. "
+"All enabled repositories will still be used to satisfy dependencies."
+msgstr ""
+"Los siguientes elementos pueden ser seleccionados solo desde los "
+"repositorioes especificados. Todos los repositorios activados serán "
+"utilizandos para satisfacer dependencias."
+
+#: commands/from_repo.cpp:38 commands/from_repo.cpp:70
+msgid "REPO_ID,..."
+msgstr "REPO_ID,..."
+
+#: commands/from_repo.cpp:53
+msgid "\"--from_repo\" already defined with diferent value"
+msgstr "\"--from_repo\" ya definido con valor diferente"
+
+#: commands/from_repo.cpp:68
+msgid ""
+"Filters installed packages by the ID of the repository they were installed "
+"from."
+msgstr ""
+"Filtrar paquetes instalador por la ID del repositorio desde donde fueron "
+"instalados."
+
+#: commands/from_repo.cpp:79
+msgid "\"--installed-from_repo\" already defined with diferent value"
+msgstr "\"--installed-from_repo\" ya definido con valor diferente"
+
+#: commands/group/arguments.hpp:34
+msgid "Show only available groups."
+msgstr "Mostrar solo grupos disponibles."
+
+#: commands/group/arguments.hpp:41
+msgid "Show also hidden groups."
+msgstr "Mostrar también grupos ocultos."
+
+#: commands/group/arguments.hpp:48
+msgid "Show only installed groups."
+msgstr "Mostrar solo grupos instalados."
+
+#: commands/group/arguments.hpp:59
+msgid ""
+"Show only groups containing packages with specified names. List option, "
+"supports globs."
+msgstr ""
+"Mostrar solo grupos que contienen paquetes con los nombres especificados. "
+"Opción de lista, compatible con globs."
+
+#: commands/group/arguments.hpp:67
+msgid "Pattern matching group IDS."
+msgstr "Patrón coincidiendo con los IDS del grupo."
+
+#: commands/group/arguments.hpp:76
+msgid "Include optional packages from group."
+msgstr "Incluir paquetes opcionales del grupo."
+
+#: commands/group/arguments.hpp:83
+msgid "Operate on groups only, no packages are changed."
+msgstr "Operar solo en grupos, no cambia ningún paquete."
+
+#: commands/history/arguments.hpp:37
+msgid "Transaction ID"
+msgstr "ID de transacción"
+
+#: commands/history/arguments.hpp:44
+msgid "Reverse the order of transactions."
+msgstr "Invertir el orden de las transacciones."
+
+#: commands/history/arguments.hpp:54
+msgid ""
+"Don't consider mismatches between installed and stored transaction packages "
+"as errors. This can result in an empty transaction because among other "
+"things the option can ignore failing Remove actions."
+msgstr ""
+"No considerar las discrepancias entre paquetes de transacción instalados y "
+"almacenados como errores. Esto puede resultar en una transacción vacía "
+"porque, entre otras cosas, la opción puede descartar acciones Quitar "
+"incorrectas."
+
+#: commands/history/arguments.hpp:67
+msgid "Don't consider extra packages pulled into the transaction as errors."
+msgstr "No considerar paquetes extra subidos en la transacción como errores."
+
+#: commands/history/arguments.hpp:80
+msgid ""
+"Show only transactions containing packages with specified names. List "
+"option, supports globs."
+msgstr ""
+"Muestra solo transacciones conteniendo paquetes con nombres específicos "
+"Opción de lista, soporta globs."
+
+#: commands/history/history.cpp:41
+msgid "Manage transaction history"
+msgstr "Gestionar historial de transacciones"
+
+#: commands/history/history_info.cpp:70
+msgid ""
+"No match found, history info defaults to considering only the last "
+"transaction, specify \"1..last\" range to search all transactions."
+msgstr ""
+"Ninguna coincidencia encontrada, historial de informe por defecto para "
+"considerar solo la transacción última, especifique el intervalo \"1.."
+"última\" para buscar todas las transacciones."
+
+#: commands/history/history_redo.cpp:54
+#: commands/history/history_rollback.cpp:58
+#: commands/history/history_store.cpp:65 commands/history/history_undo.cpp:57
+msgid "No matching transaction ID found, exactly one required."
+msgstr ""
+"No se encontró un ID de transacción coincidente, se requiere exactamente uno."
+
+#: commands/history/history_redo.cpp:58
+#: commands/history/history_rollback.cpp:62
+#: commands/history/history_undo.cpp:61
+msgid "Matched more than one transaction ID, exactly one required."
+msgstr ""
+"Se encontró más de un ID de transacción coincidente, se requiere exactamente "
+"uno."
+
+#: commands/history/history_store.cpp:68
+msgid "Multiple transactions selected for storing, only one allowed."
+msgstr ""
+"Seleccionadas múltiples transacciones a almacenar, solo se permite una."
+
+#: commands/history/history_store.cpp:80
+msgid "File \"{}\" already exists, it will be overwritten.\n"
+msgstr "Ya existe el archivo \"{}\", será sobrescrito.\n"
+
+#: commands/history/transaction_id.cpp:32
+msgid ""
+"Invalid transaction ID range \"{}\", \"ID\" or \"ID..ID\" expected, where ID "
+"is \"NUMBER\", \"last\" or \"last-NUMBER\"."
+msgstr ""
+"Intervalo de ID de transacción no válido \"{}\", se esperaba \"ID\" o \"ID.."
+"ID\", donde ID es \"NUMBER\", \"last\" o \"last-NUMBER\"."
+
+#: commands/install/install.cpp:43
+msgid "Install software"
+msgstr "Instalar software"
+
+#: commands/leaves/leaves.cpp:42
+msgid ""
+"List groups of installed packages not required by other installed packages"
+msgstr ""
+"Listar grupos de paquetes instalados no requeridos por otros paquetes "
+"instalados"
+
+#: commands/list/list.cpp:46
+msgid "Lists packages depending on the packages' relation to the system"
+msgstr ""
+"Lista paquetes que dependen de la relación de dichos paquetes con el sistema"
+
+#: commands/list/list.cpp:50
+msgid "List of package-spec-NI to match (case insensitively)"
+msgstr ""
+"Listado del paquete package-spec-NI a coincidir (sin distinguir entre "
+"mayúsculas y minúsculas)"
+
+#: commands/list/list.cpp:62
+msgid "Show all versions of the packages, not only the latest ones."
+msgstr ""
+"Mostrar todas las versiones de los paquetes, no solo las más recientes."
+
+#: commands/list/list.cpp:70
+msgid "List installed packages."
+msgstr "Listar paquetes instalados."
+
+#: commands/list/list.cpp:74
+msgid "List available packages."
+msgstr "Listar paquetes disponibles."
+
+#: commands/list/list.cpp:81
+msgid ""
+"List extras, that is packages installed on the system that are not available "
+"in any known repository."
+msgstr ""
+"Listar extras, es decir, paquetes instalados en el sistema que no están "
+"disponibles en ningún repositorio conocido."
+
+#: commands/list/list.cpp:89
+msgid ""
+"List packages installed on the system that are obsoleted by packages in any "
+"known repository."
+msgstr ""
+"Listar paquetes instalados en el sistema que quedan obsoletos por paquetes "
+"en algún repositorio conocido."
+
+#: commands/list/list.cpp:94
+msgid "List packages recently added into the repositories."
+msgstr "Listar paquetes añadidos recientemente en los repositorios."
+
+#: commands/list/list.cpp:98
+msgid "List upgrades available for the installed packages."
+msgstr "Listar actualizaciones disponibles para los paquetes instalados."
+
+#: commands/list/list.cpp:102
+msgid "List packages which will be removed by the 'dnf autoremove' command."
+msgstr ""
+"Listar paquetes que serán eliminados por el comando \"dnf autoremove\"."
+
+#: commands/list/list.cpp:203 commands/list/list.cpp:208
+msgid "Installed packages"
+msgstr "Paquetes instalados"
+
+#: commands/list/list.cpp:204 commands/list/list.cpp:217
+msgid "Available packages"
+msgstr "Paquetes disponibles"
+
+#: commands/list/list.cpp:225
+msgid "Available upgrades"
+msgstr "Actualizaciones disponibles"
+
+#: commands/list/list.cpp:241
+msgid "Obsoleting packages"
+msgstr "Reemplazando paquetes"
+
+#: commands/list/list.cpp:246
+msgid "Autoremove packages"
+msgstr "Auto-eliminar paquetes"
+
+#: commands/list/list.cpp:250
+msgid "Extra packages"
+msgstr "Paquetes adicionales"
+
+#: commands/list/list.cpp:261
+msgid "Recently added packages"
+msgstr "Paquetes añadidos recientemente"
+
+#: commands/list/list.cpp:266
+msgid "No matching packages to list"
+msgstr "No hay paquetes que se correspondan con la lista"
+
+#: commands/mark/mark.cpp:38
+msgid "Change the reason of an installed package"
+msgstr "Cambiar la razón de un paquete instalado"
+
+#: commands/module/arguments.hpp:36
+msgid "Show enabled modules."
+msgstr "Mostrar módulos habilitados."
+
+#: commands/module/arguments.hpp:43
+msgid "Show disabled modules."
+msgstr "Mostrar módulos deshabilitados."
+
+#: commands/module/arguments.hpp:50
+msgid "Pattern matching module NSVCAs."
+msgstr "Módulo de coincidencia de patrones NSVCA."
+
+#: commands/module/module.cpp:43
+msgid "Manage modules"
+msgstr "Gestionar módulos"
+
+#: commands/module/module_list.cpp:85
+msgid "No matches found for \"{}\"."
+msgstr "No se encontraron coincidencias para \"{}\"."
+
+#: commands/offline/offline.cpp:217
+msgid "Manage offline transactions"
+msgstr "Gestionar transacciones fuera de línea"
+
+#: commands/offline/offline.cpp:249
+msgid ""
+"Error reading state: {}. Rerun the command you used to initiate the offline "
+"transaction, e.g. `dnf5 system-upgrade download [OPTIONS]`."
+msgstr ""
+"Error al leer estado: {}. Vuelva a ejecutar el comando que utilizó para "
+"iniciar la transacción fuera de línea, e.g. `dnf5 system-upgrade download "
+"[OPTIONS]`."
+
+#: commands/offline/offline.cpp:272
+msgid "Couldn't connect to D-Bus: {}"
+msgstr "No ha sido posible conectarse al D-Bus: {}"
+
+#: commands/offline/offline.cpp:303
+msgid ""
+"Prepare the system to perform the offline transaction and reboot to start "
+"the transaction."
+msgstr ""
+"Preparar el sistema para realizar la transacción fuera de línea y reiniciar "
+"para iniciar la transacción."
+
+#: commands/offline/offline.cpp:310
+msgid "Power off the system after the operation is complete"
+msgstr "Apagar el sistema después de que la operación termine"
+
+#: commands/offline/offline.cpp:321
+msgid "No offline transaction is stored."
+msgstr "No hay una transacción fuera de línea almacenada."
+
+#: commands/offline/offline.cpp:329
+msgid "System is not ready for offline transaction."
+msgstr "El sistema no está listo para una transacción fuera de línea."
+
+#: commands/offline/offline.cpp:332
+msgid "Data directory {} does not exist."
+msgstr "Directorio de datos {} no existe."
+
+#: commands/offline/offline.cpp:357
+msgid "{} is not wanted by system-update.target."
+msgstr "{} no es deseado por system-update.target."
+
+#: commands/offline/offline.cpp:367
+msgid "The system will now reboot to upgrade to release version {}."
+msgstr ""
+"El sistema será reiniciado para actualizar a la versión de lanzamiento {}."
+
+#: commands/offline/offline.cpp:371
+msgid ""
+"The system will now reboot to perform the offline transaction initiated by "
+"the following command:"
+msgstr ""
+"El sistema se reiniciará ahora para realizar la transacción fuera de línea "
+"iniciada por el siguiente comando:"
+
+#: commands/offline/offline.cpp:402
+msgid ""
+"Internal use only, not intended to be run by the user. Execute the "
+"transaction in the offline environment."
+msgstr ""
+"Solo de uso interno, no se espera que sea ejecutado por el usuario. Ejecuta "
+"la transacción en un entorno fuera de línea."
+
+#: commands/offline/offline.cpp:436
+msgid "Trigger file does not exist. Exiting."
+msgstr "Archivo de disparador no existe. Saliendo."
+
+#: commands/offline/offline.cpp:440
+msgid "Another offline transaction tool is running. Exiting."
+msgstr ""
+"Otra herramienta de transacciones de fuera de línea se está ejecutando. "
+"Saliendo."
+
+#: commands/offline/offline.cpp:467
+msgid "Starting offline transaction. This will take a while."
+msgstr "Comenzando transacción sin conexión. Esto tomará un rato."
+
+#: commands/offline/offline.cpp:471
+msgid "Starting system upgrade. This will take a while."
+msgstr "Inicializando modernización del sistema. Esto tomará un rato."
+
+#: commands/offline/offline.cpp:483
+msgid "Use `dnf5 offline reboot` to begin the transaction."
+msgstr "Emplee `dnf5 offline reboot` para comenzar la transacción."
+
+#: commands/offline/offline.cpp:534
+msgid "Transaction failed: "
+msgstr "Transacción incorrecta: "
+
+#: commands/offline/offline.cpp:604
+msgid "Error reading journal: {}"
+msgstr "Error al leer el diario: {}"
+
+#: commands/offline/offline.cpp:610
+msgid "Add journal match failed: {}"
+msgstr "Añadir coincidencia del diario incorrecta: {}"
+
+#: commands/offline/offline.cpp:638
+msgid "No logs were found."
+msgstr "No se ha encontrado ningún boletín."
+
+#: commands/offline/offline.cpp:642
+msgid "The following boots appear to contain offline transaction logs:"
+msgstr ""
+"Los siguientes arranques parecen contener boletines de transacción sin "
+"conexión:"
+
+#: commands/offline/offline.cpp:659
+msgid "Cannot find logs with this index."
+msgstr "No se encontraron boletines con este índice."
+
+#: commands/offline/offline.cpp:666
+msgid "Unable to match systemd journal entry."
+msgstr "No se pudo encontrar el apunte del diario systemd."
+
+#: commands/offline/offline.cpp:678
+msgid "Show logs from past offline transactions"
+msgstr "Mostrar boletines desde transacciones fuera de línea anteriores"
+
+#: commands/offline/offline.cpp:686
+msgid ""
+"Which log to show. Run without any arguments to get a list of available logs."
+msgstr ""
+"Cuál boletín a mostrar. Ejecutar sin argumentos para obtener un listado de "
+"boletines disponibles."
+
+#: commands/offline/offline.cpp:701
+msgid ""
+"systemd is not supported in this build of DNF 5; the `log` subcommand is "
+"unavailable."
+msgstr ""
+"systemd no está soportado en esta compilación de DNF 5; el subcomando `log` "
+"no está disponible."
+
+#: commands/offline/offline.cpp:706
+msgid "Show status of the current offline transaction"
+msgstr "Mostrar estado de la transacción fuera de línea actual"
+
+#: commands/offline/offline.cpp:722
+msgid "An offline transaction was initiated by the following command:"
+msgstr "Una transacción fuera de línea fue iniciada por el siguiente comando:"
+
+#: commands/offline/offline.cpp:724
+msgid ""
+"Run `dnf5 offline reboot` to reboot and perform the offline transaction."
+msgstr ""
+"Ejecute `dnf5 offline reboot` para reiniciar y realizar la transacción fuera "
+"de línea."
+
+#: commands/offline/offline.cpp:726
+msgid ""
+"An offline transaction was started, but it did not finish. Run `dnf5 offline "
+"log` for more information. The command that initiated the transaction was:"
+msgstr ""
+"Una transacción fuera de línea fue iniciada, pero no terminó. Ejecute `dnf5 "
+"offline log` para más información. El comando que inició la transacción fue:"
+
+#: commands/offline/offline.cpp:731
+msgid "Unknown offline transaction status: "
+msgstr "Estado de transacción fuera de línea desconocido: "
+
+#: commands/provides/provides.cpp:48
+msgid "Find what package provides the given value"
+msgstr "Encontrar qué paquete provee el valor dado"
+
+#: commands/reinstall/reinstall.cpp:42
+msgid "Reinstall software"
+msgstr "Reinstalar software"
+
+#: commands/remove/remove.cpp:42
+msgid "Remove (uninstall) software"
+msgstr "Eliminar (desinstalar) software"
+
+#: commands/replay/replay.cpp:38
+msgid "Replay a transaction that was previously stored to a directory"
+msgstr "Repetir una transacción que fue almacenada previamente a un directorio"
+
+#: commands/repo/arguments.hpp:35
+msgid "Show all repositories."
+msgstr "Mostrar todos los repositorios."
+
+#: commands/repo/arguments.hpp:42
+msgid "Show enabled repositories (default)."
+msgstr "Mostrar repositorios habilitados (por defecto)."
+
+#: commands/repo/arguments.hpp:49
+msgid "Show disabled repositories."
+msgstr "Mostrar repositorios deshabilitados."
+
+#: commands/repo/arguments.hpp:56
+msgid "Pattern matching repo IDs."
+msgstr "Patrón coincidiendo con los ID del repositorios."
+
+#: commands/repo/repo.cpp:38
+msgid "Manage repositories"
+msgstr "Gestionar repositorios"
+
+#: commands/repoquery/repoquery.cpp:82
+msgid "Search for packages matching various criteria"
+msgstr "Buscar paquetes que coinciden bajo varios criterios"
+
+#: commands/repoquery/repoquery.cpp:525
+msgid ""
+"Option \"--exactdeps\" has to be used either with \"--whatrequires\" or \"--"
+"whatdepends\""
+msgstr ""
+"Opción \"--exactdeps\" debe ser usada con \"--whatrequires\" o \"--"
+"whatdepends\""
+
+#: commands/repoquery/repoquery.cpp:530
+msgid ""
+"Option \"--recursive\" has to be used either with \"--whatrequires\" or \"--"
+"providers-of=requires\""
+msgstr ""
+"Opción \"--recursive\" debe ser usada con \"--whatrequires\" o \"--providers-"
+"of=requires\""
+
+#: commands/search/arguments.hpp:37
+msgid "Search also package description and URL."
+msgstr "Buscar también descripción y URL del paquete."
+
+#: commands/search/arguments.hpp:45
+msgid "Patterns"
+msgstr "Patrones"
+
+#: commands/search/search.cpp:44
+msgid "Search for software matching all specified strings"
+msgstr "Buscar software que coincida con todas las cadenas especificadas"
+
+#: commands/swap/swap.cpp:44
+msgid "Remove software and install another in one transaction"
+msgstr "Eliminar software e instalar otro en una transacción"
+
+#: commands/system-upgrade/system-upgrade.cpp:56
+msgid "Prepare system for upgrade to a new release"
+msgstr "Preparar el sistema para modernizar a una publicación nueva"
+
+#: commands/system-upgrade/system-upgrade.cpp:72
+msgid "Download everything needed to upgrade to a new release"
+msgstr ""
+"Descargar todo lo necesario para actualizar a una nueva versión de salida"
+
+#: commands/system-upgrade/system-upgrade.cpp:80
+msgid ""
+"Do not install packages from the new release if they are older than what is "
+"currently installed"
+msgstr ""
+"No instalar paquetes de una nueva versión de salida si son más antiguos que "
+"los que están actualmente instalados"
+
+#: commands/system-upgrade/system-upgrade.cpp:101
+msgid "Need a --releasever greater than the current system version."
+msgstr "Necesita una --releasever mayor que la versión actual del sistema."
+
+#: commands/system-upgrade/system-upgrade.cpp:150
+msgid "Store a distro-sync transaction to be performed offline"
+msgstr ""
+"Almacenar una transacción distro-sync para ser realizada fuera de línea"
+
+#: commands/system-upgrade/system-upgrade.cpp:172
+msgid "Store an upgrade transaction to be performed offline"
+msgstr ""
+"Almacenar una transacción de actualización para ser realizada fuera de línea"
+
+#: commands/upgrade/upgrade.cpp:43
+msgid "Upgrade software"
+msgstr "Actualizar software"
+
+#: commands/upgrade/upgrade.cpp:50
+msgid ""
+"Upgrade packages only to the lowest versions that fix advisories of type "
+"bugfix, enhancement, security, or newpackage. In case that any option "
+"limiting advisories is used it upgrades packages only to the lowest versions "
+"that fix advisories that matching selected advisory property"
+msgstr ""
+"Actualizar paquetes solo a las versiones más bajas que arreglan avisos de "
+"tipo bugfix, enhancement, seguridad, o newpackage. En caso de que cualquier "
+"opción que limite los avisos esté en uso, actualiza paquetes solo a las "
+"versiones más bajas que arreglan avisos que coinciden con la propiedad de "
+"aviso seleccionada"
+
+#. TODO(mblaha): add full command line
+#: commands/versionlock/utils.cpp:35
+msgid "Added by 'versionlock {}' command on {}"
+msgstr "Añadido por comando 'versionlock {}' en {}"
+
+#: commands/versionlock/versionlock.cpp:40
+msgid "Manage versionlock configuration"
+msgstr "Gestionar configuración versionlock"
+
+#: commands/versionlock/versionlock_add.cpp:37
+msgid "Add new entry to versionlock configuration"
+msgstr "Añadir nueva entrada a la configuración versionlock"
+
+#: commands/versionlock/versionlock_add.cpp:44
+msgid "List of package package-spec-N to add versionlock for"
+msgstr "Lista del paquete package-spec-N para añadir versión bloqueada para"
+
+#: commands/versionlock/versionlock_add.cpp:107
+#: commands/versionlock/versionlock_exclude.cpp:126
+msgid "No package found for \"{}\"."
+msgstr "No se encontró paquete \"{}\"."
+
+#: commands/versionlock/versionlock_add.cpp:134
+msgid "Adding versionlock on \"{0} = {1}\"."
+msgstr "Añadiendo versionlock en \"{0} = {1}\"."
+
+#: commands/versionlock/versionlock_add.cpp:137
+msgid "Package \"{}\" is already locked."
+msgstr "Paquete \"{}\" ya está bloqueado."
+
+#: commands/versionlock/versionlock_clear.cpp:32
+msgid "Remove all entries from versionlock configuration"
+msgstr "Eliminar todas las entradas con configuración versionlock"
+
+#: commands/versionlock/versionlock_delete.cpp:35
+msgid "Remove any matching versionlock configuration entries"
+msgstr "Eliminar todas las entradas coincidentes de configuración versionlock"
+
+#: commands/versionlock/versionlock_delete.cpp:41
+msgid "List of package specs to remove versionlock for"
+msgstr ""
+"Lista de especificaciones de paquetes para los cuales eliminar versionlock"
+
+#: commands/versionlock/versionlock_delete.cpp:55
+msgid "Deleting versionlock entry:"
+msgstr "Eliminando entrada versionlock:"
+
+#: commands/versionlock/versionlock_exclude.cpp:37
+msgid "Add new exclude entry to versionlock configuration"
+msgstr "Añadir nueva entrada de exclusión a la configuración versionlock"
+
+#: commands/versionlock/versionlock_exclude.cpp:44
+msgid "List of package-spec-N to add versionlock exclude for"
+msgstr ""
+"Lista del paquete package-spec-N para agregar exclusión de versionlock para"
+
+#: commands/versionlock/versionlock_exclude.cpp:89
+#: commands/versionlock/versionlock_exclude.cpp:101
+msgid "Adding versionlock exclude on \"{0} = {1}\"."
+msgstr "Añadiendo exclusión de versionlock en \"{0} = {1}\"."
+
+#: commands/versionlock/versionlock_exclude.cpp:140
+msgid "Package \"{}\" is already excluded."
+msgstr "Paquete \"{}\" ya está excluido."
+
+#: context.cpp:73
+msgid "Importing OpenPGP key 0x{}:\n"
+msgstr "Importando llave OpenPGP 0x{}:\n"
+
+#: context.cpp:75 context.cpp:100
+msgid " UserID     : \"{}\"\n"
+msgstr " IDUsuario     : \"{}\"\n"
+
+#: context.cpp:78
+msgid ""
+" Fingerprint: {}\n"
+" From       : {}\n"
+msgstr ""
+" Huella dactilar: {}\n"
+" Desde                    : {}\n"
+
+#: context.cpp:87
+msgid "The key was successfully imported."
+msgstr "La llave fue importada exitosamente."
+
+#: context.cpp:96
+msgid "The following OpenPGP key (0x{}) is about to be removed:"
+msgstr "La siguiente clave OpenPGP (0x{}) es acerca de ser retirada:"
+
+#: context.cpp:98
+msgid " Reason     : {}\n"
+msgstr " Razón     : {}\n"
+
+#: context.cpp:102
+msgid " Fingerprint: {}\n"
+msgstr " Huella dactilar: {}\n"
+
+#: context.cpp:104
+msgid "As a result, installing packages signed with this key will fail."
+msgstr "Como un resultado, instalar paquetes firmados con esta llave fallará."
+
+#: context.cpp:105
+msgid "It is recommended to remove the expired key to allow importing"
+msgstr "Está recomendado quitar la llave caducada para permitir importar"
+
+#: context.cpp:106
+msgid ""
+"an updated key. This might leave already installed packages unverifiable."
+msgstr ""
+"una clave actualizada. Esto quizá deje ya instalados paquetes no "
+"verificables."
+
+#: context.cpp:109
+msgid "The system will now proceed with removing the key."
+msgstr "El sistema ahora procederá con quitar la llave."
+
+#: context.cpp:115
+msgid "Key 0x{} was successfully removed."
+msgstr "La clave 0x{} fue retirada correctamente."
+
+#: context.cpp:295
+msgid "setopt: \"{}.{}\": {}"
+msgstr "fijaropc: \"{}.{}\": {}"
+
+#: context.cpp:305
+msgid ""
+"No matching repositories for {}. To use repositories from a host system, "
+"pass --use-host-config option"
+msgstr ""
+"No hay repositorios coincidentes para {}. Para usar repositorios de un "
+"sistema anfitrión, utilice la opción --use-host-config"
+
+#: context.cpp:309
+msgid "No matching repositories for {}"
+msgstr "No hay repositorios coincidentes para {}"
+
+#: context.cpp:355
+msgid "Updating and loading repositories:"
+msgstr "Actualizando y cargando repositorios:"
+
+#: context.cpp:365
+msgid "Repositories loaded."
+msgstr "Repositorios cargados."
+
+#: context.cpp:371
+msgid "Testing offline transaction"
+msgstr "Probando transacción fuera de línea"
+
+#: context.cpp:375 context.cpp:523
+msgid "Transaction failed: {}"
+msgstr "Transacción incorrecta: {}"
+
+#: context.cpp:380 context.cpp:528
+msgid "  - {}"
+msgstr "  - {}"
+
+#: context.cpp:447
+msgid ""
+"Location \"{}\" already contains a stored transaction, it will be "
+"overwritten."
+msgstr ""
+"Ubicación \"{}\" ya contiene una transacción almacenada, será sobrescrita."
+
+#: context.cpp:476
+msgid ""
+"There is already an offline transaction queued, initiated by the following "
+"command:"
+msgstr ""
+"Ya hay una transacción fuera de línea encolada, iniciada por el siguiente "
+"comando:"
+
+#: context.cpp:478
+msgid ""
+"Continuing will cancel the old offline transaction and replace it with this "
+"one."
+msgstr ""
+"Al continuar se cancelará la transacción fuera de línea anterior y será "
+"reemplazada por esta."
+
+#: context.cpp:496
+msgid ""
+"Transaction stored to be performed offline. Run `dnf5 offline reboot` to "
+"reboot and run the transaction. To cancel the transaction and delete the "
+"downloaded files, use `dnf5 offline clean`."
+msgstr ""
+"Transacción almacenada para ser realizada fuera de línea. Ejecute `dnf5 "
+"offline reboot`para reiniciar y ejecutar la transacción. Para cancelar la "
+"transacción y eliminar los archivos descargados, use `dnf5 offline clean`."
+
+#: context.cpp:502
+msgid "Running transaction"
+msgstr "Ejecutando transacción"
+
+#: context.cpp:820
+msgid "Upgrading {}"
+msgstr "Actualizando {}"
+
+#: context.cpp:823
+msgid "Downgrading {}"
+msgstr "Degradando {}"
+
+#: context.cpp:826
+msgid "Reinstalling {}"
+msgstr "Reinstalando {}"
+
+#: context.cpp:839
+msgid "Unexpected action in TransactionPackage: {}"
+msgstr "Acción inesperada en paquete de transacción: {}"
+
+#: context.cpp:845
+msgid "Installing {}"
+msgstr "Instalando {}"
+
+#: context.cpp:866
+msgid "Prepare transaction"
+msgstr "Preparar transacción"
+
+#: context.cpp:886
+msgid "Removing {}"
+msgstr "Eliminando {}"
+
+#: context.cpp:889
+msgid "Cleanup {}"
+msgstr "Limpieza {}"
+
+#: context.cpp:907
+msgid "Unpack error: {}"
+msgstr "Error de desempaquetado: {}"
+
+#: context.cpp:915
+msgid "Cpio error: {}"
+msgstr "Error Cpio: {}"
+
+#: context.cpp:925
+msgid "Scriptlet output:"
+msgstr "Salida del scriptlet:"
+
+#: context.cpp:948
+msgid "Running scriptlets"
+msgstr "Ejecutando scriptlets"
+
+#: context.cpp:953
+msgid "Running {} scriptlet: {}"
+msgstr "Ejecutando {} scriptlet: {}"
+
+#: context.cpp:968
+msgid "Finished {} scriptlet: {}"
+msgstr "Finalizado {} scriptlet: {}"
+
+#: context.cpp:974
+msgid "Non-critical error in {} scriptlet: {}"
+msgstr "Error no crítico en {} scriptlet: {}"
+
+#: context.cpp:983
+msgid "Error in {} scriptlet: {}"
+msgstr "Error en {} scriptlet: {}"
+
+#: context.cpp:1018
+msgid "Verify package files"
+msgstr "Verificar archivos de paquete"
+
+#: library.cpp:33
+msgid "Cannot load shared library \"{}\": {}"
+msgstr "No se puede cargar la biblioteca compartida \"{}\": {}"
+
+#: library.cpp:47
+msgid "Cannot obtain address of symbol \"{}\": {}"
+msgstr "No se puede obtener la dirección del símbolo \"{}\": {}"
+
+#: main.cpp:133
+msgid "Utility for packages maintaining"
+msgstr "Utilidad para mantención de paquetes"
+
+#: main.cpp:134
+msgid "DNF5 is a program for maintaining packages."
+msgstr "DNF5 es un programa para mantención de paquetes."
+
+#: main.cpp:135
+msgid "Unclassified options:"
+msgstr "Opciones sin clasificar:"
+
+#: main.cpp:138
+msgid "Global options:"
+msgstr "Opciones Globales:"
+
+#: main.cpp:143
+msgid "Print help"
+msgstr "Asistente de impresión"
+
+#: main.cpp:150
+msgid "Configuration file location"
+msgstr "Ubicación de archivo de configuración"
+
+#: main.cpp:158
+msgid ""
+"In combination with a non-interactive command, shows just the relevant "
+"content. Suppresses messages notifying about the current state or actions of "
+"dnf5."
+msgstr ""
+"Al combinarse con un comando no interactivo, muestra solo el contenido "
+"relevante. Omite mensajes notificando sobre el estado actual o acciones de "
+"dnf5."
+
+#: main.cpp:173
+msgid ""
+"Run entirely from system cache, don't update the cache and use it even in "
+"case it is expired."
+msgstr ""
+"Ejecutar por completo desde la caché del sistema, no actualizar la caché y "
+"usarla incluso en caso de que haya expirado."
+
+#: main.cpp:182
+msgid "Control whether color is used."
+msgstr "Controlar si es utilizado el color."
+
+#: main.cpp:188
+msgid "Force refreshing metadata before running the command."
+msgstr "Forzar el refresco de los metadatos antes de ejecutar el comando."
+
+#: main.cpp:204
+msgid "Failed to expire repository cache in path \"{0}\": {1}"
+msgstr "Fallo al expirar la caché del repositorio en la ruta \"{0}\":{1}"
+
+#: main.cpp:218
+msgid "create additional repository using id and path"
+msgstr "crear repositorio adicional usando id y ruta"
+
+#: main.cpp:226
+msgid "repofrompath: Incorrect repoid and path specification \"{}\""
+msgstr "repofrompath: repoid incorrecto y especificación de ruta \"{}\""
+
+#: main.cpp:238
+msgid "set arbitrary config and repo options"
+msgstr "define opciones arbitrarias de configuración y repositorios"
+
+#: main.cpp:240
+msgid ""
+"Override a configuration option from the configuration file. To override "
+"configuration options for repositories, use repoid.option for  the\n"
+"              <option>.  Values  for configuration options like excludepkgs, "
+"includepkgs, installonlypkgs and tsflags are appended to the original "
+"value,\n"
+"              they do not override it. However, specifying an empty value (e."
+"g. --setopt=tsflags=) will clear the option."
+msgstr ""
+"Sobrescribir una opción de configuración desde el archivo de configuración. "
+"Para sobrescribir las opciones de configuración para repositorios, use "
+"repoid.option para la\n"
+"                          <option>.  Valores  para las opciones de "
+"configuración como excludepkgs, includepkgs, installonlypkgs y tsflags son "
+"adjuntadas al valor original,\n"
+"                          no lo sobrescriben. Sin embargo, especificar un "
+"valor vacío (e.g. --setopt=tsflags=) vaciará la opción."
+
+#: main.cpp:249 main.cpp:288
+msgid "{}: Badly formatted argument value \"{}\""
+msgstr "{}: Valor del argumento «{}» mal formateado"
+
+#: main.cpp:256
+msgid ""
+"{}: Badly formatted argument value: Last key character cannot be '.': {}"
+msgstr ""
+"{}: Valor del argumento mal formateado: El último carácter de la clave no "
+"puede ser «.»: {}"
+
+#: main.cpp:269
+msgid "setopt: \"{0}\": {1}"
+msgstr "fijaropc:«{0}»:{1}"
+
+#: main.cpp:281
+msgid "set arbitrary variable"
+msgstr "definir variable arbitraria"
+
+#: main.cpp:295
+msgid "setvar: {}"
+msgstr "fijarvar: {}"
+
+#: main.cpp:304
+msgid "automatically answer yes for all questions"
+msgstr "responder «sí» automáticamente a todas las preguntas"
+
+#: main.cpp:311
+msgid "automatically answer no for all questions"
+msgstr "responder «no» automáticamente a todas las preguntas"
+
+#: main.cpp:318
+msgid "try the best available package versions in transactions"
+msgstr ""
+"probar la mejor de las versiones disponibles del paquete en transacciones"
+
+#: main.cpp:325
+msgid "do not limit the transaction to the best candidate"
+msgstr "no limitar la transacción al mejor candidato"
+
+#: main.cpp:336
+msgid ""
+"Don't install files that are marked as documentation (which includes man "
+"pages and texinfo documents)"
+msgstr ""
+"No instalar archivos marcados como documentación (lo que incluye páginas man "
+"y documentos texinfo)"
+
+#: main.cpp:352
+msgid "exclude packages by name or glob"
+msgstr "excluir paquetes por nombre o patrón"
+
+#: main.cpp:371
+msgid ""
+"Enable additional repositories. List option. Supports globs, can be "
+"specified multiple times."
+msgstr ""
+"Habilita repositorios adicionales. Lista opciones. Soporta pegotes, puede "
+"ser especificado múltiples veces."
+
+#: main.cpp:389
+msgid ""
+"Disable repositories. List option. Supports globs, can be specified multiple "
+"times."
+msgstr ""
+"Deshabilita repositorios. Lista opciones. Soporta pegotes, puede ser "
+"especificado múltiples veces."
+
+#: main.cpp:407
+msgid ""
+"Enable just specific repositories. List option. Supports globs, can be "
+"specified multiple times."
+msgstr ""
+"Habilitar solo repositorios específicos. Listar opciones. Soporta patrones, "
+"se puede especificar múltiples veces."
+
+#: main.cpp:429
+msgid "disable OpenPGP signature checking (if RPM policy allows)"
+msgstr ""
+"deshabilita la comprobación de la firma OpenPGP (si lo permite la normativa "
+"RPM)"
+
+#: main.cpp:446
+msgid "Disable all libdnf5 plugins"
+msgstr "Deshabilitar todos los plugins libdnf5"
+
+#: main.cpp:456
+msgid ""
+"Enable libdnf5 plugins by name. List option. Supports globs, can be "
+"specified multiple times."
+msgstr ""
+"Habilitar plugins libdnf5 por nombre. Opción de lista. Soporta patrones, se "
+"puede especificar múltiples veces."
+
+#: main.cpp:471
+msgid ""
+"Disable libdnf5 plugins by name. List option. Supports globs, can be "
+"specified multiple times."
+msgstr ""
+"Deshabilitar plugins libdnf5 por nombre. Opción de lista. Soporta patrones, "
+"se puede especificar múltiples veces."
+
+#: main.cpp:488
+msgid "add a comment to transaction"
+msgstr "añade un comentario a la transacción"
+
+#: main.cpp:490
+msgid ""
+"Adds a comment to the action. If a transaction takes place, the comment is "
+"stored in it."
+msgstr ""
+"Añade un comentario a la acción. Si la transacción se lleva a cabo, el "
+"comentario se almacena en ella."
+
+#: main.cpp:503
+msgid "set install root"
+msgstr "define la raíz de instalación"
+
+#: main.cpp:510
+msgid ""
+"use configuration, reposdir, and vars from the host system rather than the "
+"installroot"
+msgstr ""
+"usar configuración, reposdir, y vars desde el sistema anfitrión en vez de la "
+"raíz de instalación"
+
+#: main.cpp:519
+msgid "override the value of $releasever in config and repo files"
+msgstr ""
+"anular el valor de $releasever de archivos de configuración y repositorio"
+
+#: main.cpp:532
+msgid ""
+"Show newly installed leaf packages and packages that became leaves after a "
+"transaction."
+msgstr ""
+"Mostrar nuevos paquetes hoja instalados y paquetes que se vuelven hojas "
+"después de una transacción."
+
+#: main.cpp:546
+msgid "Dump detailed solving results into files"
+msgstr "Volcar resultados detallados de resolución en archivos"
+
+#: main.cpp:555
+msgid "Print main configuration values to stdout"
+msgstr "Imprimir valores de configuración principales a la salida estándar"
+
+#: main.cpp:572
+msgid ""
+"Print repository configuration values to stdout. List option. Supports globs"
+msgstr ""
+"Imprimir valores de configuración de repositorio a la salida estándar. "
+"Opción de lista. Soporta patrones"
+
+#: main.cpp:587
+msgid "Print variable values to stdout"
+msgstr "imprimir valores de variables a la salida estándar"
+
+#: main.cpp:601
+msgid "Show DNF5 version and exit"
+msgstr "Mostrar versión de DNF5 y salir"
+
+#: main.cpp:608
+msgid "Force the use of a different architecture."
+msgstr "Forzar el uso de una arquitectura diferente."
+
+#: main.cpp:646
+msgid "Software Management Commands:"
+msgstr "Comandos de gestión de software:"
+
+#: main.cpp:653
+msgid "Query Commands:"
+msgstr "Comandos de consulta:"
+
+#: main.cpp:660
+msgid "Subcommands:"
+msgstr "Subcomandos:"
+
+#: main.cpp:759
+msgid "{} version {}.{}.{}.{}"
+msgstr "{} versión {}.{}.{}.{}"
+
+#: main.cpp:762
+msgid "{} plugin API version {}.{}"
+msgstr "{} versión de API de plugin {}.{}"
+
+#: main.cpp:767
+msgid "libdnf5 version {}.{}.{}.{}"
+msgstr "libdnf5 versión {}.{}.{}.{}"
+
+#: main.cpp:770
+msgid "libdnf5 plugin API version {}.{}"
+msgstr "versión de API de plugin de libdnf5 {}.{}"
+
+#: main.cpp:777
+msgid ""
+"\n"
+"Loaded {} plugins:"
+msgstr ""
+"\n"
+"Se cargaron {} plugins:"
+
+#: main.cpp:782
+msgid "  name: {}"
+msgstr "  nombre: {}"
+
+#: main.cpp:785
+msgid "  version: {}.{}.{}"
+msgstr "  versión: {}.{}.{}"
+
+#: main.cpp:787
+msgid "  API version: {}.{}"
+msgstr "  versión de API: {}.{}"
+
+#: main.cpp:825
+msgid ""
+"Total size of inbound packages is {:.0f} {:s}. Need to download {:.0f} {:s}."
+msgstr ""
+"El tamaño total de paquetes entrantes es {:.0f} {:s}. Se necesita descargar "
+"{:.0f} {:s}."
+
+#: main.cpp:842
+msgid ""
+"After this operation, {:.0f} {:s} extra will be used (install {:.0f} {:s}, "
+"remove {:.0f} {:s})."
+msgstr ""
+"Después de esta operación, {:.0f} {:s} extra serán utilizados (instalar "
+"{:.0f} {:s}, eliminar {:.0f} {:s})."
+
+#: main.cpp:853
+msgid ""
+"After this operation, {:.0f} {:s} will be freed (install {:.0f} {:s}, remove "
+"{:.0f} {:s})."
+msgstr ""
+"Después de esta operación, {:.0f} {:s} serán liberados (instalar {:.0f} {:"
+"s}, eliminar {:.0f} {:s})."
+
+#: main.cpp:865
+msgid "======== Main configuration: ========"
+msgstr "======== Configuración principal: ========"
+
+#: main.cpp:902
+msgid "No matching repo to dump configuration: \"{}\""
+msgstr "No hay repositorio coincidente para volcar configuración: \"{}\""
+
+#: main.cpp:907
+msgid "======== \"{}\" repository configuration: ========"
+msgstr "======== \"{}\" configuración de repositorio: ========"
+
+#: main.cpp:927
+msgid "======== Variables: ========"
+msgstr "======== Variables: ========"
+
+#: main.cpp:967
+msgid "New leaves:"
+msgstr "Nuevas hojas:"
+
+#: main.cpp:969
+msgid " {}"
+msgstr " {}"
+
+#: main.cpp:1013
+msgid "{} to skip unavailable packages"
+msgstr "{} para omitir paquetes no disponibles"
+
+#: main.cpp:1021
+msgid "{} to allow extra packages in the transaction"
+msgstr "{} para permitir paquetes extra en la transacción"
+
+#: main.cpp:1034
+msgid ""
+"{} to allow mismatches between installed and stored transaction packages. "
+"This can result in an empty transaction because among other things the "
+"option can ignore failing Remove actions."
+msgstr ""
+"{} para permitir discrepancias entre paquetes de transacción instalados y "
+"almacenados. Esto puede resultar en una transacción vacía porque, entre "
+"otras cosas, la opción puede ignorar acciones de eliminación fallidas."
+
+#: main.cpp:1081
+msgid "{} to not limit the transaction to the best candidates"
+msgstr "{} para no limitar la transacción a los mejores candidatos"
+
+#: main.cpp:1088
+msgid "{} to allow removing of installed packages to resolve problems"
+msgstr ""
+"{} para permitir la eliminación de paquetes instalados a fin de resolver "
+"problemas"
+
+#: main.cpp:1097
+msgid "{} to load additional filelists metadata"
+msgstr "{} para cargar metadatos adicionales de filelists"
+
+#: main.cpp:1104
+msgid "{} to skip uninstallable packages"
+msgstr "{} para omitir paquetes no instalables"
+
+#: main.cpp:1110
+msgid "You can try to add to command line:"
+msgstr "Puede intentar añadir a la línea de comandos:"
+
+#: main.cpp:1128
+msgid ""
+"No matches were found for the following plugin name patterns while enabling "
+"libdnf plugins: {}"
+msgstr ""
+"No se encontraron coincidencias para los siguientes patrones de nombres de "
+"plugin mientras se habilitaban plugins de libdnf: {}"
+
+#: main.cpp:1129
+msgid ""
+"No matches were found for the following plugin name patterns while disabling "
+"libdnf plugins: {}"
+msgstr ""
+"No se encontraron coincidencias para los siguientes patrones de nombres de "
+"plugin mientras se deshabilitaban plugins de libdnf: {}"
+
+#: main.cpp:1226
+msgid "--- DNF5 launched with arguments: \"{}\" ---"
+msgstr "--- DNF5 ejecutado con argumentos: \"{}\" ---"
+
+#: main.cpp:1262
+msgid "Invalid \"index\" in \"--complete=<index>[,...]\": {}"
+msgstr "Índice no válido en \"--complete=<index>[,...]\": {}"
+
+#: main.cpp:1301
+msgid "{}."
+msgstr "{}."
+
+#: main.cpp:1304 main.cpp:1556
+msgid "{}. Add \"--help\" for more information about the arguments."
+msgstr "{}. Añada \"--help\" para más información sobre los argumentos."
+
+#: main.cpp:1313
+msgid ""
+"It could be a command provided by a plugin, try: dnf5 install 'dnf5-"
+"command({})'"
+msgstr ""
+"Podría ser un comando provisto por un plugin, intente ejecutar: dnf5 install "
+"'dnf5-command({})'"
+
+#: main.cpp:1355
+msgid ""
+"The argument is available for commands: {}. (It has to be placed after the "
+"command.)"
+msgstr ""
+"El argumento está disponible para instrucciones: {}. (Tiene que estar "
+"situado tras la instrucción.)"
+
+#: main.cpp:1399
+msgid "No read/execute access in current directory, moving to /"
+msgstr ""
+"No hay permisos de lectura/ejecución en el directorio actual, moviendo a /"
+
+#: main.cpp:1471
+msgid ""
+"The requested operation requires superuser privileges. Please log in as a "
+"user with elevated rights, or use the \"--assumeno\" or \"--downloadonly\" "
+"options to run the command without modifying the system state."
+msgstr ""
+"La operación solicitada requiere privilegios de superusuario. Por favor "
+"inicie sesión con un usuario con permisos elevados, o utilice las opciones "
+"\"--assumeno\" o \"--downloadonly\" para ejecutar el comando sin modificar "
+"el estado del sistema."
+
+#: main.cpp:1512
+msgid "The operation will only store the transaction in {}"
+msgstr "Esta operación almacenará la transacción en {}"
+
+#: main.cpp:1514
+msgid "The operation will only download packages for the transaction."
+msgstr "Está operación descargará los paquetes para la transacción."
+
+#: main.cpp:1519
+msgid ""
+"Test mode enabled: Only package downloads, OpenPGP key installations and "
+"transaction checks will be performed."
+msgstr ""
+"Modo de prueba habilitado: solo descargas de paquetes, se realizaran pruebas "
+"de instalación de llaves OpenPGP y transacciones."
+
+#: main.cpp:1527
+msgid ""
+"Error: this bootc system is configured to be read-only. For more "
+"information, run `bootc --help`."
+msgstr ""
+"Error: este sistema bootc está configurado para estar en solo lectura. Para "
+"más información, ejecute `bootc --help`."
+
+#: main.cpp:1544
+msgid ""
+"No repositories were loaded from the installroot. To use the configuration "
+"and repositories of the host system, pass --use-host-config."
+msgstr ""
+"No se cargaron repositorios desde la raíz de instalación. Para usar la "
+"configuración y repositorios del sistema anfitrión, use la opción --use-host-"
+"config."
+
+#: main.cpp:1566
+msgid "Command returned error: {}"
+msgstr "El comando retornó el error: {}"
+
+#: main.cpp:1574
+msgid "DNF5 finished"
+msgstr "DNF5 finalizado"
+
+#: main.cpp:1578
+msgid "Complete!"
+msgstr "¡Completado!"
+
+#: shared_options.cpp:32
+msgid "Allow removing of installed packages to resolve problems"
+msgstr "Permitir la eliminación de paquetes instalados para resolver problemas"
+
+#: shared_options.cpp:42
+msgid "Allow resolving of depsolve problems by skipping packages"
+msgstr "Permitir la resolución de problemas depsolve omitiendo paquetes"
+
+#: shared_options.cpp:54
+msgid "Allow skipping unavailable packages"
+msgstr "Permitir la omisión de paquetes no disponibles"
+
+#, fuzzy
+#~| msgid ""
+#~| " Fingerprint: {}\n"
+#~| " From       : {}\n"
+#~ msgid " From       : {}\n"
+#~ msgstr ""
+#~ " Huella dactilar: {}\n"
+#~ " Desde                    : {}\n"
+
+#~ msgid ""
+#~ "Warning: the `_execute` command is for internal use only and is not "
+#~ "intended to be run directly by the user. To initiate the system upgrade/"
+#~ "offline transaction, you should run `dnf5 offline reboot`."
+#~ msgstr ""
+#~ "Advertencia: el comando `_execute` es solo de uso interno y no se espera "
+#~ "que sea ejecutado directamente por el usuario. Para iniciar la "
+#~ "actualización de sistema/transacción fuera de línea, debería ejecutar "
+#~ "`dnf5 offline reboot`."

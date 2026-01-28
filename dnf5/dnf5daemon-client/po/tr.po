@@ -1,0 +1,209 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Oğuz Ersen <oguz@ersen.moe>, 2024, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-26 03:48+0000\n"
+"PO-Revision-Date: 2025-10-07 23:48+0000\n"
+"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf5/"
+"dnf5daemon-client/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13.3\n"
+
+#: commands/advisory/advisory.cpp:35
+msgid "Manage advisories"
+msgstr "Tavsiyeleri yönet"
+
+#: commands/advisory/advisory_info.hpp:34
+msgid "Print details about advisories"
+msgstr "Tavsiyeler hakkında ayrıntıları yazdır"
+
+#: commands/advisory/advisory_list.hpp:34
+msgid "List advisories"
+msgstr "Tavsiyeleri listele"
+
+#: commands/advisory/arguments.hpp:32
+msgid "Show advisories containing any version of installed packages."
+msgstr "Kurulu paketlerin herhangi bir sürümünü içeren tavsiyeleri göster."
+
+#: commands/advisory/arguments.hpp:43
+msgid ""
+"Show advisories containing newer versions of installed packages. This is the "
+"default behavior."
+msgstr ""
+"Kurulu paketlerin daha yeni sürümlerini içeren tavsiyeleri göster. Bu "
+"öntanımlı davranıştır."
+
+#: commands/advisory/arguments.hpp:55
+msgid ""
+"Show advisories containing equal and older versions of installed packages."
+msgstr "Kurulu paketlerin aynı ve eski sürümlerini içeren tavsiyeleri göster."
+
+#: commands/advisory/arguments.hpp:67
+msgid ""
+"Show advisories containing newer versions of installed packages for which a "
+"newer version is available."
+msgstr ""
+"Daha yeni bir sürümü var olan kurulu paketlerin daha yeni sürümlerini içeren "
+"tavsiyeleri göster."
+
+#: commands/advisory/arguments.hpp:80
+msgid ""
+"Show only advisories containing packages with specified names. List option, "
+"supports globs."
+msgstr ""
+"Yalnızca belirtilen adlara sahip paketleri içeren tavsiyeleri göster. Liste "
+"seçeneği, globları destekler."
+
+#: commands/advisory/arguments.hpp:81
+msgid "PACKAGE_NAME,..."
+msgstr "PAKET_ADI,..."
+
+#: commands/advisory/arguments.hpp:88
+msgid "List of patterns matched against advisory names."
+msgstr "Tavsiye adlarıyla eşleşen desenlerin listesi."
+
+#: commands/advisory/arguments.hpp:95
+msgid "Show only advisories referencing a bugzilla."
+msgstr "Yalnızca bir bugzilla'ya kaynak gösteren tavsiyeleri göster."
+
+#: commands/advisory/arguments.hpp:102
+msgid "Show only advisories referencing a CVE."
+msgstr "Yalnızca bir CVE'ye kaynak gösteren tavsiyeleri göster."
+
+#: commands/advisory/arguments.hpp:113
+msgid ""
+"Include content contained in advisories with specified name. List option."
+msgstr "Belirtilen ada sahip tavsiyelerdeki içeriği dahil et. Liste seçeneği."
+
+#: commands/advisory/arguments.hpp:114
+msgid "ADVISORY_NAME,..."
+msgstr "TAVSİYE_ADI,..."
+
+#: commands/advisory/arguments.hpp:121
+msgid "Include content contained in security advisories."
+msgstr "Güvenlik tavsiyelerindeki içeriği dahil et."
+
+#: commands/advisory/arguments.hpp:128
+msgid "Include content contained in bugfix advisories."
+msgstr "Hata düzeltme tavsiyelerindeki içeriği dahil et."
+
+#: commands/advisory/arguments.hpp:135
+msgid "Include content contained in enhancement advisories."
+msgstr "İyileştirme tavsiyelerindeki içeriği dahil et."
+
+#: commands/advisory/arguments.hpp:142
+msgid "Include content contained in newpackage advisories."
+msgstr "Yeni paket tavsiyelerindeki içeriği dahil et."
+
+#. Note for translators: "critical" etc. quoted words are
+#. literals that should not be translated.
+#: commands/advisory/arguments.hpp:155
+msgid ""
+"Include content contained in advisories with specified severity. List "
+"option. Can be \"critical\", \"important\", \"moderate\", \"low\", \"none\"."
+msgstr ""
+"Belirtilen önem derecesine sahip tavsiyelerdeki içeriği dahil et. Liste "
+"seçeneği. \"critical\", \"important\", \"moderate\", \"low\", \"none\" "
+"seçeneklerinden biri olabilir."
+
+#: commands/advisory/arguments.hpp:157
+msgid "ADVISORY_SEVERITY,..."
+msgstr "TAVSİYE_ÖNEMİ,..."
+
+#: commands/advisory/arguments.hpp:169
+msgid ""
+"Include content contained in advisories that fix a Bugzilla ID, Eg. 123123. "
+"List option."
+msgstr ""
+"Bir Bugzilla kimliğini (örn. 123123) düzelten tavsiyelerdeki içeriği dahil "
+"et. Liste seçeneği."
+
+#: commands/advisory/arguments.hpp:170
+msgid "BUGZILLA_ID,..."
+msgstr "BUGZILLA_KİMLİĞİ,..."
+
+#: commands/advisory/arguments.hpp:180
+msgid ""
+"Include content contained in advisories that fix a CVE (Common "
+"Vulnerabilities and Exposures) ID, Eg. CVE-2201-0123. List option."
+msgstr ""
+"Bir CVE (Common Vulnerabilities and Exposures) kimliğini (örn. CVE-2201-0123)"
+" düzelten tavsiyelerdeki içeriği dahil et. Liste seçeneği."
+
+#: commands/advisory/arguments.hpp:182
+msgid "CVE_ID,..."
+msgstr "CVE_KİMLİĞİ,..."
+
+#: commands/clean/clean.cpp:88
+msgid "Error cleaning the cache: {}"
+msgstr "Önbellek temizlenirken hata oluştu: {}"
+
+#: commands/distro-sync/distro-sync.cpp:48
+msgid ""
+"Upgrade or downgrade installed software to the latest available versions"
+msgstr "Kurulu yazılımları kullanılabilir en son sürümlere yükselt veya düşür"
+
+#: commands/group/group.cpp:41
+msgid "Manage comps groups"
+msgstr "Grupları yönet"
+
+#: commands/group/group_list.hpp:37
+msgid "Show only available groups."
+msgstr "Yalnızca kullanılabilir grupları göster."
+
+#: commands/group/group_list.hpp:43
+msgid "Show only installed groups."
+msgstr "Yalnızca kurulu grupları göster."
+
+#: commands/group/group_list.hpp:49
+msgid "Show also hidden groups."
+msgstr "Gizli grupları da göster."
+
+#: commands/group/group_list.hpp:59
+msgid ""
+"Show only groups containing packages with specified names. List option, "
+"supports globs."
+msgstr ""
+"Yalnızca belirtilen adlara sahip paketleri içeren grupları göster. Liste "
+"seçeneği, globları destekler."
+
+#: commands/repo/repo.cpp:37
+msgid "Manage repositories"
+msgstr "Depoları yönet"
+
+#: commands/repoquery/repoquery.cpp:95
+msgid "search for packages matching various criteria"
+msgstr "çeşitli ölçütlere uyan paketleri ara"
+
+#: commands/repoquery/repoquery.cpp:159
+msgid "Error parsing JSON object \"{}\": {}"
+msgstr "\"{}\" JSON nesnesi ayrıştırılırken hata oluştu: {}"
+
+#: exception.cpp:28
+msgid ""
+"This command has to be run with superuser privileges (under the root user on "
+"most systems)."
+msgstr ""
+"Bu komutun süper kullanıcı yetkileriyle (çoğu sistemdeki root kullanıcısı "
+"ile) çalıştırılması gerekmektedir."
+
+#: main.cpp:158
+msgid ""
+"{}: Badly formatted argument value: Last key character cannot be '.': {}"
+msgstr ""
+"{}: Hatalı biçimlendirilen argüman değeri: Son anahtar karakter '.' olamaz: "
+"{}"
+
+#: main.cpp:258 main.cpp:308
+msgid ". Add \"--help\" for more information about the arguments."
+msgstr ""
+". Argümanlar hakkında daha fazla bilgi için \"--help\" seçeneğini ekleyin."

@@ -1,0 +1,422 @@
+# Rafael Fontenelle <rafaelff@gnome.org>, 2024, 2025.
+# "Geraldo S. Simião Kutz" <geraldo.simiao.kutz@gmail.com>, 2024.
+# Gabriel Elyas <gabrielelyas@protonmail.com>, 2024.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2024.
+# Ciro Mota <ciro.mota@gmail.com>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-26 03:48+0000\n"
+"PO-Revision-Date: 2025-06-11 13:46+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/dnf5/libdnf5-cli/pt_BR/>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.11.4\n"
+
+#: argument_parser.cpp:68
+msgid "Misconfigured alias \"{}\": cannot convert \"{}\" to a number"
+msgstr "Alias mal configurado \"{}\" não pode converter \"{}\" para um número"
+
+#: argument_parser.cpp:76
+msgid "Misconfigured alias \"{}\": index \"{}\" out of range"
+msgstr "Alias mal configurado \"{}\": índice \"{}\" fora do intervalo"
+
+#: argument_parser.cpp:98
+msgid "\"{}\" not allowed together with named argument \"{}\""
+msgstr "\"{}\" não permitido junto com o argumento nomeado \"{}\""
+
+#: argument_parser.cpp:100
+msgid "\"{}\" not allowed in command \"{}\""
+msgstr "\"{}\" não permitido no comando \"{}\""
+
+#: argument_parser.cpp:102
+msgid "\"{}\" not allowed together with positional argument \"{}\""
+msgstr "\"{}\" não permitido junto com o argumento posicional \"{}\""
+
+#: argument_parser.cpp:147
+msgid "Argument id \"{}\" already registered in group \"{}\""
+msgstr "ID do argumento \"{}\" já registrado no grupo \"{}\""
+
+#: argument_parser.cpp:274
+msgid "Invalid character '.' in argument id \"{}\""
+msgstr "Caractere inválido '.' no ID de argumento \"{}\""
+
+#: argument_parser.cpp:382 argument_parser.cpp:387
+msgid "Too few values for positional argument \"{}\""
+msgstr "Quantidade insuficiente de valores para o argumento posicional \"{}\""
+
+#: argument_parser.cpp:548
+msgid "Missing value for named argument \"--{}\""
+msgstr "Faltando valor para o argumento nomeado \"--{}\""
+
+#: argument_parser.cpp:556
+msgid "Unexpected value for named argument \"--{}\""
+msgstr "Valor inesperado para o argumento nomeado \"--{}\""
+
+#: argument_parser.cpp:598
+msgid "Missing value for named argument \"-{}\""
+msgstr "Faltando valor para o argumento nomeado \"-{}\""
+
+#. print usage
+#: argument_parser.cpp:694
+msgid "Usage:"
+msgstr "Uso:"
+
+#: argument_parser.cpp:702
+msgid "Description:"
+msgstr "Descrição:"
+
+#: argument_parser.cpp:979
+msgid "Command id \"{}\" already registered for command \"{}\""
+msgstr "ID do comando \"{}\" já registrado para o comando \"{}\""
+
+#: argument_parser.cpp:990
+msgid "Named argument id \"{}\" already registered for command \"{}\""
+msgstr "ID do argumento nomeado \"{}\" já registrado para o comando \"{}\""
+
+#: argument_parser.cpp:1000
+msgid "Positional argument id \"{}\" already registered for command \"{}\""
+msgstr "ID do argumento posicional \"{}\" já registrado para o comando \"{}\""
+
+#: argument_parser.cpp:1010
+msgid "Group id \"{}\" already registered for command \"{}\""
+msgstr "ID do grupo \"{}\" já registrado para o comando \"{}\""
+
+#: argument_parser.cpp:1037
+msgid "Command id \"{}\" does not contain subcommand with id \"{}\""
+msgstr "O ID do comando \"{}\" não contém subcomando com o ID \"{}\""
+
+#: argument_parser.cpp:1045
+msgid "Command id \"{}\" does not contain named argument with id \"{}\""
+msgstr "O ID do comando \"{}\" não contém um argumento nomeado com ID \"{}\""
+
+#: argument_parser.cpp:1053
+msgid "Command id \"{}\" does not contain positional argument with id \"{}\""
+msgstr ""
+"O ID do comando \"{}\" não contém um argumento posicional com ID \"{}\""
+
+#: argument_parser.cpp:1060
+msgid "Command id \"{}\" does not contain group with id \"{}\""
+msgstr "O ID do comando \"{}\" não contém grupo com o ID \"{}\""
+
+#: argument_parser.cpp:1177 argument_parser.cpp:1388
+msgid "Unknown argument \"{}\" for command \"{}\""
+msgstr "Argumento desconhecido \"{}\" para o comando \"{}\""
+
+#: argument_parser.cpp:1192 argument_parser.cpp:1403
+msgid "Missing positional argument \"{}\" for command \"{}\""
+msgstr "Faltando o argumento posicional \"{}\" para o comando \"{}\""
+
+#: argument_parser.cpp:1274
+msgid "Missing value for command alias \"{}\""
+msgstr "Faltando valor para o alias de comando \"{}\""
+
+#: argument_parser.cpp:1610
+msgid "Named argument with path id \"{}\" not found"
+msgstr "Argumento nomeado com o ID de caminho \"{}\" não encontrado"
+
+#: argument_parser.cpp:1620
+msgid "Positional argument with path id \"{}\" not found"
+msgstr "Argumento posicional com ID de comando \"{}\" não encontrado"
+
+#: exception.cpp:30
+msgid "Operation aborted by the user."
+msgstr "Operação abortada pelo usuário."
+
+#: exception.cpp:33
+msgid "Failed to resolve the transaction"
+msgstr "Falha ao resolver a transação"
+
+#: output/moduleinfo.cpp:36
+msgid "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled, [a]ctive"
+msgstr "Dica: [d]padrão, [e]ativado, [x]desativado, [i]instalado,[a]ativo"
+
+#: output/modulelist.cpp:39
+msgid "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled"
+msgstr "Dica: [d]padrão, [e]ativado, [x]desativado, [i]instalado"
+
+#. Note for translators: This is a right-aligned column separator in
+#. a package properties table as in "Name    : bash".
+#: output/packageinfo.cpp:57
+msgid " : "
+msgstr " : "
+
+#. Add package
+#: output/packageinfo.cpp:63
+msgid "Name"
+msgstr "Nome"
+
+#: output/packageinfo.cpp:68
+msgid "Epoch"
+msgstr "Período"
+
+#: output/packageinfo.cpp:69 output/transaction_table.cpp:289
+msgid "Version"
+msgstr "Versão"
+
+#: output/packageinfo.cpp:70
+msgid "Release"
+msgstr "Lançamento"
+
+#: output/packageinfo.cpp:71
+msgid "Architecture"
+msgstr "Arquitetura"
+
+#: output/packageinfo.cpp:75
+msgid "Obsoletes"
+msgstr "Obsoletos"
+
+#: output/packageinfo.cpp:85
+msgid "Download size"
+msgstr "Tamanho do Download"
+
+#: output/packageinfo.cpp:89
+msgid "Installed size"
+msgstr "Tamanho instalado"
+
+#: output/packageinfo.cpp:91
+msgid "Source"
+msgstr "Fonte"
+
+#: output/packageinfo.cpp:94
+msgid "From repository"
+msgstr "Do repositório"
+
+#: output/packageinfo.cpp:96 output/transaction_table.cpp:295
+msgid "Repository"
+msgstr "Repositório"
+
+#: output/packageinfo.cpp:98
+msgid "Summary"
+msgstr "Sumário"
+
+#: output/packageinfo.cpp:99
+msgid "URL"
+msgstr "URL"
+
+#: output/packageinfo.cpp:100
+msgid "License"
+msgstr "Licença"
+
+#: output/packageinfo.cpp:104
+msgid "Description"
+msgstr "Descrição"
+
+#: output/packageinfo.cpp:109
+msgid "Vendor"
+msgstr "Fornecedor"
+
+#: output/search.cpp:45
+msgid " (exact)"
+msgstr " (exata)"
+
+#: output/search.cpp:90
+msgid "No matches found."
+msgstr "Nenhuma correspondência encontrada."
+
+#: output/search.cpp:101
+msgid "Matched fields: "
+msgstr "Campos correspondentes: "
+
+#: output/transaction_table.cpp:127
+msgid "Transaction Summary:\n"
+msgstr "Sumário da Transação:\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:132
+msgid " Installing:      {:4} package\n"
+msgid_plural " Installing:      {:4} packages\n"
+msgstr[0] " Instalando:      {:4} pacote\n"
+msgstr[1] " Instalando:      {:4} pacotes\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:141
+msgid " Reinstalling:    {:4} package\n"
+msgid_plural " Reinstalling:    {:4} packages\n"
+msgstr[0] " Reinstalando:    {:4} pacote\n"
+msgstr[1] " Reinstalando:    {:4} pacotes\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:150
+msgid " Upgrading:       {:4} package\n"
+msgid_plural " Upgrading:       {:4} packages\n"
+msgstr[0] " Atualizando:       {:4} pacote\n"
+msgstr[1] " Atualizando:       {:4} pacotes\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:159
+msgid " Replacing:       {:4} package\n"
+msgid_plural " Replacing:       {:4} packages\n"
+msgstr[0] " Substituindo:       {:4} pacote\n"
+msgstr[1] " Substituindo:       {:4} pacotes\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:168
+msgid " Removing:        {:4} package\n"
+msgid_plural " Removing:        {:4} packages\n"
+msgstr[0] " Removendo:        {:4} pacote\n"
+msgstr[1] " Removendo:        {:4} pacotes\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:177
+msgid " Downgrading:     {:4} package\n"
+msgid_plural " Downgrading:     {:4} packages\n"
+msgstr[0] " Downgrading:     {:4} pacote\n"
+msgstr[1] " Downgrading:     {:4} pacotes\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:186
+msgid " Changing reason: {:4} package\n"
+msgid_plural " Changing reason: {:4} packages\n"
+msgstr[0] " Motivo de mudança: {:4} pacote\n"
+msgstr[1] " Motivo de mudança: {:4} pacotes\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:195
+msgid " Skipping:        {:4} package\n"
+msgid_plural " Skipping:        {:4} packages\n"
+msgstr[0] " Pulando:        {:4} pacote\n"
+msgstr[1] " Pulando:        {:4} pacotes\n"
+
+#: output/transaction_table.cpp:277
+msgid "Package"
+msgstr "Pacote"
+
+#: output/transaction_table.cpp:283
+msgid "Arch"
+msgstr "Arch"
+
+#: output/transaction_table.cpp:301
+msgid "Size"
+msgstr "Tamanho"
+
+#: output/transaction_table.cpp:357 output/transaction_table.cpp:451
+msgid "{} -> {}"
+msgstr "{} -> {}"
+
+#: output/transaction_table.cpp:373
+msgid "replacing {}"
+msgstr "substituindo {}"
+
+#: output/transaction_table.cpp:409 output/transaction_table.cpp:426
+msgid " <name-unset>"
+msgstr " <nome indefinido>"
+
+#: output/transaction_table.cpp:457
+msgid "replacing "
+msgstr "substituindo "
+
+#: output/transaction_table.cpp:470
+msgid "Skipping packages with conflicts:"
+msgstr "Ignorando pacotes com conflitos:"
+
+#: output/transaction_table.cpp:472
+msgid "Skipping packages with broken dependencies:"
+msgstr "Ignorando pacotes com dependências quebradas:"
+
+#: output/transaction_table.cpp:533
+msgid "Installing dependencies:"
+msgstr "Instalando dependências:"
+
+#: output/transaction_table.cpp:535
+msgid "Installing weak dependencies:"
+msgstr "Instalando dependências fracas:"
+
+#: output/transaction_table.cpp:537
+msgid "Installing group/module packages:"
+msgstr "Instalação de pacotes de grupos/módulos:"
+
+#: output/transaction_table.cpp:539
+msgid "Installing:"
+msgstr "Instalando:"
+
+#: output/transaction_table.cpp:543
+msgid "Upgrading:"
+msgstr "Atualizando:"
+
+#: output/transaction_table.cpp:546
+msgid "Downgrading:"
+msgstr "Desatualizando:"
+
+#: output/transaction_table.cpp:549
+msgid "Reinstalling:"
+msgstr "Reinstalando:"
+
+#: output/transaction_table.cpp:553
+msgid "Removing dependent packages:"
+msgstr "Removendo pacotes dependentes:"
+
+#: output/transaction_table.cpp:555
+msgid "Removing unused dependencies:"
+msgstr "Removendo dependências inutilizadas:"
+
+#: output/transaction_table.cpp:557
+msgid "Removing:"
+msgstr "Removendo:"
+
+#: output/transaction_table.cpp:561
+msgid "Changing reason:"
+msgstr "Motivo de mudança:"
+
+#: output/transaction_table.cpp:593
+msgid "Installing groups dependencies:"
+msgstr "Instalando dependências de grupos:"
+
+#: output/transaction_table.cpp:595
+msgid "Installing groups:"
+msgstr "Instalando grupos:"
+
+#: output/transaction_table.cpp:599
+msgid "Removing groups:"
+msgstr "Removendo grupos:"
+
+#: output/transaction_table.cpp:602
+msgid "Upgrading groups:"
+msgstr "Atualizando grupos:"
+
+#: output/transaction_table.cpp:629
+msgid "Installing environmental groups:"
+msgstr "Instalação de grupos ambientais:"
+
+#: output/transaction_table.cpp:632
+msgid "Removing environmental groups:"
+msgstr "Removendo grupos ambientais:"
+
+#: output/transaction_table.cpp:635
+msgid "Upgrading environmental groups:"
+msgstr "Atualizando grupos ambientais:"
+
+#: output/transaction_table.cpp:662
+msgid "Enabling module streams:"
+msgstr "Ativação de fluxos de módulos:"
+
+#: output/transaction_table.cpp:665
+msgid "Disabling modules:"
+msgstr "Desativando módulos:"
+
+#: output/transaction_table.cpp:668
+msgid "Resetting modules:"
+msgstr "Redefinindo módulos:"
+
+#: output/transaction_table.cpp:671
+msgid "Switching module streams:"
+msgstr "Troca de fluxos de módulos:"
+
+#: output/transaction_table.cpp:745
+msgid "Nothing to do."
+msgstr "Nada para fazer."
+
+#: progressbar/multi_progress_bar.cpp:36
+msgid "Total"
+msgstr "Total"
+
+#: session.cpp:149
+msgid "Missing command"
+msgstr "Comando ausente"

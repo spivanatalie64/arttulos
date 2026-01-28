@@ -1,0 +1,1848 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Joan Aymà <joan@ayma.cat>, 2024, 2025.
+# David Medina <dmedinacpnl@gmail.com>, 2025.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-26 03:48+0000\n"
+"PO-Revision-Date: 2025-07-25 17:09+0000\n"
+"Last-Translator: David Medina <dmedinacpnl@gmail.com>\n"
+"Language-Team: Catalan <https://translate.fedoraproject.org/projects/dnf5/"
+"dnf5/ca/>\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12.2\n"
+
+#: cmdline_aliases.cpp:84 context.cpp:301 main.cpp:1357
+msgid ", "
+msgstr ", "
+
+#: cmdline_aliases.cpp:145
+msgid ""
+"Attached named argument \"{}\" not found: {}: Requested in file \"{}\" on "
+"line {}: {}"
+msgstr ""
+"L'argument anomenat \"{}\" adjuntat no s'ha trobat: {}: S'ha soŀlicitat al "
+"fitxer \"{}\" a la línia {}: {}"
+
+#: cmdline_aliases.cpp:159
+msgid ""
+"Unknown attribute \"{}\" of attached named argument for alias \"{}\" in file "
+"\"{}\" on line {}: {}"
+msgstr ""
+"Atribut desconegut \"{}\" d'un argument adjuntat anomenat per l'àlies \"{}\" "
+"a la línia {}: {}"
+
+#: cmdline_aliases.cpp:171
+msgid "Missing attribute \"id_path\" for alias \"{}\" in file \"{}\""
+msgstr "Falta l'atribut \"id_path\" per l'àlies \"{}\" en el fitxer \"{}\""
+
+#: cmdline_aliases.cpp:208
+msgid "Unsupported version \"{}\" in file \"{}\". Supported versions: {}"
+msgstr ""
+"Versió no suportada \"{}\" en el fitxer \"{}\". Versions suportades: {}"
+
+#: cmdline_aliases.cpp:218
+msgid "Bad value type of attribute \"version\" in file \"{}\" on line {}: {}"
+msgstr ""
+"Tipus de valor incorrecte per l'atribut \"version\" en el fitxer \"{}\" a la "
+"línia {}: {}"
+
+#: cmdline_aliases.cpp:224
+msgid "Missing attribute \"version\" in file \"{}\""
+msgstr "Falta l'atribut \"version\" en el fitxer \"{}\""
+
+#: cmdline_aliases.cpp:236
+msgid "Unknown key \"{}\" in file \"{}\" on line {}: {}"
+msgstr "Clau \"{}\" desconeguda en el fitxer \"{}\" a la línia {}: {}"
+
+#: cmdline_aliases.cpp:253
+msgid "Empty or bad element id path in file \"{}\" on line {}: {}"
+msgstr ""
+"Id de camí d'element buit o incorrecte en el fitxer \"{}\" a la línia {}: {}"
+
+#: cmdline_aliases.cpp:272
+msgid ""
+"Parent command \"{}\" not found: {}: Requested in file \"{}\" on line {}: {}"
+msgstr ""
+"No s'ha trobat la comanda parent \"{}\": {}: Soŀlicitat en el fitxer \"{}\" "
+"a la línia {}: {}"
+
+#: cmdline_aliases.cpp:301
+msgid "Unknown type \"{}\" of element \"{}\" in file \"{}\" on line {}: {}"
+msgstr ""
+"Tipus \"{}\" desconegut de l'element \"{}\" en el fitxer \"{}\" a la línia "
+"{}: {}"
+
+#: cmdline_aliases.cpp:312
+msgid "Missing attribute \"type\" for element \"{}\" in file \"{}\""
+msgstr "Falta l'atribut \"type\" a l'element \"{}\" al fitxer \"{}\""
+
+#: cmdline_aliases.cpp:331
+msgid ""
+"Named argument \"{}\" already registered. Requested in file \"{}\" on line "
+"{}: {}"
+msgstr ""
+"L'argument anomenat \"{}\" ja està registrat. La soŀlicitud és en el fitxer "
+"\"{}\" a la línia {}: {}"
+
+#: cmdline_aliases.cpp:347
+msgid ""
+"Command \"{}\" already registered. Requested in file \"{}\" on line {}: {}"
+msgstr ""
+"La comanda \"{}\" ja està registrada. La soŀlicitud és en el fitxer \"{}\" a "
+"la línia {}: {}"
+
+#: cmdline_aliases.cpp:375
+msgid "Unknown attribute \"{}\" of group \"{}\" in file \"{}\" on line {}: {}"
+msgstr ""
+"Atribut \"{}\" desconegut del grup \"{}\" en el fitxer \"{}\" a la línia {}: "
+"{}"
+
+#: cmdline_aliases.cpp:387
+msgid "Missing attribute \"header\" for element \"{}\" in file \"{}\""
+msgstr "Falta l'atribut \"header\" a l'element \"{}\" en el fitxer \"{}\""
+
+#: cmdline_aliases.cpp:428 cmdline_aliases.cpp:538
+msgid ""
+"The \"short_name\" attribute of named argument \"{}\" must be one character "
+"long in file \"{}\" on line {}: {}"
+msgstr ""
+"L'atribut \"short_name\" de l'argument anomenat \"{}\" ha de tenir un "
+"caràcter de llargada en el fitxer \"{}\" a la línia {}: {}"
+
+#: cmdline_aliases.cpp:446
+msgid "Source \"{}\" not found: {}: Requested in file \"{}\" on line {}: {}"
+msgstr ""
+"Font \"{}\" no trobada: {}: sol·licitada al fitxer \"{}\" a la línia {}: {}"
+
+#: cmdline_aliases.cpp:462 cmdline_aliases.cpp:563 cmdline_aliases.cpp:676
+msgid "Group \"{}\" not found: {}: Requested in file \"{}\" on line {}: {}"
+msgstr ""
+"No s'ha trobat el grup \"{}\": {}: s'ha sol·licitat al fitxer \"{}\" a la "
+"línia {}: {}"
+
+#: cmdline_aliases.cpp:476 cmdline_aliases.cpp:579
+msgid ""
+"Unknown attribute \"{}\" of named argument \"{}\" in file \"{}\" on line {}: "
+"{}"
+msgstr ""
+"Atribut desconegut \"{}\" de l'argument amb el nom \"{}\" al fitxer \"{}\" a "
+"la línia {}: {}"
+
+#: cmdline_aliases.cpp:489
+msgid "Missing attribute \"source\" for named argument \"{}\" in file \"{}\""
+msgstr ""
+"Falta l'atribut \"source\" per a l'argument amb el nom \"{}\" al fitxer "
+"\"{}\""
+
+#: cmdline_aliases.cpp:498 cmdline_aliases.cpp:592
+msgid ""
+"At least one of the attributes \"long_name\" and \"short_name\" must be set "
+"for named argument \"{}\" in file \"{}\""
+msgstr ""
+"Almenys un dels atributs \"long_name\" i \"short_name\" s'ha d'establir per "
+"a l'argument amb nom \"{}\" al fitxer \"{}\""
+
+#: cmdline_aliases.cpp:657
+msgid ""
+"Attached command \"{}\" not found: {}: Requested in file \"{}\" on line {}: "
+"{}"
+msgstr ""
+"No s'ha trobat l'ordre adjunta \"{}\": {}: s'ha sol·licitat al fitxer \"{}\" "
+"a la línia {}: {}"
+
+#: cmdline_aliases.cpp:691
+msgid ""
+"Used config file version \"1.0\" for attribute \"{}\" of command \"{}\" in "
+"file \"{}\" on line {}: {}"
+msgstr ""
+"S'ha usat la versió del fitxer de configuració \"1.0\" per a l'atribut "
+"\"{}\" de l'ordre \"{}\" al fitxer \"{}\" a la línia {}: {}"
+
+#: cmdline_aliases.cpp:713
+msgid ""
+"Unknown attribute \"{}\" of required value for alias \"{}\" in file \"{}\" "
+"on line {}: {}"
+msgstr ""
+"Atribut desconegut \"{}\" del valor obligatori per a l'àlies \"{}\" al "
+"fitxer \"{}\" a la línia {}: {}"
+
+#: cmdline_aliases.cpp:726
+msgid ""
+"Missing attribute \"value_help\" of required value for alias \"{}\" in file "
+"\"{}\""
+msgstr ""
+"Falta l'atribut \"value_help\" del valor obligatori per a l'àlies \"{}\" al "
+"fitxer \"{}\""
+
+#: cmdline_aliases.cpp:740
+msgid ""
+"Unknown attribute \"{}\" of command \"{}\" in file \"{}\" on line {}: {}"
+msgstr ""
+"Atribut desconegut \"{}\" de l'ordre \"{}\" al fitxer \"{}\" a la línia {}: "
+"{}"
+
+#: cmdline_aliases.cpp:756
+msgid ""
+"Missing attribute \"attached_command\" for command \"{}\" in file \"{}\""
+msgstr ""
+"Falta l'atribut \"attached_command\" per a l'ordre \"{}\" al fitxer \"{}\""
+
+#: cmdline_aliases.cpp:791
+msgid "Bad value type in file \"{}\" on line {}: {}"
+msgstr "Tipus de valor incorrecte al fitxer \"{}\" a la línia {}: {}"
+
+#: cmdline_aliases.cpp:804
+msgid "Syntax error in file \"{}\" on line {}:"
+msgstr "Error de sintaxi al fitxer \"{}\" a la línia {}:"
+
+#: commands/advisory/advisory.cpp:36
+msgid "Manage advisories"
+msgstr "Gestiona els avisos"
+
+#: commands/advisory/advisory_info.hpp:35
+msgid "Print details about advisories"
+msgstr "Mostra els detalls dels avisos"
+
+#: commands/advisory/advisory_list.hpp:35
+msgid "List advisories"
+msgstr "Llista els avisos"
+
+#: commands/advisory/advisory_summary.cpp:44
+msgid "All"
+msgstr "Tots"
+
+#: commands/advisory/advisory_summary.cpp:48
+msgid "Installed"
+msgstr "Instal·lat"
+
+#: commands/advisory/advisory_summary.cpp:52
+msgid "Updates"
+msgstr "Actualitzacions"
+
+#: commands/advisory/advisory_summary.cpp:65
+msgid "Available"
+msgstr "Disponible"
+
+#: commands/advisory/advisory_summary.hpp:33
+msgid "Print summary of advisories"
+msgstr "Mostra el resum dels avisos"
+
+#: commands/advisory/arguments.hpp:34
+msgid "Show advisories containing any version of installed packages."
+msgstr ""
+"Mostra els avisos que inclouen qualsevol versió dels paquets instal·lats."
+
+#: commands/advisory/arguments.hpp:45
+msgid ""
+"Show advisories containing newer versions of installed packages. This is the "
+"default behavior."
+msgstr ""
+"Mostra avisos que inclouen noves versions dels paquets instal·lats. Acció "
+"per defecte."
+
+#: commands/advisory/arguments.hpp:57
+msgid ""
+"Show advisories containing equal and older versions of installed packages."
+msgstr ""
+"Mostra els avisos que inclouen la mateixa versió o anteriors dels paquets i "
+"instal·lats."
+
+#: commands/advisory/arguments.hpp:69
+msgid ""
+"Show advisories containing newer versions of installed packages for which a "
+"newer version is available."
+msgstr ""
+"Mostra els avisos que inclouen versions més noves dels paquets instal·lats "
+"dels quals hi ha disponible una versió més nova."
+
+#: commands/advisory/arguments.hpp:82
+msgid ""
+"Show only advisories containing packages with specified names. List option, "
+"supports globs."
+msgstr ""
+"Mostra solament els avisos que inclouen paquets amb noms específics. Opció "
+"de tipus llista, que suporta expressions globals."
+
+#: commands/advisory/arguments.hpp:83 commands/history/arguments.hpp:81
+msgid "PACKAGE_NAME,..."
+msgstr "NOM_DEL_PAQUET,..."
+
+#: commands/advisory/arguments.hpp:90
+msgid "List of patterns matched against advisory names."
+msgstr "Llista de patrons coincidents amb els noms dels avisos."
+
+#: commands/advisory/arguments.hpp:100
+msgid "Show only advisories referencing a bugzilla."
+msgstr "Mostra solament els avisos amb referències a un bugzilla."
+
+#: commands/advisory/arguments.hpp:107
+msgid "Show only advisories referencing a CVE."
+msgstr "Mostra solament els avisos amb referències a un CVE."
+
+#: commands/advisory_shared.hpp:76
+msgid "No advisory found matching the requested name: \"{}\""
+msgstr "No s'ha trobat cap avís que coincideixi amb el nom sol·licitat: {}"
+
+#: commands/advisory_shared.hpp:109
+msgid "No advisory found fixing the Bugzilla ID: \"{}\""
+msgstr "No s'ha trobat cap avís de solució per l'identificador de Bugzilla: {}"
+
+#: commands/advisory_shared.hpp:128
+msgid "No advisory found fixing the CVE ID: \"{}\""
+msgstr "No s'ha trobat cap avís de solució per l'ID CVE: {}"
+
+#: commands/advisory_shared.hpp:143
+msgid "No advisory found matching the specified filters."
+msgstr "No s'ha trobat cap avís que coincideixi amb els filtres especificats."
+
+#: commands/advisory_shared.hpp:158
+msgid ""
+"Include content contained in advisories with specified name. List option."
+msgstr ""
+"Inclou el contingut dels avisos amb el nom especificat. Opció de llista."
+
+#: commands/advisory_shared.hpp:159
+msgid "ADVISORY_NAME,..."
+msgstr "NOM_DE_L'AVÍS,..."
+
+#: commands/advisory_shared.hpp:166
+msgid "Include content contained in security advisories."
+msgstr "Inclou el contingut dels avisos de seguretat."
+
+#: commands/advisory_shared.hpp:173
+msgid "Include content contained in bugfix advisories."
+msgstr "Inclou el contingut dels avisos de correcció d'errors."
+
+#: commands/advisory_shared.hpp:180
+msgid "Include content contained in enhancement advisories."
+msgstr "Inclou el contingut dels avisos de millora."
+
+#: commands/advisory_shared.hpp:187
+msgid "Include content contained in newpackage advisories."
+msgstr "Inclou el contingut dels avisos de paquets nous."
+
+#: commands/advisory_shared.hpp:198
+msgid ""
+"Include content contained in advisories with specified severity. List "
+"option. Can be \"critical\", \"important\", \"moderate\", \"low\", \"none\"."
+msgstr ""
+"Inclou el contingut dels avisos amb una gravetat especificada. Opció de "
+"llista. Pot ser crític, important, moderat, baix o cap."
+
+#: commands/advisory_shared.hpp:200
+msgid "ADVISORY_SEVERITY,..."
+msgstr "SEVERITAT_DE_L'AVÍS,..."
+
+#: commands/advisory_shared.hpp:212
+msgid ""
+"Include content contained in advisories that fix a Bugzilla ID, Eg. 123123. "
+"List option."
+msgstr ""
+"Inclou el contingut dels avisos que arreglen un identificador de Bugzilla, "
+"p. ex. 123123. Opció llista."
+
+#: commands/advisory_shared.hpp:213
+msgid "BUGZILLA_ID,..."
+msgstr "ID_DE_BUGZILLA,..."
+
+#: commands/advisory_shared.hpp:223
+msgid ""
+"Include content contained in advisories that fix a CVE (Common "
+"Vulnerabilities and Exposures) ID, Eg. CVE-2201-0123. List option."
+msgstr ""
+"Inclou el contingut dels avisos que solucionen un cas de CVE "
+"(Vulnerabilitats i exposicions comunes), p. ex. CVE-2201-0123. Opció de "
+"llista."
+
+#: commands/advisory_shared.hpp:225
+msgid "CVE_ID,..."
+msgstr "CVE_ID,..."
+
+#: commands/autoremove/autoremove.cpp:38
+msgid "Remove all unneeded packages originally installed as dependencies."
+msgstr ""
+"Treu tots els paquets innecessaris originalment instal·lats com a "
+"dependències."
+
+#: commands/check-upgrade/check-upgrade.cpp:47
+msgid "Check for available package upgrades"
+msgstr "Comprova si hi ha actualitzacions de paquets disponibles"
+
+#: commands/check-upgrade/check-upgrade.cpp:54
+msgid ""
+"Reports the lowest versions of packages that fix advisories of type bugfix, "
+"enhancement, security, or newpackage. In case that any option limiting "
+"advisories is used it reports the lowest versions of packages that fix "
+"advisories matching selected advisory properties"
+msgstr ""
+"Informa de les versions més baixes dels paquets que solucionen avisos del "
+"tipus correcció d'errors, millora, seguretat o paquet nou. En cas que s'usi "
+"qualsevol opció que limiti els avisos, informa de les versions més baixes "
+"dels paquets que solucionen els avisos que coincideixen amb les propietats "
+"d'assessorament seleccionades"
+
+#: commands/check/check.cpp:247
+msgid "Check for problems in the packagedb"
+msgstr "Comprova si hi ha problemes a la base de dades de paquets"
+
+#: commands/check/check.cpp:335
+msgid "Check discovered {} problem(s) in {} package(s)"
+msgstr "Comprova {} problema/es descobert(s) en {} paquet(s)"
+
+#: commands/clean/clean.cpp:91
+msgid "List of cache types to clean up. Supported types: {0}"
+msgstr "Llista els tipus de memòria cau a netejar. Tipus suportats: {0}"
+
+#: commands/clean/clean.cpp:109
+msgid "Unknown cache type \"{0}\". Supported types: {1}"
+msgstr "Tipus de memòria cau\"{0}\" desconegut. Tipus suportats: {1}"
+
+#: commands/clean/clean.cpp:166
+msgid "Failed to cleanup repository cache in path \"{0}\": {1}"
+msgstr "Ha fallat al netejar la memòria cau a la ruta \"{0}\": {1}"
+
+#: commands/clean/clean.cpp:176
+msgid "Cache directory \"{}\" does not exist. Nothing to clean."
+msgstr ""
+"El directori de memòria cau \"{}\" no existeix. No hi ha res a netejar."
+
+#: commands/clean/clean.cpp:181
+msgid "Cannot iterate cache directory \"{}\": {}"
+msgstr ""
+"No ha estat possible iterar dins el directori de memòria cau \"{}\": {}"
+
+#: commands/debuginfo-install/debuginfo-install.cpp:45
+msgid "Install debuginfo packages."
+msgstr "Instal·la els paquets d'informació de depuració."
+
+#: commands/distro-sync/distro-sync.cpp:44
+msgid ""
+"Upgrade or downgrade installed software to the latest available versions"
+msgstr ""
+"Actualitzar o desactualitzar el programari instal·lat a la versions més "
+"recents disponibles"
+
+#: commands/do/do.cpp:44
+msgid "Do transaction"
+msgstr "Fes la transacció"
+
+#: commands/do/do.cpp:49
+msgid "Action to be done on the following items."
+msgstr "Acció per fer als elements següents:"
+
+#: commands/do/do.cpp:63
+msgid "Unsupported action \"{}\""
+msgstr "Acció no admesa: \"{}\""
+
+#: commands/do/do.cpp:73
+msgid "Type of the following items."
+msgstr "Tipus dels elements següents:"
+
+#: commands/do/do.cpp:86
+msgid "Unsupported item type \"{}\""
+msgstr "Tipus d'element \"{}\" no compatible"
+
+#: commands/do/do.cpp:99
+msgid "List of items to take action on"
+msgstr "Llista d'elements sobre els quals cal actuar"
+
+#: commands/do/do.cpp:131 commands/do/do.cpp:135
+msgid "Only package downgrade is supported."
+msgstr "Només s'admet la baixada de paquets."
+
+#: commands/do/do.cpp:142 commands/do/do.cpp:146
+msgid "Only package reinstall is supported."
+msgstr "Només s'admet la reinstal·lació de paquets."
+
+#: commands/do/do.cpp:152
+msgid "Action was not defined"
+msgstr "No s'ha definit l'acció"
+
+#: commands/do/do.cpp:230
+msgid "Invalid Environmet/Group specification: {}"
+msgstr "Especificació d'entorn / grup no vàlida: {}"
+
+#: commands/do/do.cpp:314
+msgid "Downgrading environments and groups is not supported."
+msgstr "No s'admet la baixada d'entorns i grups."
+
+#: commands/do/do.cpp:330
+msgid "Reinstaling environments and groups is not supported."
+msgstr "No s'admet la reinstal·lació d'entorns i grups."
+
+#: commands/downgrade/downgrade.cpp:42
+msgid "Downgrade software"
+msgstr "Desactualitzar programari"
+
+#: commands/download/download.cpp:106
+msgid "When running with --url, prints URLs from all available mirrors"
+msgstr ""
+"Quan s'executa amb --url, informa les URLs de tots els miralls disponibles"
+
+#: commands/download/download.cpp:122
+msgid "Invalid urlprotocol option: {}"
+msgstr "Opció de protocol url invàlida: {}"
+
+#: commands/download/download.cpp:149 main.cpp:627
+msgid "Unsupported architecture \"{0}\". Please choose one from {1}"
+msgstr "Arquitectura \"{0}\" no suporta. Sisplau escull una de \"{1}\""
+
+#. TODO(jrohel): Add support for requiring an argument by another argument in ArgumentParser?
+#: commands/download/download.cpp:186
+msgid "Option \"--alldeps\" should be used with \"--resolve\""
+msgstr "L'opció \"--alldeps\" ha d'usar-se amb \"--resolve\""
+
+#: commands/download/download.cpp:226
+msgid ""
+"No package \"{}\" available; You might want to use --skip-unavailable option."
+msgstr ""
+"No hi ha cap paquet {} disponible. És possible que vulgueu usar l'opció --"
+"skip-unavailable."
+
+#: commands/environment/arguments.hpp:33
+msgid "Show only available environments."
+msgstr "Mostra només els entorns disponibles."
+
+#: commands/environment/arguments.hpp:40
+msgid "Show only installed environments."
+msgstr "Mostra només els entorns instal·lats."
+
+#: commands/environment/arguments.hpp:47
+msgid "Pattern matching environment IDs."
+msgstr "Patró que coincideix amb els IDs d'entorn."
+
+#: commands/environment/environment.cpp:35
+msgid "Manage comps environments"
+msgstr "Administra entorns de comps"
+
+#: commands/from_repo.cpp:35
+msgid ""
+"The following items can be selected only from the specified repositories. "
+"All enabled repositories will still be used to satisfy dependencies."
+msgstr ""
+"Els elements següents només es poden seleccionar dels repositoris "
+"especificats. Tots els dipòsits habilitats s'usaran encara per satisfer les "
+"dependències."
+
+#: commands/from_repo.cpp:38 commands/from_repo.cpp:70
+msgid "REPO_ID,..."
+msgstr "REPO_ID..."
+
+#: commands/from_repo.cpp:53
+msgid "\"--from_repo\" already defined with diferent value"
+msgstr "\"--from_repo\" ja està definit amb un valor diferent"
+
+#: commands/from_repo.cpp:68
+msgid ""
+"Filters installed packages by the ID of the repository they were installed "
+"from."
+msgstr ""
+"Filtra els paquets instal·lats per l'ID del repositori des del qual es van "
+"instal·lar."
+
+#: commands/from_repo.cpp:79
+msgid "\"--installed-from_repo\" already defined with diferent value"
+msgstr "\"--installed-from_repo\" ja està definit amb un valor diferent"
+
+#: commands/group/arguments.hpp:34
+msgid "Show only available groups."
+msgstr "Mostra només els grups disponibles."
+
+#: commands/group/arguments.hpp:41
+msgid "Show also hidden groups."
+msgstr "Mostra també els grups ocults."
+
+#: commands/group/arguments.hpp:48
+msgid "Show only installed groups."
+msgstr "Mostra només els grups instal·lats."
+
+#: commands/group/arguments.hpp:59
+msgid ""
+"Show only groups containing packages with specified names. List option, "
+"supports globs."
+msgstr ""
+"Mostra sols els grups que contenen paquets amb els noms especificats. Opció "
+"tipus llista, suporta globs."
+
+#: commands/group/arguments.hpp:67
+msgid "Pattern matching group IDS."
+msgstr "Patró coincident amb IDs dels grups."
+
+#: commands/group/arguments.hpp:76
+msgid "Include optional packages from group."
+msgstr "Inclou paquets opcionals del grup."
+
+#: commands/group/arguments.hpp:83
+msgid "Operate on groups only, no packages are changed."
+msgstr "Opera sols en els grups, sense fer canvis als paquets."
+
+#: commands/history/arguments.hpp:37
+msgid "Transaction ID"
+msgstr "Identificador de la transacció"
+
+#: commands/history/arguments.hpp:44
+msgid "Reverse the order of transactions."
+msgstr "Inverteix l'ordre de les transaccions."
+
+#: commands/history/arguments.hpp:54
+msgid ""
+"Don't consider mismatches between installed and stored transaction packages "
+"as errors. This can result in an empty transaction because among other "
+"things the option can ignore failing Remove actions."
+msgstr ""
+"No tinguis en compte com errors les diferències entre els paquets instalats "
+"i els de la transacció desada. Això podria provocar una transacció buida "
+"perquè entre altres coses aquesta opció pot ignorar accions d'esborrar "
+"fallides."
+
+#: commands/history/arguments.hpp:67
+msgid "Don't consider extra packages pulled into the transaction as errors."
+msgstr "No consideris com errors els paquets extra inclosos a la transacció."
+
+#: commands/history/arguments.hpp:80
+msgid ""
+"Show only transactions containing packages with specified names. List "
+"option, supports globs."
+msgstr ""
+"Mostra només les transaccions que contenen paquets amb noms especificats. Té "
+"opció de llista, admet globs."
+
+#: commands/history/history.cpp:41
+msgid "Manage transaction history"
+msgstr "Gestiona l'historial de transaccions"
+
+#: commands/history/history_info.cpp:70
+msgid ""
+"No match found, history info defaults to considering only the last "
+"transaction, specify \"1..last\" range to search all transactions."
+msgstr ""
+"No s'ha trobat cap coincidència, la informació de l'historial només té en "
+"compte l'última transacció, especifiqueu l'interval \"1..últim\" per cercar "
+"totes les transaccions."
+
+#: commands/history/history_redo.cpp:54
+#: commands/history/history_rollback.cpp:58
+#: commands/history/history_store.cpp:65 commands/history/history_undo.cpp:57
+msgid "No matching transaction ID found, exactly one required."
+msgstr ""
+"No s'ha trobat cap ID de transacció coincident, se'n requereix exactament un."
+
+#: commands/history/history_redo.cpp:58
+#: commands/history/history_rollback.cpp:62
+#: commands/history/history_undo.cpp:61
+msgid "Matched more than one transaction ID, exactly one required."
+msgstr ""
+"S'han trobat més d'un ID de transacció coincident, se'n requereix exactament "
+"un."
+
+#: commands/history/history_store.cpp:68
+msgid "Multiple transactions selected for storing, only one allowed."
+msgstr ""
+"Múltiples transaccions seleccionades per emmagatzemar, se'n permet solament "
+"una."
+
+#: commands/history/history_store.cpp:80
+msgid "File \"{}\" already exists, it will be overwritten.\n"
+msgstr "El fitxer \"{}\" ja existeix, es sobreescriurà.\n"
+
+#: commands/history/transaction_id.cpp:32
+msgid ""
+"Invalid transaction ID range \"{}\", \"ID\" or \"ID..ID\" expected, where ID "
+"is \"NUMBER\", \"last\" or \"last-NUMBER\"."
+msgstr ""
+"Rang d'ID de transaccions \"{}\" invàlid, s'esperava \"ID\" o \"ID..ID\", on "
+"ID és \"NÚMERO\", \"last\" o \"last-NÚMERO\"."
+
+#: commands/install/install.cpp:43
+msgid "Install software"
+msgstr "Instal·la programari"
+
+#: commands/leaves/leaves.cpp:42
+msgid ""
+"List groups of installed packages not required by other installed packages"
+msgstr ""
+"Llista els grups dels paquets instal·lats que no els requereixen cap altre "
+"paquet"
+
+#: commands/list/list.cpp:46
+msgid "Lists packages depending on the packages' relation to the system"
+msgstr "Llista els paquets segons com estan relacionats amb el sistema"
+
+#: commands/list/list.cpp:50
+msgid "List of package-spec-NI to match (case insensitively)"
+msgstr ""
+"Llista de package-spec-NI per fer coincidir (sense distinció entre "
+"majúscules i minúscules)"
+
+#: commands/list/list.cpp:62
+msgid "Show all versions of the packages, not only the latest ones."
+msgstr "Mostra totes les versions dels paquets, no solament les més recents."
+
+#: commands/list/list.cpp:70
+msgid "List installed packages."
+msgstr "Llista els paquets instal·lats."
+
+#: commands/list/list.cpp:74
+msgid "List available packages."
+msgstr "Llista els paquets disponibles."
+
+#: commands/list/list.cpp:81
+msgid ""
+"List extras, that is packages installed on the system that are not available "
+"in any known repository."
+msgstr ""
+"Llista els paquets extra, és a dir, els paquets instal·lats al sistema que "
+"no estan disponibles en cap repositori conegut."
+
+#: commands/list/list.cpp:89
+msgid ""
+"List packages installed on the system that are obsoleted by packages in any "
+"known repository."
+msgstr ""
+"Llista els paquets instal·lats al sistema que són obsolets per altres "
+"paquets de qualsevol repertori conegut."
+
+#: commands/list/list.cpp:94
+msgid "List packages recently added into the repositories."
+msgstr "Llista els paquets afegits recentment als repositoris."
+
+#: commands/list/list.cpp:98
+msgid "List upgrades available for the installed packages."
+msgstr "Llista les actualitzacions disponibles dels paquets instal·lats."
+
+#: commands/list/list.cpp:102
+msgid "List packages which will be removed by the 'dnf autoremove' command."
+msgstr ""
+"Llista els paquets que seran esborrats per la comanda 'dnf autoremove'."
+
+#: commands/list/list.cpp:203 commands/list/list.cpp:208
+msgid "Installed packages"
+msgstr "Paquets instal·lats"
+
+#: commands/list/list.cpp:204 commands/list/list.cpp:217
+msgid "Available packages"
+msgstr "Paquets disponibles"
+
+#: commands/list/list.cpp:225
+msgid "Available upgrades"
+msgstr "Actualitzacions disponibles"
+
+#: commands/list/list.cpp:241
+msgid "Obsoleting packages"
+msgstr "Es degraden paquets"
+
+#: commands/list/list.cpp:246
+msgid "Autoremove packages"
+msgstr "Supressió automàtica de paquets"
+
+#: commands/list/list.cpp:250
+msgid "Extra packages"
+msgstr "Paquets addicionals"
+
+#: commands/list/list.cpp:261
+msgid "Recently added packages"
+msgstr "Paquets recentment afegits"
+
+#: commands/list/list.cpp:266
+msgid "No matching packages to list"
+msgstr "No hi ha paquets coincidents per llistar"
+
+#: commands/mark/mark.cpp:38
+msgid "Change the reason of an installed package"
+msgstr "Canvia la raó d'un paquet instal·lat"
+
+#: commands/module/arguments.hpp:36
+msgid "Show enabled modules."
+msgstr "Mostra els mòduls habilitats."
+
+#: commands/module/arguments.hpp:43
+msgid "Show disabled modules."
+msgstr "Mostra els mòduls deshabilitats."
+
+#: commands/module/arguments.hpp:50
+msgid "Pattern matching module NSVCAs."
+msgstr "Patró coincident amb NSVCAs del mòdul."
+
+#: commands/module/module.cpp:43
+msgid "Manage modules"
+msgstr "Gestiona els mòduls"
+
+#: commands/module/module_list.cpp:85
+msgid "No matches found for \"{}\"."
+msgstr "Cap coincidència amb \"{}\"."
+
+#: commands/offline/offline.cpp:217
+msgid "Manage offline transactions"
+msgstr "Gestiona les transaccions fora de línia"
+
+#: commands/offline/offline.cpp:249
+msgid ""
+"Error reading state: {}. Rerun the command you used to initiate the offline "
+"transaction, e.g. `dnf5 system-upgrade download [OPTIONS]`."
+msgstr ""
+"Error llegint l'estat: {}. Torna a executar l'ordre que has just per iniciar "
+"la transacció fora de línia, p.e. `dnf5 system-upgrade download [OPCIONS]`."
+
+#: commands/offline/offline.cpp:272
+msgid "Couldn't connect to D-Bus: {}"
+msgstr "No s'ha pogut connectar al D-Bus: {}"
+
+#: commands/offline/offline.cpp:303
+msgid ""
+"Prepare the system to perform the offline transaction and reboot to start "
+"the transaction."
+msgstr ""
+"Prepara el sistema per fer la transacció fora de línia i el reinicia per "
+"començar la transacció."
+
+#: commands/offline/offline.cpp:310
+msgid "Power off the system after the operation is complete"
+msgstr "Apaga el sistema després que l'operació hagi completat"
+
+#: commands/offline/offline.cpp:321
+msgid "No offline transaction is stored."
+msgstr "No hi ha cap transacció desada."
+
+#: commands/offline/offline.cpp:329
+msgid "System is not ready for offline transaction."
+msgstr "El sistema no està preparat per una transacció fora de línia."
+
+#: commands/offline/offline.cpp:332
+msgid "Data directory {} does not exist."
+msgstr "El directori de dades {} no existeix."
+
+#: commands/offline/offline.cpp:357
+msgid "{} is not wanted by system-update.target."
+msgstr "{} no és requerit per system-update.target."
+
+#: commands/offline/offline.cpp:367
+msgid "The system will now reboot to upgrade to release version {}."
+msgstr "Ara el sistema es reiniciarà per actualitzar a la versió {}."
+
+#: commands/offline/offline.cpp:371
+msgid ""
+"The system will now reboot to perform the offline transaction initiated by "
+"the following command:"
+msgstr ""
+"Ara el sistema es reiniciarà per fer la transacció fora de línia iniciada "
+"per l'ordre següent:"
+
+#: commands/offline/offline.cpp:402
+msgid ""
+"Internal use only, not intended to be run by the user. Execute the "
+"transaction in the offline environment."
+msgstr ""
+"Només per a ús intern, no destinat a ser executat per l'usuari. Executeu la "
+"transacció a l'entorn fora de línia."
+
+#: commands/offline/offline.cpp:436
+msgid "Trigger file does not exist. Exiting."
+msgstr "El fitxer activador no existeix. Se'n surt."
+
+#: commands/offline/offline.cpp:440
+msgid "Another offline transaction tool is running. Exiting."
+msgstr ""
+"S'està executant una altra eina de transaccions fora de línia. Sortint."
+
+#: commands/offline/offline.cpp:467
+msgid "Starting offline transaction. This will take a while."
+msgstr "S'inicia la transacció fora de línia. Això trigarà una estona."
+
+#: commands/offline/offline.cpp:471
+msgid "Starting system upgrade. This will take a while."
+msgstr "S'inicia l'actualització del sistema. Això trigarà una estona."
+
+#: commands/offline/offline.cpp:483
+msgid "Use `dnf5 offline reboot` to begin the transaction."
+msgstr "Useu 'dnf5 offline reboot' per començar la transacció."
+
+#: commands/offline/offline.cpp:534
+msgid "Transaction failed: "
+msgstr "Ha fallat la transacció: "
+
+#: commands/offline/offline.cpp:604
+msgid "Error reading journal: {}"
+msgstr "Error en llegir el diari: {}"
+
+#: commands/offline/offline.cpp:610
+msgid "Add journal match failed: {}"
+msgstr "Ha fallat afegir la coincidència del diari: {}"
+
+#: commands/offline/offline.cpp:638
+msgid "No logs were found."
+msgstr "No s'ha trobat cap registre."
+
+#: commands/offline/offline.cpp:642
+msgid "The following boots appear to contain offline transaction logs:"
+msgstr ""
+"Les arrencades següents semblen contenir registres de transaccions fora de "
+"línia:"
+
+#: commands/offline/offline.cpp:659
+msgid "Cannot find logs with this index."
+msgstr "No es pot trobar cap registre amb aquest índex."
+
+#: commands/offline/offline.cpp:666
+msgid "Unable to match systemd journal entry."
+msgstr "No es pot fer coincidir l'entrada de diari del sistema."
+
+#: commands/offline/offline.cpp:678
+msgid "Show logs from past offline transactions"
+msgstr "Mostra els registres de transaccions fora de línia anteriors"
+
+#: commands/offline/offline.cpp:686
+msgid ""
+"Which log to show. Run without any arguments to get a list of available logs."
+msgstr ""
+"Quin registre mostrar. Executeu-ho sense cap argument per obtenir una llista "
+"dels registres disponibles."
+
+#: commands/offline/offline.cpp:701
+msgid ""
+"systemd is not supported in this build of DNF 5; the `log` subcommand is "
+"unavailable."
+msgstr ""
+"systemd no és compatible amb aquesta compilació de DNF 5; la subordre 'log' "
+"no està disponible."
+
+#: commands/offline/offline.cpp:706
+msgid "Show status of the current offline transaction"
+msgstr "Mostra l'estat de la transacció fora de línia actual"
+
+#: commands/offline/offline.cpp:722
+msgid "An offline transaction was initiated by the following command:"
+msgstr "S'ha iniciat una transacció fora de línia amb l'ordre següent:"
+
+#: commands/offline/offline.cpp:724
+msgid ""
+"Run `dnf5 offline reboot` to reboot and perform the offline transaction."
+msgstr ""
+"Executeu 'dnf5 offline reboot' per reiniciar i fer la transacció fora de "
+"línia."
+
+#: commands/offline/offline.cpp:726
+msgid ""
+"An offline transaction was started, but it did not finish. Run `dnf5 offline "
+"log` for more information. The command that initiated the transaction was:"
+msgstr ""
+"S'ha iniciat una transacció fora de línia, però no s'ha acabat. Executeu "
+"'dnf5 offline log' per obtenir més informació. L'ordre que ha iniciat la "
+"transacció:"
+
+#: commands/offline/offline.cpp:731
+msgid "Unknown offline transaction status: "
+msgstr "Estat desconegut de la transacció fora de línia: "
+
+#: commands/provides/provides.cpp:48
+msgid "Find what package provides the given value"
+msgstr "Troba quin paquet proporciona el valor donat"
+
+#: commands/reinstall/reinstall.cpp:42
+msgid "Reinstall software"
+msgstr "Reinstal·la programari"
+
+#: commands/remove/remove.cpp:42
+msgid "Remove (uninstall) software"
+msgstr "Suprimeix (desinstal·la) programari"
+
+#: commands/replay/replay.cpp:38
+msgid "Replay a transaction that was previously stored to a directory"
+msgstr ""
+"Reprodueix una transacció que s'ha emmagatzemat anteriorment en un directori"
+
+#: commands/repo/arguments.hpp:35
+msgid "Show all repositories."
+msgstr "Mostra tots els dipòsits."
+
+#: commands/repo/arguments.hpp:42
+msgid "Show enabled repositories (default)."
+msgstr "Mostra els dipòsits activats (per defecte)."
+
+#: commands/repo/arguments.hpp:49
+msgid "Show disabled repositories."
+msgstr "Mostra els dipòsits desactivats."
+
+#: commands/repo/arguments.hpp:56
+msgid "Pattern matching repo IDs."
+msgstr "Identificadors de repositoris que coincideixen amb el patró."
+
+#: commands/repo/repo.cpp:38
+msgid "Manage repositories"
+msgstr "Gestioneu els dipòsits"
+
+#: commands/repoquery/repoquery.cpp:82
+msgid "Search for packages matching various criteria"
+msgstr "Cerca paquets que coincideixen amb diversos criteris"
+
+#: commands/repoquery/repoquery.cpp:525
+msgid ""
+"Option \"--exactdeps\" has to be used either with \"--whatrequires\" or \"--"
+"whatdepends\""
+msgstr ""
+"L'opció \"--exactdeps\" s'ha d'usar amb \"--whatrequires\" o \"--"
+"whatdepends\""
+
+#: commands/repoquery/repoquery.cpp:530
+msgid ""
+"Option \"--recursive\" has to be used either with \"--whatrequires\" or \"--"
+"providers-of=requires\""
+msgstr ""
+"L'opció \"--recursive\" s'ha d'usar amb \"--whatrequires\" o \"--providers-"
+"of=requires\""
+
+#: commands/search/arguments.hpp:37
+msgid "Search also package description and URL."
+msgstr "Cerca també la descripció del paquet i l'URL."
+
+#: commands/search/arguments.hpp:45
+msgid "Patterns"
+msgstr "Patrons"
+
+#: commands/search/search.cpp:44
+msgid "Search for software matching all specified strings"
+msgstr "Cerca programari que coincideixi amb totes les cadenes especificades"
+
+#: commands/swap/swap.cpp:44
+msgid "Remove software and install another in one transaction"
+msgstr "Suprimeix programari i n'instal·la un altre en una transacció"
+
+#: commands/system-upgrade/system-upgrade.cpp:56
+msgid "Prepare system for upgrade to a new release"
+msgstr "Es prepara el sistema per actualitzar-lo a una versió nova"
+
+#: commands/system-upgrade/system-upgrade.cpp:72
+msgid "Download everything needed to upgrade to a new release"
+msgstr "Es baixa tot el necessari per actualitzar a una versió nova"
+
+#: commands/system-upgrade/system-upgrade.cpp:80
+msgid ""
+"Do not install packages from the new release if they are older than what is "
+"currently installed"
+msgstr ""
+"No s'instal·len paquets de la nova versió si són més antics que el que està "
+"instal·lat actualment"
+
+#: commands/system-upgrade/system-upgrade.cpp:101
+msgid "Need a --releasever greater than the current system version."
+msgstr "Cal un --releasever més elevat que la versió actual del sistema."
+
+#: commands/system-upgrade/system-upgrade.cpp:150
+msgid "Store a distro-sync transaction to be performed offline"
+msgstr ""
+"Desa una transacció de sincronització de distribució per fer-la fora de línia"
+
+#: commands/system-upgrade/system-upgrade.cpp:172
+msgid "Store an upgrade transaction to be performed offline"
+msgstr "Desa una transacció d'actualització per fer-la fora de línia"
+
+#: commands/upgrade/upgrade.cpp:43
+msgid "Upgrade software"
+msgstr "Actualitza el programari"
+
+#: commands/upgrade/upgrade.cpp:50
+msgid ""
+"Upgrade packages only to the lowest versions that fix advisories of type "
+"bugfix, enhancement, security, or newpackage. In case that any option "
+"limiting advisories is used it upgrades packages only to the lowest versions "
+"that fix advisories that matching selected advisory property"
+msgstr ""
+"Actualitza els paquets només a les versions més baixes que corregeixen "
+"avisos d'errors, que tenen a veure amb millores, seguretat o paquets nous. "
+"En cas que s'usi qualsevol opció que limiti els avisos, actualitza els "
+"paquets només a les versions més baixes que solucionen els avisos que "
+"coincideixen amb la propietat d'assessorament seleccionada"
+
+#. TODO(mblaha): add full command line
+#: commands/versionlock/utils.cpp:35
+msgid "Added by 'versionlock {}' command on {}"
+msgstr "Afegit per l'ordre versionlock {} a {}"
+
+#: commands/versionlock/versionlock.cpp:40
+msgid "Manage versionlock configuration"
+msgstr "Gestioneu la configuració de blocatge de versions"
+
+#: commands/versionlock/versionlock_add.cpp:37
+msgid "Add new entry to versionlock configuration"
+msgstr "Afegeix una entrada nova a la configuració de blocatge de versions"
+
+#: commands/versionlock/versionlock_add.cpp:44
+msgid "List of package package-spec-N to add versionlock for"
+msgstr ""
+"Llista de paquets package-spec-N per als quals afegir blocatge de versió"
+
+#: commands/versionlock/versionlock_add.cpp:107
+#: commands/versionlock/versionlock_exclude.cpp:126
+msgid "No package found for \"{}\"."
+msgstr "No s'ha trobat cap paquet per a \"{}\"."
+
+#: commands/versionlock/versionlock_add.cpp:134
+msgid "Adding versionlock on \"{0} = {1}\"."
+msgstr "S'afegeix el blocatge de versió a \"{0} = {1}\"."
+
+#: commands/versionlock/versionlock_add.cpp:137
+msgid "Package \"{}\" is already locked."
+msgstr "El paquet {} ja està blocat."
+
+#: commands/versionlock/versionlock_clear.cpp:32
+msgid "Remove all entries from versionlock configuration"
+msgstr ""
+"Suprimeix totes les entrades de la configuració del blocatge de versions"
+
+#: commands/versionlock/versionlock_delete.cpp:35
+msgid "Remove any matching versionlock configuration entries"
+msgstr ""
+"Suprimeix les entrades de configuració coincidents del blocatge de versions"
+
+#: commands/versionlock/versionlock_delete.cpp:41
+msgid "List of package specs to remove versionlock for"
+msgstr ""
+"Llista d'especificacions del paquet per suprimir del blocatge de versions"
+
+#: commands/versionlock/versionlock_delete.cpp:55
+msgid "Deleting versionlock entry:"
+msgstr "Se suprimeix l'entrada del blocatge de versions:"
+
+#: commands/versionlock/versionlock_exclude.cpp:37
+msgid "Add new exclude entry to versionlock configuration"
+msgstr ""
+"Afegeix una nova entrada d'exclusió a la configuració del blocatge de "
+"versions"
+
+#: commands/versionlock/versionlock_exclude.cpp:44
+msgid "List of package-spec-N to add versionlock exclude for"
+msgstr ""
+"Llista de package-spec-N per als quals afegir l'exclusió de blocatge de "
+"versió"
+
+#: commands/versionlock/versionlock_exclude.cpp:89
+#: commands/versionlock/versionlock_exclude.cpp:101
+msgid "Adding versionlock exclude on \"{0} = {1}\"."
+msgstr "S'afegeix l'exclusió de blocatge de versions a {0} = {1}."
+
+#: commands/versionlock/versionlock_exclude.cpp:140
+msgid "Package \"{}\" is already excluded."
+msgstr "El paquet {} ja està exclòs."
+
+#: context.cpp:73
+msgid "Importing OpenPGP key 0x{}:\n"
+msgstr "S'importa la clau OpenPGP 0x{}:\n"
+
+#: context.cpp:75 context.cpp:100
+msgid " UserID     : \"{}\"\n"
+msgstr " ID d'usuari     : {}\n"
+
+#: context.cpp:78
+msgid ""
+" Fingerprint: {}\n"
+" From       : {}\n"
+msgstr ""
+" Empremta: {}\n"
+" De       : {}\n"
+
+#: context.cpp:87
+msgid "The key was successfully imported."
+msgstr "La clau s'ha importat correctament."
+
+#: context.cpp:96
+msgid "The following OpenPGP key (0x{}) is about to be removed:"
+msgstr "La següent clau OpenPGP (0x{}) està a punt de suprimir-se:"
+
+#: context.cpp:98
+msgid " Reason     : {}\n"
+msgstr " Raó     : {}\n"
+
+#: context.cpp:102
+msgid " Fingerprint: {}\n"
+msgstr " Empremta: {}\n"
+
+#: context.cpp:104
+msgid "As a result, installing packages signed with this key will fail."
+msgstr ""
+"Com a resultat, la instal·lació de paquets signats amb aquesta clau fallarà."
+
+#: context.cpp:105
+msgid "It is recommended to remove the expired key to allow importing"
+msgstr "Es recomana suprimir la clau caducada per permetre la importació"
+
+#: context.cpp:106
+msgid ""
+"an updated key. This might leave already installed packages unverifiable."
+msgstr ""
+"d'una clau actualitzada. Això pot deixar els paquets ja instal·lats com a no "
+"verificables."
+
+#: context.cpp:109
+msgid "The system will now proceed with removing the key."
+msgstr "Ara el sistema procedirà a suprimir la clau."
+
+#: context.cpp:115
+msgid "Key 0x{} was successfully removed."
+msgstr "La clau 0x{} s'ha suprimit correctament."
+
+#: context.cpp:295
+msgid "setopt: \"{}.{}\": {}"
+msgstr "setopt: \"{}.{}\": {}"
+
+#: context.cpp:305
+msgid ""
+"No matching repositories for {}. To use repositories from a host system, "
+"pass --use-host-config option"
+msgstr ""
+"No hi ha dipòsits coincidents per a {}. Per usar dipòsits d'un sistema "
+"amfitrió, apliqueu l'opció --use-host-config"
+
+#: context.cpp:309
+msgid "No matching repositories for {}"
+msgstr "No hi ha dipòsits coincidents per a {}"
+
+#: context.cpp:355
+msgid "Updating and loading repositories:"
+msgstr "Actualització i càrrega de dipòsits:"
+
+#: context.cpp:365
+msgid "Repositories loaded."
+msgstr "Dipòsits carregats."
+
+#: context.cpp:371
+msgid "Testing offline transaction"
+msgstr "Es prova la transacció fora de línia"
+
+#: context.cpp:375 context.cpp:523
+msgid "Transaction failed: {}"
+msgstr "Ha fallat la transacció: {}"
+
+#: context.cpp:380 context.cpp:528
+msgid "  - {}"
+msgstr "  - {}"
+
+#: context.cpp:447
+msgid ""
+"Location \"{}\" already contains a stored transaction, it will be "
+"overwritten."
+msgstr "La ubicació {} ja conté una transacció desada. Se sobreescriurà."
+
+#: context.cpp:476
+msgid ""
+"There is already an offline transaction queued, initiated by the following "
+"command:"
+msgstr ""
+"Ja hi ha una transacció fora de línia a la cua, iniciada per l'ordre següent:"
+
+#: context.cpp:478
+msgid ""
+"Continuing will cancel the old offline transaction and replace it with this "
+"one."
+msgstr ""
+"Si continueu, es cancel·larà transacció anterior fora de línia i la "
+"substituirà per aquesta."
+
+#: context.cpp:496
+msgid ""
+"Transaction stored to be performed offline. Run `dnf5 offline reboot` to "
+"reboot and run the transaction. To cancel the transaction and delete the "
+"downloaded files, use `dnf5 offline clean`."
+msgstr ""
+"Transacció desada per fer-la fora de línia. Executeu 'dnf5 offline reboot' "
+"per reiniciar i executar la transacció. Per cancel·lar la transacció i "
+"suprimir els fitxers baixats, useu 'dnf5 offline clean'."
+
+#: context.cpp:502
+msgid "Running transaction"
+msgstr "S'executa la transacció"
+
+#: context.cpp:820
+msgid "Upgrading {}"
+msgstr "S'actualitza {}"
+
+#: context.cpp:823
+msgid "Downgrading {}"
+msgstr "Es degrada {}"
+
+#: context.cpp:826
+msgid "Reinstalling {}"
+msgstr "Es reinstal·la {}"
+
+#: context.cpp:839
+msgid "Unexpected action in TransactionPackage: {}"
+msgstr "Acció inesperada a TransactionPackage: {}"
+
+#: context.cpp:845
+msgid "Installing {}"
+msgstr "S'instal·la {}"
+
+#: context.cpp:866
+msgid "Prepare transaction"
+msgstr "Es prepara la transacció"
+
+#: context.cpp:886
+msgid "Removing {}"
+msgstr "Se suprimeix {}"
+
+#: context.cpp:889
+msgid "Cleanup {}"
+msgstr "Es neteja {}"
+
+#: context.cpp:907
+msgid "Unpack error: {}"
+msgstr "Error de desempaquetat: {}"
+
+#: context.cpp:915
+msgid "Cpio error: {}"
+msgstr "Error de Cpio: {}"
+
+#: context.cpp:925
+msgid "Scriptlet output:"
+msgstr "Sortida de l'scriptlet:"
+
+#: context.cpp:948
+msgid "Running scriptlets"
+msgstr "Executant scriptlets"
+
+#: context.cpp:953
+msgid "Running {} scriptlet: {}"
+msgstr "Executant l'scriptlet de {}: {}"
+
+#: context.cpp:968
+msgid "Finished {} scriptlet: {}"
+msgstr "S'ha acabat l'scriptlet de {} : {}"
+
+#: context.cpp:974
+msgid "Non-critical error in {} scriptlet: {}"
+msgstr "Error no crític a l'scriptlet de {} : {}"
+
+#: context.cpp:983
+msgid "Error in {} scriptlet: {}"
+msgstr "Error a l'scriptlet de {}: {}"
+
+#: context.cpp:1018
+msgid "Verify package files"
+msgstr "Verificació dels fitxers dels paquets"
+
+#: library.cpp:33
+msgid "Cannot load shared library \"{}\": {}"
+msgstr "No es pot carregar la biblioteca compartida {}: {}"
+
+#: library.cpp:47
+msgid "Cannot obtain address of symbol \"{}\": {}"
+msgstr "No es pot obtenir l'adreça del símbol {}: {}"
+
+#: main.cpp:133
+msgid "Utility for packages maintaining"
+msgstr "Utilitat per al manteniment de paquets"
+
+#: main.cpp:134
+msgid "DNF5 is a program for maintaining packages."
+msgstr "DNF5 és un programa per a mantenir paquets."
+
+#: main.cpp:135
+msgid "Unclassified options:"
+msgstr "Opcions no classificades:"
+
+#: main.cpp:138
+msgid "Global options:"
+msgstr "Opcions globals:"
+
+#: main.cpp:143
+msgid "Print help"
+msgstr "Imprimeix l'ajuda"
+
+#: main.cpp:150
+msgid "Configuration file location"
+msgstr "Ubicació del fitxer de configuració"
+
+#: main.cpp:158
+msgid ""
+"In combination with a non-interactive command, shows just the relevant "
+"content. Suppresses messages notifying about the current state or actions of "
+"dnf5."
+msgstr ""
+"En combinació amb una ordre no interactiva, només mostra el contingut "
+"rellevant. Suprimeix els missatges que notifiquin sobre l'estat actual o les "
+"accions del dnf5."
+
+#: main.cpp:173
+msgid ""
+"Run entirely from system cache, don't update the cache and use it even in "
+"case it is expired."
+msgstr ""
+"Executa completament des de la memòria cau del sistema, no actualitza la "
+"memòria cau i l'usa fins i tot en cas que hagi caducat."
+
+#: main.cpp:182
+msgid "Control whether color is used."
+msgstr "Controla si s'usa el color."
+
+#: main.cpp:188
+msgid "Force refreshing metadata before running the command."
+msgstr "Força l'actualització de metadades abans d'executar l'ordre."
+
+#: main.cpp:204
+msgid "Failed to expire repository cache in path \"{0}\": {1}"
+msgstr "No s'ha pogut fer caducar la memòria cau del dipòsit al camí {0}: {1}"
+
+#: main.cpp:218
+msgid "create additional repository using id and path"
+msgstr "crea un repositori addicional amb id i camí"
+
+#: main.cpp:226
+msgid "repofrompath: Incorrect repoid and path specification \"{}\""
+msgstr "reporompath: repoid i especificació del camí incorrectes: {}"
+
+#: main.cpp:238
+msgid "set arbitrary config and repo options"
+msgstr "estableix les opcions arbitràries «config» i «repo»"
+
+#: main.cpp:240
+msgid ""
+"Override a configuration option from the configuration file. To override "
+"configuration options for repositories, use repoid.option for  the\n"
+"              <option>.  Values  for configuration options like excludepkgs, "
+"includepkgs, installonlypkgs and tsflags are appended to the original "
+"value,\n"
+"              they do not override it. However, specifying an empty value (e."
+"g. --setopt=tsflags=) will clear the option."
+msgstr ""
+"Substitueix una opció de configuració del fitxer de configuració. Per "
+"anul·lar les opcions de configuració dels dipòsits, useu repoid.option:\n"
+"              <opció>.  Els valors d'opcions de configuració com ara "
+"excludepkgs, includepkgs, installonlypkgs i tsflags s'afegeixen al valor "
+"original.\n"
+"              no l'anul·len. Tanmateix, si s'especifica un valor buit (per "
+"exemple, --setopt=tsflags=) s'esborrarà l'opció."
+
+#: main.cpp:249 main.cpp:288
+msgid "{}: Badly formatted argument value \"{}\""
+msgstr "{}: format incorrecte del valor de l'argument \"{}\""
+
+#: main.cpp:256
+msgid ""
+"{}: Badly formatted argument value: Last key character cannot be '.': {}"
+msgstr ""
+"{}: valor de l'argument incorrecte: l'últim caràcter clau no pot ser '.': {}"
+
+#: main.cpp:269
+msgid "setopt: \"{0}\": {1}"
+msgstr "setopt: '{0}': {1}"
+
+#: main.cpp:281
+msgid "set arbitrary variable"
+msgstr "estableix una variable arbitrària"
+
+#: main.cpp:295
+msgid "setvar: {}"
+msgstr "setvar: {}"
+
+#: main.cpp:304
+msgid "automatically answer yes for all questions"
+msgstr "respon automàticament SÍ a totes les preguntes"
+
+#: main.cpp:311
+msgid "automatically answer no for all questions"
+msgstr "respon automàticament NO a totes les preguntes"
+
+#: main.cpp:318
+msgid "try the best available package versions in transactions"
+msgstr "prova les millors versions de paquets disponibles a les transaccions"
+
+#: main.cpp:325
+msgid "do not limit the transaction to the best candidate"
+msgstr "no limitis la transacció al millor candidat"
+
+#: main.cpp:336
+msgid ""
+"Don't install files that are marked as documentation (which includes man "
+"pages and texinfo documents)"
+msgstr ""
+"No instal·lis fitxers marcats com a documentació (que inclou pàgines man i "
+"documents texinfo)"
+
+#: main.cpp:352
+msgid "exclude packages by name or glob"
+msgstr "exclou els paquets per nom o glob"
+
+#: main.cpp:371
+msgid ""
+"Enable additional repositories. List option. Supports globs, can be "
+"specified multiple times."
+msgstr ""
+"Habilita dipòsits addicionals. Té opció de llista. Admet globs, es pot "
+"especificar diverses vegades."
+
+#: main.cpp:389
+msgid ""
+"Disable repositories. List option. Supports globs, can be specified multiple "
+"times."
+msgstr ""
+"Inhabilita dipòsits addicionals. Té opció de llista. Admet globs, es pot "
+"especificar diverses vegades."
+
+#: main.cpp:407
+msgid ""
+"Enable just specific repositories. List option. Supports globs, can be "
+"specified multiple times."
+msgstr ""
+"Habilita només dipòsits específics. Té opció de llista. Admet globs, es pot "
+"especificar diverses vegades."
+
+#: main.cpp:429
+msgid "disable OpenPGP signature checking (if RPM policy allows)"
+msgstr ""
+"inhabilita la comprovació de signatura OpenPGP (si la política d'RPM ho "
+"permet)"
+
+#: main.cpp:446
+msgid "Disable all libdnf5 plugins"
+msgstr "Inhabilita tots els connectors de libdnf5"
+
+#: main.cpp:456
+msgid ""
+"Enable libdnf5 plugins by name. List option. Supports globs, can be "
+"specified multiple times."
+msgstr ""
+"Habilita els connectors de libdnf5 pel nom. Té opció de llista. Admet globs, "
+"es pot especificar diverses vegades."
+
+#: main.cpp:471
+msgid ""
+"Disable libdnf5 plugins by name. List option. Supports globs, can be "
+"specified multiple times."
+msgstr ""
+"Inhabilita els connectors de libdnf5 pel nom. Té opció de llista. Admet "
+"globs, es pot especificar diverses vegades."
+
+#: main.cpp:488
+msgid "add a comment to transaction"
+msgstr "afegeix un comentari a la transacció"
+
+#: main.cpp:490
+msgid ""
+"Adds a comment to the action. If a transaction takes place, the comment is "
+"stored in it."
+msgstr ""
+"Afegeix un comentari a l'acció. Si es fa una transacció, el comentari s'hi "
+"desa."
+
+#: main.cpp:503
+msgid "set install root"
+msgstr "estableix l'arrel de la instal·lació"
+
+#: main.cpp:510
+msgid ""
+"use configuration, reposdir, and vars from the host system rather than the "
+"installroot"
+msgstr ""
+"usa la configuració, reposdir i vars del sistema amfitrió en lloc de l'arrel "
+"de la instal·lació"
+
+#: main.cpp:519
+msgid "override the value of $releasever in config and repo files"
+msgstr "substitueix el valor de $releasever als fitxers config i repo"
+
+#: main.cpp:532
+msgid ""
+"Show newly installed leaf packages and packages that became leaves after a "
+"transaction."
+msgstr ""
+"Mostra els paquets de fulles recentment instal·lats i els paquets que es van "
+"convertir en fulles després d'una transacció."
+
+#: main.cpp:546
+msgid "Dump detailed solving results into files"
+msgstr "Aboca els resultats detallats de la resolució en fitxers"
+
+#: main.cpp:555
+msgid "Print main configuration values to stdout"
+msgstr "Imprimeix els valors de configuració principals a la sortida estàndard"
+
+#: main.cpp:572
+msgid ""
+"Print repository configuration values to stdout. List option. Supports globs"
+msgstr ""
+"Imprimeix els valors de configuració del dipòsit a la sortida estàndard. Té "
+"opció de llista. Admet globs"
+
+#: main.cpp:587
+msgid "Print variable values to stdout"
+msgstr "Imprimeix els valors de les variables a la sortida estàndard"
+
+#: main.cpp:601
+msgid "Show DNF5 version and exit"
+msgstr "Mostra la versió de DNF5 i surt"
+
+#: main.cpp:608
+msgid "Force the use of a different architecture."
+msgstr "Força l'ús d'una arquitectura diferent."
+
+#: main.cpp:646
+msgid "Software Management Commands:"
+msgstr "Ordres de gestió de programari:"
+
+#: main.cpp:653
+msgid "Query Commands:"
+msgstr "Ordres de consulta:"
+
+#: main.cpp:660
+msgid "Subcommands:"
+msgstr "Subordres:"
+
+#: main.cpp:759
+msgid "{} version {}.{}.{}.{}"
+msgstr "{} versió {}.{}.{}.{}"
+
+#: main.cpp:762
+msgid "{} plugin API version {}.{}"
+msgstr "{} versió de l'API del connector {}.{}"
+
+#: main.cpp:767
+msgid "libdnf5 version {}.{}.{}.{}"
+msgstr "versió de libdnf5 {}.{}.{}.{}"
+
+#: main.cpp:770
+msgid "libdnf5 plugin API version {}.{}"
+msgstr "versió de l'API del connector de libdnf5 {}.{}"
+
+#: main.cpp:777
+msgid ""
+"\n"
+"Loaded {} plugins:"
+msgstr ""
+"\n"
+"S'han carregat {} connectors:"
+
+#: main.cpp:782
+msgid "  name: {}"
+msgstr "  nom: {}"
+
+#: main.cpp:785
+msgid "  version: {}.{}.{}"
+msgstr "  versió: {}.{}.{}"
+
+#: main.cpp:787
+msgid "  API version: {}.{}"
+msgstr "  Versió de l'API: {}.{}"
+
+#: main.cpp:825
+msgid ""
+"Total size of inbound packages is {:.0f} {:s}. Need to download {:.0f} {:s}."
+msgstr ""
+"La mida total dels paquets entrants és {:.0f} {:s}. Cal baixar {:.0f} {:s}."
+
+#: main.cpp:842
+msgid ""
+"After this operation, {:.0f} {:s} extra will be used (install {:.0f} {:s}, "
+"remove {:.0f} {:s})."
+msgstr ""
+"Després d'aquesta operació, s'usaran {:.0f} {:s} addicionals ({:.0f} "
+"d'instal·lació {:s}, {:.0f} {:s} de supressió)."
+
+#: main.cpp:853
+msgid ""
+"After this operation, {:.0f} {:s} will be freed (install {:.0f} {:s}, remove "
+"{:.0f} {:s})."
+msgstr ""
+"Després d'aquesta operació, s'alliberaran {:.0f} {:s} ({:.0f} d'instal·lació "
+"{:s}, {:.0f} {:s} de supressió)."
+
+#: main.cpp:865
+msgid "======== Main configuration: ========"
+msgstr "======== Configuració principal: ========"
+
+#: main.cpp:902
+msgid "No matching repo to dump configuration: \"{}\""
+msgstr ""
+"No hi ha cap dipòsit que coincideixi amb la configuració d'abocament: {}"
+
+#: main.cpp:907
+msgid "======== \"{}\" repository configuration: ========"
+msgstr "======== Configuració del dipòsit {}: ========"
+
+#: main.cpp:927
+msgid "======== Variables: ========"
+msgstr "======== Variables: ========"
+
+#: main.cpp:967
+msgid "New leaves:"
+msgstr "Abandonaments nous:"
+
+#: main.cpp:969
+msgid " {}"
+msgstr " {}"
+
+#: main.cpp:1013
+msgid "{} to skip unavailable packages"
+msgstr "{} per ometre paquets no disponibles"
+
+#: main.cpp:1021
+msgid "{} to allow extra packages in the transaction"
+msgstr "{} per permetre paquets addicionals a la transacció"
+
+#: main.cpp:1034
+msgid ""
+"{} to allow mismatches between installed and stored transaction packages. "
+"This can result in an empty transaction because among other things the "
+"option can ignore failing Remove actions."
+msgstr ""
+"{} per permetre desajustos entre els paquets instal·lats i els de "
+"transaccions desades. Això pot resultar en una transacció buida perquè, "
+"entre altres coses, l'opció pot ignorar les accions de supressió fallides."
+
+#: main.cpp:1081
+msgid "{} to not limit the transaction to the best candidates"
+msgstr "{} per no limitar la transacció als millors candidats"
+
+#: main.cpp:1088
+msgid "{} to allow removing of installed packages to resolve problems"
+msgstr ""
+"{} per permetre la supressió de paquets instal·lats per resoldre problemes"
+
+#: main.cpp:1097
+msgid "{} to load additional filelists metadata"
+msgstr "{} per carregar metadades addicionals de llistes de fitxers"
+
+#: main.cpp:1104
+msgid "{} to skip uninstallable packages"
+msgstr "{} per ometre paquets desinstal·lables"
+
+#: main.cpp:1110
+msgid "You can try to add to command line:"
+msgstr "Podeu provar d'afegir el següent a la línia d'ordres:"
+
+#: main.cpp:1128
+msgid ""
+"No matches were found for the following plugin name patterns while enabling "
+"libdnf plugins: {}"
+msgstr ""
+"No s'han trobat coincidències per als patrons de nom de connectors següents "
+"mentre s'habilitaven els connectors de libdnf: {}"
+
+#: main.cpp:1129
+msgid ""
+"No matches were found for the following plugin name patterns while disabling "
+"libdnf plugins: {}"
+msgstr ""
+"No s'han trobat coincidències per als patrons de nom de connectors següents "
+"mentre s'inhabilitaven els connectors de libdnf: {}"
+
+#: main.cpp:1226
+msgid "--- DNF5 launched with arguments: \"{}\" ---"
+msgstr "--- DNF5 llançat amb arguments: {} ---"
+
+#: main.cpp:1262
+msgid "Invalid \"index\" in \"--complete=<index>[,...]\": {}"
+msgstr "Índex no vàlid a \"--complete=<index>[,...]\": {}"
+
+#: main.cpp:1301
+msgid "{}."
+msgstr "{}."
+
+#: main.cpp:1304 main.cpp:1556
+msgid "{}. Add \"--help\" for more information about the arguments."
+msgstr "{}. Afegiu '--help' per obtenir més informació sobre els arguments."
+
+#: main.cpp:1313
+msgid ""
+"It could be a command provided by a plugin, try: dnf5 install 'dnf5-"
+"command({})'"
+msgstr ""
+"Pot ser una ordre proporcionada per un connector, proveu: dnf5 install 'dnf5-"
+"command({})'"
+
+#: main.cpp:1355
+msgid ""
+"The argument is available for commands: {}. (It has to be placed after the "
+"command.)"
+msgstr ""
+"L'argument està disponible per a les ordres següents: {}. (S'ha de col·locar "
+"després de l'ordre.)"
+
+#: main.cpp:1399
+msgid "No read/execute access in current directory, moving to /"
+msgstr "No hi ha accés de lectura o execució al directori actual, es passa a /"
+
+#: main.cpp:1471
+msgid ""
+"The requested operation requires superuser privileges. Please log in as a "
+"user with elevated rights, or use the \"--assumeno\" or \"--downloadonly\" "
+"options to run the command without modifying the system state."
+msgstr ""
+"L'operació demanada requereix privilegis de superusuari. Inicieu sessió com "
+"a usuari amb drets elevats o useu les opcions '--assumeno' o '--"
+"downloadonly' per executar l'ordre sense modificar l'estat del sistema."
+
+#: main.cpp:1512
+msgid "The operation will only store the transaction in {}"
+msgstr "L'operació només desarà la transacció a {}"
+
+#: main.cpp:1514
+msgid "The operation will only download packages for the transaction."
+msgstr "L'operació només baixarà els paquets per a la transacció."
+
+#: main.cpp:1519
+msgid ""
+"Test mode enabled: Only package downloads, OpenPGP key installations and "
+"transaction checks will be performed."
+msgstr ""
+"Mode de prova activat: només es faran baixades de paquets, instal·lacions de "
+"claus OpenPGP i comprovacions de transaccions."
+
+#: main.cpp:1527
+msgid ""
+"Error: this bootc system is configured to be read-only. For more "
+"information, run `bootc --help`."
+msgstr ""
+"Error: aquest sistema de bootc està configurat per ser només de lectura. Per "
+"obtenir-ne més informació, executeu bootc --help."
+
+#: main.cpp:1544
+msgid ""
+"No repositories were loaded from the installroot. To use the configuration "
+"and repositories of the host system, pass --use-host-config."
+msgstr ""
+"No s'ha carregat cap dipòsit des de l'arrel de la instal·lació. Per usar la "
+"configuració i els dipòsits del sistema amfitrió, apliqueu --use-host-config."
+
+#: main.cpp:1566
+msgid "Command returned error: {}"
+msgstr "L'ordre ha retornat un error: {}"
+
+#: main.cpp:1574
+msgid "DNF5 finished"
+msgstr "El DNF5 ha acabat"
+
+#: main.cpp:1578
+msgid "Complete!"
+msgstr "Completat!"
+
+#: shared_options.cpp:32
+msgid "Allow removing of installed packages to resolve problems"
+msgstr "Permet la supressió de paquets instal·lats per resoldre problemes"
+
+#: shared_options.cpp:42
+msgid "Allow resolving of depsolve problems by skipping packages"
+msgstr "Permet la resolució de problemes de dependències ometent paquets"
+
+#: shared_options.cpp:54
+msgid "Allow skipping unavailable packages"
+msgstr "Permet ometre paquets no disponibles"
+
+#~ msgid " From       : {}\n"
+#~ msgstr " De       : {}\n"
+
+#~ msgid ""
+#~ "Warning: the `_execute` command is for internal use only and is not "
+#~ "intended to be run directly by the user. To initiate the system upgrade/"
+#~ "offline transaction, you should run `dnf5 offline reboot`."
+#~ msgstr ""
+#~ "Avís: l'ordre '_execute' només és per a ús intern i no està pensada per "
+#~ "ser executada directament per l'usuari. Per iniciar l'actualització del "
+#~ "sistema o la transacció fora de línia, hauríeu d'executar 'dnf5 offline "
+#~ "reboot'."

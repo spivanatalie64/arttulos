@@ -1,0 +1,7 @@
+=Ver: 3.0
+
+=Pkg: one 1 1 src
+
+=Pkg: one 1 1 noarch
+=Prv: one = 1-1
+=Vnd: dnf5-test

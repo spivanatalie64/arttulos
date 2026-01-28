@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2024.
+# Ricky Tigg <ricky.tigg@gmail.com>, 2024, 2025.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-26 03:48+0000\n"
+"PO-Revision-Date: 2025-03-21 02:53+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf5/"
+"libdnf5-plugin-actions/fi/>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.4\n"
+
+#: actions.cpp:237
+msgid "File \"{}\" on line {}: {}"
+msgstr "Tiedosto \"{}\" rivillä {}: {}"
+
+#: actions.cpp:636 actions.cpp:642 actions.cpp:648 actions.cpp:654
+msgid "\"HOOK:PKG_FILTER:DIRECTION:OPTIONS:CMD\" format expected"
+msgstr "\"KOUKKU:PAK_SUODATIN:SUUNTA:VAIHTOEHDOT:KOM\"-muotoa odotetaan"
+
+#: actions.cpp:676
+msgid "Unknown \"enabled\" option value \"{}\""
+msgstr "Tuntematon \"enabled\"-vaihtoehdon arvo \"{}\""
+
+#: actions.cpp:683
+msgid "Unknown option \"{}\""
+msgstr "Tuntematon vaihtoehto \"{}\""
+
+#: actions.cpp:711
+msgid "Unknown hook \"{}\""
+msgstr "Tuntematon koukku \"{}\""
+
+#: actions.cpp:720
+msgid ""
+"Package filter can only be used in GOAL_RESOLVED, PRE_TRANS and POST_TRANS "
+"hooks"
+msgstr ""
+"Pakettisuodatinta voidaan käyttää vain GOAL_RESOLVED-, PRE_TRANS- ja "
+"POST_TRANS-koukuissa"
+
+#: actions.cpp:726
+msgid "Cannot use direction without package filter"
+msgstr "Suuntaa ei voi käyttää ilman pakettisuodatinta"
+
+#: actions.cpp:740
+msgid "Unknown package direction \"{}\""
+msgstr "Tuntematon paketin suunta \"{}\""
+
+#: actions.cpp:747
+msgid "Unknown mode \"{}\""
+msgstr "Tuntematon tila \"{}\""
+
+#: actions.cpp:755
+msgid "Unsupported value of the \"raise_error\" option: {}"
+msgstr "\"raise_error\"-vaihtoehdon arvoa ei tueta: {}"
+
+#: actions.cpp:760
+msgid "Missing command"
+msgstr "Puuttuva komento"
+
+#: actions.cpp:953
+msgid "Synax error: Missing equal sign (=) in action output line: {}"
+msgstr ""
+"Syntaksivirhe: puuttuu yhtäläisyysmerkki (=) toiminnan lähtörivillä: {}"
+
+#: actions.cpp:964
+msgid "Cannot set option: Action output line: {}"
+msgstr "Vaihtoehtoa ei voi asettaa: Toiminnan lähtörivi: {}"
+
+#: actions.cpp:982
+msgid "Action sent the wrong log level: {}"
+msgstr "Toiminta lähetti väärän lokitason: {}"
+
+#: actions.cpp:987 actions.cpp:1794
+msgid "Action calls for stop: {}"
+msgstr "Toiminta vaatii pysäyttämistä: {}"
+
+#: actions.cpp:990 actions.cpp:1801
+msgid "Action sent error message: {}"
+msgstr "Toiminta lähetetty virheilmoitus: {}"
+
+#: actions.cpp:995
+msgid ""
+"Syntax error: Action output line must start with \"tmp.\" or \"conf.\" or "
+"\"var.\" or \"stop=\" or \"error=\": {}"
+msgstr ""
+"Syntaksivirhe: Toiminnan lähtörivin alussa on oltava \"tmp\". tai \"conf.\" "
+"tai \"var\". tai \"stop=\" tai \"error=\": {}"
+
+#: actions.cpp:1020
+msgid "Error reading from action (from pipe)"
+msgstr "Virhe toiminnan lukemisessa (putkesta)"
+
+#: actions.cpp:1038
+msgid "Syntax error in json request from action: Missing starting '{{' char"
+msgstr "Syntaksivirhe toiminnan json-pyynnössä: Alkumerkki '{{' puuttuu"
+
+#: actions.cpp:1062
+msgid "Error during processing of a request from action."
+msgstr "Virhe toimintapyynnön käsittelyn aikana."
+
+#: actions.cpp:1071
+msgid "Syntax error in json request from action: {}"
+msgstr "Syntaksivirhe toiminnan json-pyynnössä: {}"
+
+#: actions.cpp:1079
+msgid "Syntax error in json request from action: Incomplete input"
+msgstr "Syntaksivirhe toiminnan json-pyynnössä: epätäydellinen syöttö"
+
+#: actions.cpp:1154
+msgid "Cannot write response"
+msgstr "Vastausta ei voi kirjoittaa"
+
+#: actions.cpp:1821
+msgid "Actions plugin: Cannot create pipe"
+msgstr "Toimintolaajennus: Putkea ei voi luoda"
+
+#: actions.cpp:1913
+msgid "Actions plugin: Cannot fork"
+msgstr "Toimintolaajennus: Ei voi haarautua"
+
+#: actions.cpp:1968
+msgid "Actions plugin: Cannot bind command stdin"
+msgstr "Toimintolaajennus: komentoa stdin ei voi sitoa"
+
+#: actions.cpp:1970
+msgid "Actions plugin: Cannot bind command stdout"
+msgstr "Toimintolaajennus: komentoa stdout ei voi sitoa"
+
+#: actions.cpp:1988
+msgid "Cannot execute action, command \"{}\" arguments \"{}\""
+msgstr "Toimintaa ei voi suorittaa; komento \"{}\" argumentit \"{}\""
+
+#: actions.cpp:1996
+msgid "Error during preparation child process"
+msgstr "Virhe lapsiprosessin valmistelun aikana"
+
+#: actions.cpp:2015
+msgid "Exit code: {}"
+msgstr "Poistumiskoodi: {}"
+
+#: actions.cpp:2019
+msgid "Terminated by signal: {}"
+msgstr "Lopetettu signaalilla: {}"
+
+#~ msgid "Error in file \"{}\" on line {}: Unknown option \"{}\""
+#~ msgstr "Virhe tiedostossa \"{}\" rivillä {}: Tuntematon vaihtoehto \"{}\""
+
+#~ msgid "Error in file \"{}\" on line {}: Unknown mode \"{}\""
+#~ msgstr "Virhe tiedostossa \"{}\" rivillä {}: Tuntematon tila \"{}\""
+
+#~ msgid "Error in file \"{}\" on line {}: Missing command"
+#~ msgstr "Virhe tiedostossa \"{}\" rivillä {}: Puuttuva komento"

@@ -1,0 +1,5 @@
+// Transpiled from C to ScrapeC
+CHIPSET(0x7121, I810, i8xx)
+CHIPSET(0x7123, I810_DC100, i8xx)
+CHIPSET(0x7125, I810_E, i8xx)
+CHIPSET(0x1132, I815, i8xx)

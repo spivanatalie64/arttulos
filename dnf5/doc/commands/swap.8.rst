@@ -1,0 +1,66 @@
+..
+    Copyright Contributors to the DNF5 project.
+    Copyright Contributors to the libdnf project.
+    SPDX-License-Identifier: GPL-2.0-or-later
+
+    This file is part of libdnf: https://github.com/rpm-software-management/libdnf/
+
+    Libdnf is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 2 of the License, or
+    (at your option) any later version.
+
+    Libdnf is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with libdnf.  If not, see <https://www.gnu.org/licenses/>.
+
+.. _swap_command_ref-label:
+
+#############
+ Swap Command
+#############
+
+Synopsis
+========
+
+``dnf5 swap [options] <remove-spec> <install-spec>``
+
+
+Description
+===========
+
+The ``swap`` command in ``DNF5`` is used for removing a package while installing
+a different one in a single transaction.
+Both ``<remove-spec>`` and ``<install-spec>`` are ``<package-spec-NPFB>``
+
+
+Options
+=======
+
+``--allowerasing``
+    | Allow removing of installed packages to resolve any potential dependency problems.
+
+.. include:: ../_shared/options/installed-from-repo.rst
+
+.. include:: ../_shared/options/from-repo.rst
+
+.. include:: ../_shared/options/from-vendor.rst
+
+.. include:: ../_shared/options/transaction.rst
+
+
+Examples
+========
+
+``dnf5 swap mlocate plocate``
+    | Remove the ``mlocate`` package and install the ``plocate`` instead in the single transaction.
+
+
+See Also
+========
+
+    | :manpage:`dnf5-specs(7)`, :ref:`Patterns specification <specs_misc_ref-label>`

@@ -1,0 +1,26 @@
+{
+  "name": "ArttulOS Brutalist",
+  "type": "dark",
+  "colors": {
+    "background": "#181818",
+    "foreground": "#ffffff",
+    "primary": "#00FFD0",
+    "secondary": "#232323",
+    "accent": "#00FFD0",
+    "highlight": "#00FFD0",
+    "border": "#232323"
+  },
+  "window": {
+    "borderRadius": 8,
+    "borderWidth": 2
+  },
+  "panel": {
+    "background": "#232323",
+    "foreground": "#ffffff"
+  },
+  "menu": {
+    "background": "#232323",
+    "foreground": "#ffffff",
+    "highlight": "#00FFD0"
+  }
+}

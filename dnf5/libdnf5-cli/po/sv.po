@@ -1,0 +1,421 @@
+# Rafael Fontenelle <rafaelff@gnome.org>, 2024.
+# Luna Jernberg <bittin@reimu.nl>, 2024, 2025.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# Göran Uddeborg <goeran@uddeborg.se>, 2024, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-26 03:48+0000\n"
+"PO-Revision-Date: 2025-06-11 09:23+0000\n"
+"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf5/"
+"libdnf5-cli/sv/>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.4\n"
+
+#: argument_parser.cpp:68
+msgid "Misconfigured alias \"{}\": cannot convert \"{}\" to a number"
+msgstr "Felkonfigurerat alias \"{}\": kan inte konvertera \"{}\" till ett tal"
+
+#: argument_parser.cpp:76
+msgid "Misconfigured alias \"{}\": index \"{}\" out of range"
+msgstr "Felkonfigurerat alias \"{}\": index \"{}\" utanför intervallet"
+
+#: argument_parser.cpp:98
+msgid "\"{}\" not allowed together with named argument \"{}\""
+msgstr "\"{}\" inte tillåtet tillsammans med det namngivna argumentet \"{}\""
+
+#: argument_parser.cpp:100
+msgid "\"{}\" not allowed in command \"{}\""
+msgstr "\"{}\" inte tillåtet i kommandot \"{}\""
+
+#: argument_parser.cpp:102
+msgid "\"{}\" not allowed together with positional argument \"{}\""
+msgstr "\"{}\" inte tillåtet tillsammans med positionsargument \"{}\""
+
+#: argument_parser.cpp:147
+msgid "Argument id \"{}\" already registered in group \"{}\""
+msgstr "Argument-id \"{}\" redan registrerat i gruppen \"{}\""
+
+#: argument_parser.cpp:274
+msgid "Invalid character '.' in argument id \"{}\""
+msgstr "Ogiltigt tecken '.' i argument-id \"{}\""
+
+#: argument_parser.cpp:382 argument_parser.cpp:387
+msgid "Too few values for positional argument \"{}\""
+msgstr "För få värden för positionsargument \"{}\""
+
+#: argument_parser.cpp:548
+msgid "Missing value for named argument \"--{}\""
+msgstr "Saknar värde för det namngivna argumentet \"--{}\""
+
+#: argument_parser.cpp:556
+msgid "Unexpected value for named argument \"--{}\""
+msgstr "Oväntat värde för det namngivna argument \"--{}\""
+
+#: argument_parser.cpp:598
+msgid "Missing value for named argument \"-{}\""
+msgstr "Saknar värde för det namngivna argumentet \"-{}\""
+
+#. print usage
+#: argument_parser.cpp:694
+msgid "Usage:"
+msgstr "Användning:"
+
+#: argument_parser.cpp:702
+msgid "Description:"
+msgstr "Beskrivning:"
+
+#: argument_parser.cpp:979
+msgid "Command id \"{}\" already registered for command \"{}\""
+msgstr "Kommando-id \"{}\" redan registrerat för kommando \"{}\""
+
+#: argument_parser.cpp:990
+msgid "Named argument id \"{}\" already registered for command \"{}\""
+msgstr "Namngivet argument-id \"{}\" redan registrerat för kommando \"{}\""
+
+#: argument_parser.cpp:1000
+msgid "Positional argument id \"{}\" already registered for command \"{}\""
+msgstr "Positionsargument-id \"{}\" har redan registrerats för kommando \"{}\""
+
+#: argument_parser.cpp:1010
+msgid "Group id \"{}\" already registered for command \"{}\""
+msgstr "Grupp-id \"{}\" redan registrerat för kommando \"{}\""
+
+#: argument_parser.cpp:1037
+msgid "Command id \"{}\" does not contain subcommand with id \"{}\""
+msgstr "Kommando-id \"{}\" innehåller inte underkommando med id \"{}\""
+
+#: argument_parser.cpp:1045
+msgid "Command id \"{}\" does not contain named argument with id \"{}\""
+msgstr ""
+"Kommando-id \"{}\" innehåller inte ett namngivet argument med id \"{}\""
+
+#: argument_parser.cpp:1053
+msgid "Command id \"{}\" does not contain positional argument with id \"{}\""
+msgstr "Kommando-id \"{}\" innehåller inte positionsargument med id \"{}\""
+
+#: argument_parser.cpp:1060
+msgid "Command id \"{}\" does not contain group with id \"{}\""
+msgstr "Kommando-id \"{}\" innehåller inte grupp med id \"{}\""
+
+#: argument_parser.cpp:1177 argument_parser.cpp:1388
+msgid "Unknown argument \"{}\" for command \"{}\""
+msgstr "Okänt argument \"{}\" för kommando \"{}\""
+
+#: argument_parser.cpp:1192 argument_parser.cpp:1403
+msgid "Missing positional argument \"{}\" for command \"{}\""
+msgstr "Saknar positionsargument \"{}\" för kommando \"{}\""
+
+#: argument_parser.cpp:1274
+msgid "Missing value for command alias \"{}\""
+msgstr "Saknar värde för kommandoaliaset \"{}\""
+
+#: argument_parser.cpp:1610
+msgid "Named argument with path id \"{}\" not found"
+msgstr "Det namngivna argumentet med sökvägs-id \"{}\" hittades inte"
+
+#: argument_parser.cpp:1620
+msgid "Positional argument with path id \"{}\" not found"
+msgstr "Positionsargument med sökvägs-id \"{}\" hittades inte"
+
+#: exception.cpp:30
+msgid "Operation aborted by the user."
+msgstr "Operation avbröts av användaren."
+
+#: exception.cpp:33
+msgid "Failed to resolve the transaction"
+msgstr "Misslyckades att lösa transaktionen"
+
+#: output/moduleinfo.cpp:36
+msgid "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled, [a]ctive"
+msgstr ""
+"Ledtråd: [d]standard, [e]aktiverad, [x]avaktiverad, [i]nstallerad, [a]ktiv"
+
+#: output/modulelist.cpp:39
+msgid "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled"
+msgstr "Ledtråd: [d]standard, [e]aktiverad, [x]avaktiverad, [i]installerad"
+
+#. Note for translators: This is a right-aligned column separator in
+#. a package properties table as in "Name    : bash".
+#: output/packageinfo.cpp:57
+msgid " : "
+msgstr " : "
+
+#. Add package
+#: output/packageinfo.cpp:63
+msgid "Name"
+msgstr "Namn"
+
+#: output/packageinfo.cpp:68
+msgid "Epoch"
+msgstr "Epok"
+
+#: output/packageinfo.cpp:69 output/transaction_table.cpp:289
+msgid "Version"
+msgstr "Version"
+
+#: output/packageinfo.cpp:70
+msgid "Release"
+msgstr "Utgåva"
+
+#: output/packageinfo.cpp:71
+msgid "Architecture"
+msgstr "Arkitektur"
+
+#: output/packageinfo.cpp:75
+msgid "Obsoletes"
+msgstr "Föråldrade"
+
+#: output/packageinfo.cpp:85
+msgid "Download size"
+msgstr "Nedladdningsstorlek"
+
+#: output/packageinfo.cpp:89
+msgid "Installed size"
+msgstr "Installerad storlek"
+
+#: output/packageinfo.cpp:91
+msgid "Source"
+msgstr "Källa"
+
+#: output/packageinfo.cpp:94
+msgid "From repository"
+msgstr "Från förråd"
+
+#: output/packageinfo.cpp:96 output/transaction_table.cpp:295
+msgid "Repository"
+msgstr "Förråd"
+
+#: output/packageinfo.cpp:98
+msgid "Summary"
+msgstr "Summering"
+
+#: output/packageinfo.cpp:99
+msgid "URL"
+msgstr "URL"
+
+#: output/packageinfo.cpp:100
+msgid "License"
+msgstr "Licens"
+
+#: output/packageinfo.cpp:104
+msgid "Description"
+msgstr "Beskrivning"
+
+#: output/packageinfo.cpp:109
+msgid "Vendor"
+msgstr "Leverantör"
+
+#: output/search.cpp:45
+msgid " (exact)"
+msgstr " (exakt)"
+
+#: output/search.cpp:90
+msgid "No matches found."
+msgstr "Inga matchningar hittades."
+
+#: output/search.cpp:101
+msgid "Matched fields: "
+msgstr "Matchade fält: "
+
+#: output/transaction_table.cpp:127
+msgid "Transaction Summary:\n"
+msgstr "Transaktionssammanfattning:\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:132
+msgid " Installing:      {:4} package\n"
+msgid_plural " Installing:      {:4} packages\n"
+msgstr[0] " Installerar:      {:4} paket\n"
+msgstr[1] " Installerar:      {:4} paket\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:141
+msgid " Reinstalling:    {:4} package\n"
+msgid_plural " Reinstalling:    {:4} packages\n"
+msgstr[0] " Installerar om:   {:4} paket\n"
+msgstr[1] " Installerar om:   {:4} paket\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:150
+msgid " Upgrading:       {:4} package\n"
+msgid_plural " Upgrading:       {:4} packages\n"
+msgstr[0] " Uppgraderar:      {:4} paket\n"
+msgstr[1] " Uppgraderar:      {:4} paket\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:159
+msgid " Replacing:       {:4} package\n"
+msgid_plural " Replacing:       {:4} packages\n"
+msgstr[0] " Ersätter:         {:4} paket\n"
+msgstr[1] " Ersätter:         {:4} paket\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:168
+msgid " Removing:        {:4} package\n"
+msgid_plural " Removing:        {:4} packages\n"
+msgstr[0] " Tar bort:         {:4} paket\n"
+msgstr[1] " Tar bort:         {:4} paket\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:177
+msgid " Downgrading:     {:4} package\n"
+msgid_plural " Downgrading:     {:4} packages\n"
+msgstr[0] " Nedgraderar:      {:4} paket\n"
+msgstr[1] " Nedgraderar:      {:4} paket\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:186
+msgid " Changing reason: {:4} package\n"
+msgid_plural " Changing reason: {:4} packages\n"
+msgstr[0] " Ändrar orsak:     {:4} paket\n"
+msgstr[1] " Ändrar orsak:     {:4} paket\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:195
+msgid " Skipping:        {:4} package\n"
+msgid_plural " Skipping:        {:4} packages\n"
+msgstr[0] " Hoppar över:      {:4} paket\n"
+msgstr[1] " Hoppar över:      {:4} paket\n"
+
+#: output/transaction_table.cpp:277
+msgid "Package"
+msgstr "Paket"
+
+#: output/transaction_table.cpp:283
+msgid "Arch"
+msgstr "Arkitektur"
+
+#: output/transaction_table.cpp:301
+msgid "Size"
+msgstr "Storlek"
+
+#: output/transaction_table.cpp:357 output/transaction_table.cpp:451
+msgid "{} -> {}"
+msgstr "{} → {}"
+
+#: output/transaction_table.cpp:373
+msgid "replacing {}"
+msgstr "ersätter {}"
+
+#: output/transaction_table.cpp:409 output/transaction_table.cpp:426
+msgid " <name-unset>"
+msgstr " <namnet ej satt>"
+
+#: output/transaction_table.cpp:457
+msgid "replacing "
+msgstr "ersätter "
+
+#: output/transaction_table.cpp:470
+msgid "Skipping packages with conflicts:"
+msgstr "Hoppar över paket med konflikter:"
+
+#: output/transaction_table.cpp:472
+msgid "Skipping packages with broken dependencies:"
+msgstr "Hoppar över paket med brutna beroenden:"
+
+#: output/transaction_table.cpp:533
+msgid "Installing dependencies:"
+msgstr "Installerar beroenden:"
+
+#: output/transaction_table.cpp:535
+msgid "Installing weak dependencies:"
+msgstr "Installerar svaga beroenden:"
+
+#: output/transaction_table.cpp:537
+msgid "Installing group/module packages:"
+msgstr "Installerar grupp/modulpaket:"
+
+#: output/transaction_table.cpp:539
+msgid "Installing:"
+msgstr "Installerar:"
+
+#: output/transaction_table.cpp:543
+msgid "Upgrading:"
+msgstr "Uppgraderar:"
+
+#: output/transaction_table.cpp:546
+msgid "Downgrading:"
+msgstr "Nedgraderar:"
+
+#: output/transaction_table.cpp:549
+msgid "Reinstalling:"
+msgstr "Ominstallerar:"
+
+#: output/transaction_table.cpp:553
+msgid "Removing dependent packages:"
+msgstr "Tar bort beroende paket:"
+
+#: output/transaction_table.cpp:555
+msgid "Removing unused dependencies:"
+msgstr "Tar bort oanvända beroenden:"
+
+#: output/transaction_table.cpp:557
+msgid "Removing:"
+msgstr "Tar bort:"
+
+#: output/transaction_table.cpp:561
+msgid "Changing reason:"
+msgstr "Ändrar anledning:"
+
+#: output/transaction_table.cpp:593
+msgid "Installing groups dependencies:"
+msgstr "Installera gruppberoenden:"
+
+#: output/transaction_table.cpp:595
+msgid "Installing groups:"
+msgstr "Installerar grupper:"
+
+#: output/transaction_table.cpp:599
+msgid "Removing groups:"
+msgstr "Tar bort grupper:"
+
+#: output/transaction_table.cpp:602
+msgid "Upgrading groups:"
+msgstr "Uppgraderar grupper:"
+
+#: output/transaction_table.cpp:629
+msgid "Installing environmental groups:"
+msgstr "Installerar miljögrupper:"
+
+#: output/transaction_table.cpp:632
+msgid "Removing environmental groups:"
+msgstr "Tar bort miljögrupper:"
+
+#: output/transaction_table.cpp:635
+msgid "Upgrading environmental groups:"
+msgstr "Uppgraderar miljögrupper:"
+
+#: output/transaction_table.cpp:662
+msgid "Enabling module streams:"
+msgstr "Aktiverar modulströmmar:"
+
+#: output/transaction_table.cpp:665
+msgid "Disabling modules:"
+msgstr "Avaktiverar moduler:"
+
+#: output/transaction_table.cpp:668
+msgid "Resetting modules:"
+msgstr "Återställer moduler:"
+
+#: output/transaction_table.cpp:671
+msgid "Switching module streams:"
+msgstr "Byter modulströmmar:"
+
+#: output/transaction_table.cpp:745
+msgid "Nothing to do."
+msgstr "Inget att göra."
+
+#: progressbar/multi_progress_bar.cpp:36
+msgid "Total"
+msgstr "Totalt"
+
+#: session.cpp:149
+msgid "Missing command"
+msgstr "Saknar kommando"

@@ -1,0 +1,423 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2024.
+# Ricky Tigg <ricky.tigg@gmail.com>, 2024, 2025.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-26 03:48+0000\n"
+"PO-Revision-Date: 2025-09-04 01:43+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf5/"
+"libdnf5-cli/fi/>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.13\n"
+
+#: argument_parser.cpp:68
+msgid "Misconfigured alias \"{}\": cannot convert \"{}\" to a number"
+msgstr ""
+
+#: argument_parser.cpp:76
+msgid "Misconfigured alias \"{}\": index \"{}\" out of range"
+msgstr ""
+
+#: argument_parser.cpp:98
+msgid "\"{}\" not allowed together with named argument \"{}\""
+msgstr "\"{}\" ei ole sallittu yhdessä nimetyn argumentin \"{}\" kanssa"
+
+#: argument_parser.cpp:100
+msgid "\"{}\" not allowed in command \"{}\""
+msgstr "\"{}\" ei ole sallittu komennossa \"{}\""
+
+#: argument_parser.cpp:102
+msgid "\"{}\" not allowed together with positional argument \"{}\""
+msgstr "\"{}\" ei ole sallittu yhdessä sijaintiargumentin \"{}\" kanssa"
+
+#: argument_parser.cpp:147
+msgid "Argument id \"{}\" already registered in group \"{}\""
+msgstr "Argumenttitunnus \"{}\" on jo rekisteröity ryhmässä \"{}\""
+
+#: argument_parser.cpp:274
+msgid "Invalid character '.' in argument id \"{}\""
+msgstr "Virheellinen merkki '.' argumenttitunnuksessa \"{}\""
+
+#: argument_parser.cpp:382 argument_parser.cpp:387
+msgid "Too few values for positional argument \"{}\""
+msgstr "Liian vähän arvoja sijaintiargumentille \"{}\""
+
+#: argument_parser.cpp:548
+msgid "Missing value for named argument \"--{}\""
+msgstr "Puuttuva arvo nimetylle argumentille \"--{}\""
+
+#: argument_parser.cpp:556
+msgid "Unexpected value for named argument \"--{}\""
+msgstr "Odottamaton arvo nimetylle argumentille \"--{}\""
+
+#: argument_parser.cpp:598
+msgid "Missing value for named argument \"-{}\""
+msgstr "Puuttuva arvo nimetylle argumentille \"-{}\""
+
+#. print usage
+#: argument_parser.cpp:694
+msgid "Usage:"
+msgstr "Käyttö:"
+
+#: argument_parser.cpp:702
+msgid "Description:"
+msgstr "Kuvaus:"
+
+#: argument_parser.cpp:979
+msgid "Command id \"{}\" already registered for command \"{}\""
+msgstr "Komentotunnus \"{}\" on jo rekisteröity komennolle \"{}\""
+
+#: argument_parser.cpp:990
+msgid "Named argument id \"{}\" already registered for command \"{}\""
+msgstr "Nimetty argumenttitunnus \"{}\" on jo rekisteröity komennolle \"{}\""
+
+#: argument_parser.cpp:1000
+msgid "Positional argument id \"{}\" already registered for command \"{}\""
+msgstr "Sijaintiargumentin tunnus \"{}\" on jo rekisteröity komennolle \"{}\""
+
+#: argument_parser.cpp:1010
+msgid "Group id \"{}\" already registered for command \"{}\""
+msgstr "Ryhmätunnus \"{}\" on jo rekisteröity komennolle \"{}\""
+
+#: argument_parser.cpp:1037
+msgid "Command id \"{}\" does not contain subcommand with id \"{}\""
+msgstr "Komentotunnus \"{}\" ei sisällä alikomentoa tunnuksella \"{}\""
+
+#: argument_parser.cpp:1045
+msgid "Command id \"{}\" does not contain named argument with id \"{}\""
+msgstr ""
+"Komentotunnus \"{}\" ei sisällä nimettyä argumenttia tunnuksella \"{}\""
+
+#: argument_parser.cpp:1053
+msgid "Command id \"{}\" does not contain positional argument with id \"{}\""
+msgstr "Komentotunnus \"{}\" ei sisällä sijaintiargumenttia tunnuksella \"{}\""
+
+#: argument_parser.cpp:1060
+msgid "Command id \"{}\" does not contain group with id \"{}\""
+msgstr "Komentotunnus \"{}\" ei sisällä ryhmää, jonka tunnus on \"{}\""
+
+#: argument_parser.cpp:1177 argument_parser.cpp:1388
+msgid "Unknown argument \"{}\" for command \"{}\""
+msgstr "Tuntematon argumentti \"{}\" komennolle \"{}\""
+
+#: argument_parser.cpp:1192 argument_parser.cpp:1403
+msgid "Missing positional argument \"{}\" for command \"{}\""
+msgstr "Puuttuva sijaintiargumentti \"{}\" komennolle \"{}\""
+
+#: argument_parser.cpp:1274
+msgid "Missing value for command alias \"{}\""
+msgstr "Puuttuva arvo komennon aliakselta \"{}\""
+
+#: argument_parser.cpp:1610
+msgid "Named argument with path id \"{}\" not found"
+msgstr "Nimettyä argumenttia polkutunnuksella \"{}\" ei löydy"
+
+#: argument_parser.cpp:1620
+msgid "Positional argument with path id \"{}\" not found"
+msgstr "Sijaintiargumenttia polkutunnuksella \"{}\" ei löydy"
+
+#: exception.cpp:30
+msgid "Operation aborted by the user."
+msgstr "Toimenpide peruttu käyttäjän toimesta."
+
+#: exception.cpp:33
+msgid "Failed to resolve the transaction"
+msgstr "Tapahtuman ratkaiseminen epäonnistui"
+
+#: output/moduleinfo.cpp:36
+msgid "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled, [a]ctive"
+msgstr ""
+"Vihje: [o]letus, [k]äytössä, [p]oistettu käytöstä, [a]sennettu, [ak]tiivinen"
+
+#: output/modulelist.cpp:39
+msgid "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled"
+msgstr "Vihje: [o]letus, [k]äytössä, [p]oistettu käytöstä, [a]sennettu"
+
+#. Note for translators: This is a right-aligned column separator in
+#. a package properties table as in "Name    : bash".
+#: output/packageinfo.cpp:57
+msgid " : "
+msgstr " : "
+
+#. Add package
+#: output/packageinfo.cpp:63
+msgid "Name"
+msgstr "Nimi"
+
+#: output/packageinfo.cpp:68
+msgid "Epoch"
+msgstr "Ajanjakso"
+
+#: output/packageinfo.cpp:69 output/transaction_table.cpp:289
+msgid "Version"
+msgstr "Versio"
+
+#: output/packageinfo.cpp:70
+msgid "Release"
+msgstr "Julkaisu"
+
+#: output/packageinfo.cpp:71
+msgid "Architecture"
+msgstr "Arkkitehtuuri"
+
+#: output/packageinfo.cpp:75
+msgid "Obsoletes"
+msgstr "Vanhentaa"
+
+#: output/packageinfo.cpp:85
+msgid "Download size"
+msgstr "Latauksen koko"
+
+#: output/packageinfo.cpp:89
+msgid "Installed size"
+msgstr "Asennuksen koko"
+
+#: output/packageinfo.cpp:91
+msgid "Source"
+msgstr "Lähde"
+
+#: output/packageinfo.cpp:94
+msgid "From repository"
+msgstr "Ohjelmistolähteestä"
+
+#: output/packageinfo.cpp:96 output/transaction_table.cpp:295
+msgid "Repository"
+msgstr "Ohjelmistolähde"
+
+#: output/packageinfo.cpp:98
+msgid "Summary"
+msgstr "Yhteenveto"
+
+#: output/packageinfo.cpp:99
+msgid "URL"
+msgstr "URL-osoite"
+
+#: output/packageinfo.cpp:100
+msgid "License"
+msgstr "Lisenssi"
+
+#: output/packageinfo.cpp:104
+msgid "Description"
+msgstr "Kuvaus"
+
+#: output/packageinfo.cpp:109
+msgid "Vendor"
+msgstr "Toimittaja"
+
+#: output/search.cpp:45
+msgid " (exact)"
+msgstr " (tarkka)"
+
+#: output/search.cpp:90
+msgid "No matches found."
+msgstr "Täsmäävyyksiä ei löytynyt."
+
+#: output/search.cpp:101
+msgid "Matched fields: "
+msgstr "Täsmäävät kentät: "
+
+#: output/transaction_table.cpp:127
+msgid "Transaction Summary:\n"
+msgstr "Transaktion yhteenveto:\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:132
+msgid " Installing:      {:4} package\n"
+msgid_plural " Installing:      {:4} packages\n"
+msgstr[0] " Asennetaan:      {:4} paketti\n"
+msgstr[1] " Asennetaan:      {:4} pakettia\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:141
+msgid " Reinstalling:    {:4} package\n"
+msgid_plural " Reinstalling:    {:4} packages\n"
+msgstr[0] " Asennetaan uudelleen:    {:4} paketti\n"
+msgstr[1] " Asennetaan uudelleen:    {:4} pakettia\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:150
+msgid " Upgrading:       {:4} package\n"
+msgid_plural " Upgrading:       {:4} packages\n"
+msgstr[0] " Päivitetään:       {:4} paketti\n"
+msgstr[1] " Päivitetään:       {:4} pakettia\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:159
+msgid " Replacing:       {:4} package\n"
+msgid_plural " Replacing:       {:4} packages\n"
+msgstr[0] " Korvataan:       {:4} paketti\n"
+msgstr[1] " Korvataan:       {:4} pakettia\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:168
+msgid " Removing:        {:4} package\n"
+msgid_plural " Removing:        {:4} packages\n"
+msgstr[0] " Poistetaan:        {:4} paketti\n"
+msgstr[1] " Poistetaan:        {:4} pakettia\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:177
+msgid " Downgrading:     {:4} package\n"
+msgid_plural " Downgrading:     {:4} packages\n"
+msgstr[0] " Varhennetaan:     {:4} paketti\n"
+msgstr[1] " Varhennetaan:     {:4} pakettia\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:186
+msgid " Changing reason: {:4} package\n"
+msgid_plural " Changing reason: {:4} packages\n"
+msgstr[0] " Vaihdetaan syy: {:4} paketti\n"
+msgstr[1] " Vaihdetaan syy: {:4} pakettia\n"
+
+#. Keep the replaceble number aligned across all messages.
+#: output/transaction_table.cpp:195
+msgid " Skipping:        {:4} package\n"
+msgid_plural " Skipping:        {:4} packages\n"
+msgstr[0] " Ohitetaan:        {:4} paketti\n"
+msgstr[1] " Ohitetaan:        {:4} pakettia\n"
+
+#: output/transaction_table.cpp:277
+msgid "Package"
+msgstr "Paketti"
+
+#: output/transaction_table.cpp:283
+msgid "Arch"
+msgstr "Arkkiteht."
+
+#: output/transaction_table.cpp:301
+msgid "Size"
+msgstr "Koko"
+
+#: output/transaction_table.cpp:357 output/transaction_table.cpp:451
+msgid "{} -> {}"
+msgstr "{} -> {}"
+
+#: output/transaction_table.cpp:373
+msgid "replacing {}"
+msgstr "korvaa {}"
+
+#: output/transaction_table.cpp:409 output/transaction_table.cpp:426
+msgid " <name-unset>"
+msgstr " <nimi-ei-määritelty>"
+
+#: output/transaction_table.cpp:457
+msgid "replacing "
+msgstr "korvataan "
+
+#: output/transaction_table.cpp:470
+msgid "Skipping packages with conflicts:"
+msgstr "Ohitetaan ristiriidassa olevat paketit:"
+
+#: output/transaction_table.cpp:472
+msgid "Skipping packages with broken dependencies:"
+msgstr "Ohitetaan rikkinäisiä riippuvuuksia omaavat paketit:"
+
+#: output/transaction_table.cpp:533
+msgid "Installing dependencies:"
+msgstr "Asennetaan riippuvuuksia:"
+
+#: output/transaction_table.cpp:535
+msgid "Installing weak dependencies:"
+msgstr "Asennetaan heikkoja riippuvuuksia:"
+
+#: output/transaction_table.cpp:537
+msgid "Installing group/module packages:"
+msgstr "Asennetaan ryhmä-/moduulipaketteja:"
+
+#: output/transaction_table.cpp:539
+msgid "Installing:"
+msgstr "Asennetaan:"
+
+#: output/transaction_table.cpp:543
+msgid "Upgrading:"
+msgstr "Päivitetään:"
+
+#: output/transaction_table.cpp:546
+msgid "Downgrading:"
+msgstr "Vanhennetaan:"
+
+#: output/transaction_table.cpp:549
+msgid "Reinstalling:"
+msgstr "Asennetaan uudelleen:"
+
+#: output/transaction_table.cpp:553
+msgid "Removing dependent packages:"
+msgstr "Poistetaan riippuvaiset paketit:"
+
+#: output/transaction_table.cpp:555
+msgid "Removing unused dependencies:"
+msgstr "Poistetaan käyttämättömiä riippuvuuksia:"
+
+#: output/transaction_table.cpp:557
+msgid "Removing:"
+msgstr "Poistetaan:"
+
+#: output/transaction_table.cpp:561
+msgid "Changing reason:"
+msgstr "Muutetaan syy:"
+
+#: output/transaction_table.cpp:593
+msgid "Installing groups dependencies:"
+msgstr "Asennetaan ryhmäriippuvuuksia:"
+
+#: output/transaction_table.cpp:595
+msgid "Installing groups:"
+msgstr "Asennetaan ryhmiä:"
+
+#: output/transaction_table.cpp:599
+msgid "Removing groups:"
+msgstr "Poistetaan ryhmiä:"
+
+#: output/transaction_table.cpp:602
+msgid "Upgrading groups:"
+msgstr "Päivitetään ryhmät:"
+
+#: output/transaction_table.cpp:629
+msgid "Installing environmental groups:"
+msgstr "Asennetaan ympäristöryhmiä:"
+
+#: output/transaction_table.cpp:632
+msgid "Removing environmental groups:"
+msgstr "Poistetaan ympäristöryhmiä:"
+
+#: output/transaction_table.cpp:635
+msgid "Upgrading environmental groups:"
+msgstr "Päivitetään ympäristöryhmiä:"
+
+#: output/transaction_table.cpp:662
+msgid "Enabling module streams:"
+msgstr "Otetaan moduulivirtoja käyttöön:"
+
+#: output/transaction_table.cpp:665
+msgid "Disabling modules:"
+msgstr "Poistetaan moduuleita käytöstä:"
+
+#: output/transaction_table.cpp:668
+msgid "Resetting modules:"
+msgstr "Nollataan moduuleita:"
+
+#: output/transaction_table.cpp:671
+msgid "Switching module streams:"
+msgstr "Vaihdetaan moduulivirtoja:"
+
+#: output/transaction_table.cpp:745
+msgid "Nothing to do."
+msgstr "Ei mitään tehtävää."
+
+#: progressbar/multi_progress_bar.cpp:36
+msgid "Total"
+msgstr "Yhteensä"
+
+#: session.cpp:149
+msgid "Missing command"
+msgstr "Puuttuva komento"

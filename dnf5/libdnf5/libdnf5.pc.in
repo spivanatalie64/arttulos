@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/include
+
+Name: libdnf5
+Description: Package management library
+Version: @PROJECT_VERSION@
+Requires: @LIBDNF5_PC_REQUIRES_STRING@
+Requires.private: @LIBDNF5_PC_REQUIRES_PRIVATE_STRING@
+Libs: -L${libdir} -ldnf5
+Cflags: -I${includedir}

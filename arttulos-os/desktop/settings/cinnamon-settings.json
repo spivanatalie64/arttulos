@@ -1,0 +1,11 @@
+{
+  "panel-zone-left": ["menu@cinnamon.org", "show-desktop@cinnamon.org"],
+  "panel-zone-center": ["window-list@cinnamon.org"],
+  "panel-zone-right": ["systray@cinnamon.org", "notifications@cinnamon.org", "calendar@cinnamon.org", "user@cinnamon.org"],
+  "theme": "ArttulOS Brutalist",
+  "background": "/usr/share/backgrounds/arttulos/brutalist-matrix.svg",
+  "workspace-count": 2,
+  "menu-layout": "classic",
+  "hotcorner-enabled": false,
+  "font": "Fira Mono 11"
+}

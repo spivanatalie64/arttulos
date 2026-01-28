@@ -1,0 +1,1710 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2024.
+# Luna Jernberg <bittin@reimu.nl>, 2024, 2025.
+# Göran Uddeborg <goeran@uddeborg.se>, 2024, 2025.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024, 2025.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-26 03:48+0000\n"
+"PO-Revision-Date: 2025-06-01 12:47+0000\n"
+"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf5/"
+"libdnf5/sv/>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.4\n"
+
+#: advisory/advisory.cpp:81
+msgid ""
+"Bad libsolv id for advisory \"{}\", solvable name \"{}\" doesn't have "
+"advisory prefix \"{}\""
+msgstr ""
+"Felaktigt libsolv-id för rekommendationen \"{}\", lösbart namn \"{}\" har "
+"inte ett rekommendationsprefix \"{}\""
+
+#: base/goal.cpp:482
+msgid "Unsupported argument for REMOVE action: {}"
+msgstr "Argument som inte stöds för TA BORT åtgärd: {}"
+
+#. TODO(lukash) throw a proper exception
+#: base/goal.cpp:1652
+msgid "Incorrect configuration value for multilib_policy: {}"
+msgstr "Felaktigt konfigurationsvärde för multilib_policy: {}"
+
+#: base/goal_elements.cpp:352
+msgid "Install"
+msgstr "Installera"
+
+#: base/goal_elements.cpp:354
+msgid "Install via provide"
+msgstr "Installera via tillhandahållande"
+
+#: base/goal_elements.cpp:356
+msgid "Install by group"
+msgstr "Installera via grupp"
+
+#: base/goal_elements.cpp:358
+msgid "Upgrade"
+msgstr "Uppgradera"
+
+#: base/goal_elements.cpp:360
+msgid "Upgrade all"
+msgstr "Uppgradera alla"
+
+#: base/goal_elements.cpp:362
+msgid "Upgrade minimal"
+msgstr "Uppgradera minimalt"
+
+#: base/goal_elements.cpp:364
+msgid "Upgrade all minimal"
+msgstr "Uppgradera alla minimalt"
+
+#: base/goal_elements.cpp:366
+msgid "Downgrade"
+msgstr "Nedgradera"
+
+#: base/goal_elements.cpp:368
+msgid "Reinstall"
+msgstr "Ominstallera"
+
+#: base/goal_elements.cpp:370
+msgid "Install or reinstall"
+msgstr "Installera eller ominstallera"
+
+#: base/goal_elements.cpp:372
+msgid "Remove"
+msgstr "Ta bort"
+
+#: base/goal_elements.cpp:374
+msgid "Distrosync"
+msgstr "Distrosynka"
+
+#: base/goal_elements.cpp:376
+msgid "Distrosync all"
+msgstr "Distrosynka alla"
+
+#: base/goal_elements.cpp:378
+msgid "Reason Change"
+msgstr "Orsaksändring"
+
+#: base/goal_elements.cpp:380
+msgid "Resolve"
+msgstr "Lös upp"
+
+#: base/goal_elements.cpp:382
+msgid "Enable"
+msgstr "Aktivera"
+
+#: base/goal_elements.cpp:384
+msgid "Disable"
+msgstr "Avaktivera"
+
+#: base/goal_elements.cpp:386
+msgid "Reset"
+msgstr "Återställ"
+
+#: base/goal_elements.cpp:388
+msgid "Parse serialized transaction"
+msgstr "Analysera serialiserad transaktion"
+
+#: base/goal_elements.cpp:390
+msgid "Install action"
+msgstr "Installationsåtgärd"
+
+#: base/goal_elements.cpp:392
+msgid "Remove action"
+msgstr "Borttagningsåtgärd"
+
+#: base/goal_elements.cpp:394
+msgid "Upgrade action"
+msgstr "Uppgraderingsåtgärd"
+
+#: base/goal_elements.cpp:396
+msgid "Reinstall action"
+msgstr "Ominstallationsåtgärd"
+
+#: base/goal_elements.cpp:398
+msgid "Reason change action"
+msgstr "Ändringsorsaksåtgärd"
+
+#: base/goal_elements.cpp:400
+msgid "Reason override"
+msgstr "Orsak åsidosättande"
+
+#: base/goal_elements.cpp:402
+msgid "Revert comps upgrade"
+msgstr "Återställ comps-uppgradering"
+
+#: base/goal_elements.cpp:404
+msgid "Install debug RPMs"
+msgstr "Installera felsöknings RPMer"
+
+#: base/goal_elements.cpp:406
+msgid "Transaction merge"
+msgstr "Transaktionssammanslagning"
+
+#: base/log_event.cpp:141
+msgid "No packages to remove for argument: {}"
+msgstr "Inga paket att ta bort för argument: {}"
+
+#: base/log_event.cpp:143
+msgid "No groups to remove for argument: {}"
+msgstr "Inga grupper att ta bort för argument: {}"
+
+#: base/log_event.cpp:146
+msgid "No environmental groups to remove for argument: {}"
+msgstr "Inga miljögrupper att ta bort för argument: {}"
+
+#: base/log_event.cpp:148
+msgid "No modules to remove for argument: {}"
+msgstr "Inga moduler att ta bort för argument: {}"
+
+#: base/log_event.cpp:152
+msgid "No match for group from environment: {}"
+msgstr "Ingen matchning för grupp från miljö: {}"
+
+#: base/log_event.cpp:154
+msgid "No match for group package: {}"
+msgstr "Ingen matchning för grupppaket: {}"
+
+#: base/log_event.cpp:158
+msgid "Cannot perform {0}, no match for: {1}."
+msgstr "Kan inte utföra {0}, ingen matchning för: {1}."
+
+#: base/log_event.cpp:160
+msgid "No match for argument: {}"
+msgstr "Ingen matchning för argument: {}"
+
+#: base/log_event.cpp:163
+msgid "No match for argument '{0}' in selected advisories"
+msgstr "Ingen matchning för argumentet '{0}' i valda rekommendationer"
+
+#: base/log_event.cpp:165
+msgid "No match in selected advisories"
+msgstr "Ingen matchning i valda rekommendationer"
+
+#: base/log_event.cpp:169
+msgid "No match for argument '{0}' in repositories '{1}'"
+msgstr "Ingen matchning för argumentet '{0}' i förråd '{1}'"
+
+#: base/log_event.cpp:175
+msgid "Cannot perform {0} for {1} '{2}' because it is not installed."
+msgstr "Kan inte utföra {0} för {1} ”{2}” eftersom det inte är installerat."
+
+#: base/log_event.cpp:180
+msgid "Packages for argument '{}' available, but not installed."
+msgstr "Paket för argumentet '{}' tillgängliga, men inte installerade."
+
+#: base/log_event.cpp:184
+msgid ""
+"Packages for argument '{}' available, but installed for a different "
+"architecture."
+msgstr ""
+"Paket för argumentet '{}' tillgängliga, men installerade för en annan "
+"arkitektur."
+
+#: base/log_event.cpp:188
+msgid "Cannot perform {0} because '{1}' matches only source packages."
+msgstr "Kan inte utföra {0} eftersom '{1}' matchar endast källkodspaket."
+
+#: base/log_event.cpp:192
+msgid "Argument '{}' matches only source packages."
+msgstr "Argumentet '{}' matchar endast källpaket."
+
+#: base/log_event.cpp:196
+msgid "Cannot perform {0} because '{1}' matches only excluded packages."
+msgstr "Kan inte utföra {0} eftersom '{1}' matchar endast exkluderade paket."
+
+#: base/log_event.cpp:200
+msgid "Argument '{}' matches only excluded packages."
+msgstr "Argumentet '{}' matchar endast exkluderade paket."
+
+#: base/log_event.cpp:204
+msgid ""
+"Cannot perform {0} because '{1}' matches only packages excluded by "
+"versionlock."
+msgstr ""
+"Kan inte utföra {0} eftersom '{1}' matchar endast paket som uteslutits av "
+"versionslås."
+
+#: base/log_event.cpp:208
+msgid "Argument '{}' matches only packages excluded by versionlock."
+msgstr "Argumentet '{}' matchar endast paket som exkluderas av versionslås."
+
+#: base/log_event.cpp:213
+msgid "  * Maybe you meant: {}"
+msgstr "  *  Du kanske menade: {}"
+
+#: base/log_event.cpp:216
+msgid "There are following alternatives for '{0}': {1}"
+msgstr "Det finns följande alternativ för '{0}': {1}"
+
+#: base/log_event.cpp:223
+msgid ""
+"The lowest available version of the \"{}\" package is already installed, "
+"cannot downgrade it."
+msgstr ""
+"Den lägsta tillgängliga versionen av \"{}\"-paketet är redan installerad, "
+"kan inte nedgradera det."
+
+#: base/log_event.cpp:229
+msgid ""
+"Installed packages for argument '{0}' are not available in repositories in "
+"the same version, available versions: {1}, cannot reinstall."
+msgstr ""
+"Installerade paket för argument ”{0}” är inte tillgängliga i förråd i samma "
+"version, tillgängliga versioner: {1}, kan inte installera om."
+
+#: base/log_event.cpp:235
+msgid ""
+"Cannot perform {0} because '{1}' is installed in a different version: '{2}'."
+msgstr ""
+"Kan inte utföra {0} eftersom '{1}' är installerad i en annan version: '{2}'."
+
+#: base/log_event.cpp:241
+msgid ""
+"Packages for argument '{}' installed and available, but in a different "
+"version."
+msgstr ""
+"Paket för argument'{}' installerade och tillgängliga, men i en annan version."
+
+#: base/log_event.cpp:243
+msgid "Packages for argument '{}' installed, but not available."
+msgstr "Paket för argument '{}' installerade, men inte tillgängliga."
+
+#: base/log_event.cpp:252
+msgid "Package \"{}\" is already installed with reason \"{}\"."
+msgstr "Paketet \"{}\" är redan installerat med anledningen \"{}\"."
+
+#: base/log_event.cpp:254
+msgid "Package \"{}\" is already installed."
+msgstr "Paketet \"{}\" är redan installerat."
+
+#: base/log_event.cpp:263
+msgid "Debug data written to \"{}\""
+msgstr "Felsöknings data har skrivits till \"{}\""
+
+#: base/log_event.cpp:267
+msgid ""
+"{0} upgrade cannot be reverted, however associated package actions will be. "
+"({1} id: '{2}') ."
+msgstr ""
+"{0} uppgradering kan inte återställas, men associerade paketåtgärder kommer "
+"att vara det. ({1}-id: '{2}') ."
+
+#: base/log_event.cpp:273
+msgid "{} action for argument \"{}\" is not supported."
+msgstr "{} åtgärd för argument \"{}\" stöds inte."
+
+#. Format a leading line of the error message.
+#: base/log_event.cpp:282
+msgid "Unable to resolve argument '{}':"
+msgstr "Kunde inte lösa upp argumentet ”{}”:"
+
+#: base/log_event.cpp:286
+msgid ""
+"\n"
+"  - Argument '{}' matches {} stream ('{}') of module '{}', but the stream is "
+"not enabled or default."
+msgid_plural ""
+"\n"
+"  - Argument '{}' matches {} streams ('{}') of module '{}', but none of the "
+"streams are enabled or default."
+msgstr[0] ""
+"\n"
+"  - Argumentet “{}“ matchar {} ström (”{}”) i modulen ”{}”, men strömmen är "
+"inte aktiverad eller standard."
+msgstr[1] ""
+"\n"
+"  - Argumentet ”{}” matchar {} strömmar (”{}”) i modulen ”{}”, men ingen av "
+"strömmarna är aktiverade eller standard."
+
+#: base/log_event.cpp:293
+msgid "', '"
+msgstr "', '"
+
+#: base/log_event.cpp:302
+msgid "Modular dependency problems:\n"
+msgstr "Modulärt beroendeproblem:\n"
+
+#: base/log_event.cpp:309
+msgid "Modular dependency problems with the latest modules:\n"
+msgstr "Modulärt beroendeproblem med de senaste modulerna:\n"
+
+#: base/log_event.cpp:316
+msgid "Modular dependency problems with the defaults:\n"
+msgstr "Modulärt beroendeproblem med standarderna:\n"
+
+#: base/log_event.cpp:331
+msgid ""
+"The operation would result in switching of module '{0}' stream '{1}' to "
+"stream '{2}'\n"
+msgstr ""
+"Åtgärden skulle resultera i byte av modulen ”{0}” ström ”{1}” till ström "
+"”{2}”\n"
+
+#: base/log_event.cpp:336
+msgid ""
+"Error: It is not possible to switch enabled streams of a module unless "
+"explicitly enabled via configuration option module_stream_switch."
+msgstr ""
+"Fel: det är inte möjligt att byta aktiverade strömmar för en modul om det "
+"inte är explicit aktiverat via konfigurationsflaggan module_stream_switch."
+
+#: base/log_event.cpp:341
+msgid ""
+"Extra package '{0}' (with action '{1}') which is not present in the stored "
+"transaction was pulled into the transaction.\n"
+msgstr ""
+"Extra paket '{0}' (med åtgärd '{1}') som inte är närvarande i den lagrade "
+"transaktionen drogs in i transaktionen.\n"
+
+#: base/log_event.cpp:347
+msgid "Cannot parse file: '{0}': {1}.\n"
+msgstr "Kan inte analysera fil '{0}':{1}.\n"
+
+#: base/log_event.cpp:354
+msgid ""
+"Could not find debuginfo package for the following packages resolved from "
+"the argument '{0}': {1}"
+msgstr ""
+"Kunde inte hitta debuginfo paket för följande paket lösta från argument "
+"'{0}': {1}"
+
+#: base/log_event.cpp:357 base/log_event.cpp:368
+msgctxt "String for joining NEVRAs - e.g. `foo-4-4.noarch, bar-5-5.noarch`"
+msgid ", "
+msgstr ", "
+
+#: base/log_event.cpp:364
+msgid ""
+"Could not find debugsource package for the following packages resolved from "
+"the argument '{0}': {1}"
+msgstr ""
+"Kunde inte hitta debugkäll paket för följande paket löst från argument "
+"'{0}' : {1}"
+
+#: base/log_event.cpp:371
+msgid "Transaction merge error: '{0}'"
+msgstr "Transaktionssammanslagningsfel: '{0}'"
+
+#: base/solver_problems.cpp:41
+msgid "{} does not belong to a distupgrade repository"
+msgstr "{} tillhör inte ett distributionsuppgraderingsförråd"
+
+#: base/solver_problems.cpp:42
+msgid "{0} from {1} has inferior architecture"
+msgstr "{0} från {1} har sämre arkitektur"
+
+#: base/solver_problems.cpp:43
+msgid "problem with installed package"
+msgstr "problem med installerat paket"
+
+#: base/solver_problems.cpp:44 base/solver_problems.cpp:80
+msgid "conflicting requests"
+msgstr "motstridiga förfrågningar"
+
+#: base/solver_problems.cpp:45 base/solver_problems.cpp:81
+msgid "unsupported request"
+msgstr "förfrågan som inte stöds"
+
+#: base/solver_problems.cpp:46 base/solver_problems.cpp:82
+msgid "nothing provides requested {}"
+msgstr "ingenting tillhandahåller begärt {}"
+
+#: base/solver_problems.cpp:47
+msgid "package {} does not exist"
+msgstr "paket {} existerar inte"
+
+#: base/solver_problems.cpp:48 base/solver_problems.cpp:84
+msgid "{} is provided by the system"
+msgstr "{} tillhandahålls av systemet"
+
+#: base/solver_problems.cpp:49 base/solver_problems.cpp:85
+msgid "some dependency problem"
+msgstr "något beroendeproblem"
+
+#: base/solver_problems.cpp:50
+msgid "cannot install the best update candidate for package {}"
+msgstr "kan inte installera den bästa uppdateringskandidaten för paketet {}"
+
+#: base/solver_problems.cpp:51 base/solver_problems.cpp:87
+msgid "cannot install the best candidate for the job"
+msgstr "kan inte installera den bästa kandidaten för jobbet"
+
+#: base/solver_problems.cpp:52
+msgid "package {0} from {1} is filtered out by modular filtering"
+msgstr "paket {0} från {1} filtreras bort genom modulär filtrering"
+
+#: base/solver_problems.cpp:53
+msgid "package {0} from {1} does not have a compatible architecture"
+msgstr "paket {0} från {1} har inte en kompatibel arkitektur"
+
+#: base/solver_problems.cpp:54
+msgid "package {0} from {1} is not installable"
+msgstr "paket {0} från {1} är inte installerbart"
+
+#: base/solver_problems.cpp:55
+msgid "package {0} from {1} is filtered out by exclude filtering"
+msgstr "paket {0} från {1} filtreras bort genom exkluderingsfiltrering"
+
+#: base/solver_problems.cpp:56
+msgid "nothing provides {0} needed by {1} from {2}"
+msgstr "ingenting tillhandahåller {0} som behövs av {1} från {2}"
+
+#: base/solver_problems.cpp:57
+msgid "cannot install both {0} from {1} and {2} from {3}"
+msgstr "kan inte installera både {0} från {1} och {2} från {3}"
+
+#: base/solver_problems.cpp:58
+msgid "package {0} from {1} conflicts with {2} provided by {3} from {4}"
+msgstr ""
+"paket {0} från {1} är i konflikt med {2} som tillhandahålls av {3} från {4}"
+
+#: base/solver_problems.cpp:60
+msgid "installed package {0} conflicts with {1} provided by {2} from {3}"
+msgstr ""
+"installerat paket {0} är i konflikt med {1} som tillhandahålls av {2} från "
+"{3}"
+
+#: base/solver_problems.cpp:61
+msgid "package {0} from {1} obsoletes {2} provided by {3} from {4}"
+msgstr "paket {0} från {1} föråldrade {2} tillhandahållet av {3} från {4}"
+
+#: base/solver_problems.cpp:62
+msgid "installed package {0} obsoletes {1} provided by {2} from {3}"
+msgstr "installerat paket {0} är föråldrat {1} tillhandahållet av {2} från {3}"
+
+#: base/solver_problems.cpp:64
+msgid "package {0} from {1} implicitly obsoletes {2} provided by {3} from {4}"
+msgstr ""
+"paket{0} från {1} implicit föråldrat {2} tillhandahållet av {3} från {4}"
+
+#: base/solver_problems.cpp:66
+msgid ""
+"package {1} from {2} requires {0}, but none of the providers can be installed"
+msgstr ""
+"paket {1} från {2} kräver {0}, men ingen av leverantörerna kan installeras"
+
+#: base/solver_problems.cpp:68
+msgid ""
+"installed package {1} requires {0}, but none of the providers can be "
+"installed"
+msgstr ""
+"installerat paket {1} kräver {0}, men ingen av leverantörerna kan installeras"
+
+#: base/solver_problems.cpp:69
+msgid "package {0} from {1} conflicts with {2} provided by itself"
+msgstr ""
+"paket {0} från {1} är i konflikt med {2} som tillhandahålls av sig självt"
+
+#: base/solver_problems.cpp:70
+msgid "both package {0} from {1} and {3} from {4} obsolete {2}"
+msgstr "både paket {0} från {1} och {3} från {4} föråldrar {2}"
+
+#: base/solver_problems.cpp:72
+msgid ""
+"The operation would result in removing the following protected packages: {}"
+msgstr "Åtgärden skulle resultera i att följande skyddade paket tas bort: {}"
+
+#: base/solver_problems.cpp:75
+msgid "The operation would result in removing of running kernel: {}"
+msgstr "Åtgärden skulle resultera i att kärnan som körs tas bort: {}"
+
+#: base/solver_problems.cpp:77
+msgid "module {} does not belong to a distupgrade repository"
+msgstr "modulen {} tillhör inte ett distributionsuppgraderingsförråd"
+
+#: base/solver_problems.cpp:78
+msgid "module {} has inferior architecture"
+msgstr "modulen {} har sämre arkitektur"
+
+#: base/solver_problems.cpp:79
+msgid "problem with installed module {}"
+msgstr "problem med den installerade modulen {}"
+
+#: base/solver_problems.cpp:83
+msgid "module {} does not exist"
+msgstr "modulen {} finns inte"
+
+#: base/solver_problems.cpp:86
+msgid "cannot install the best update candidate for module {}"
+msgstr "kan inte installera den bästa uppdateringskandidaten för modulen {}"
+
+#: base/solver_problems.cpp:88 base/solver_problems.cpp:91
+msgid "module {} is disabled"
+msgstr "modulen {} är avaktiverad"
+
+#: base/solver_problems.cpp:89
+msgid "module {} does not have a compatible architecture"
+msgstr "modulen {} har inte en kompatibel arkitektur"
+
+#: base/solver_problems.cpp:90
+msgid "module {} is not installable"
+msgstr "modulen {} är inte installerbar"
+
+#: base/solver_problems.cpp:92
+msgid "nothing provides {0} needed by module {1}"
+msgstr "ingenting tillhandahåller {0} som behövs av modulen {1}"
+
+#: base/solver_problems.cpp:93
+msgid "cannot install both modules {0} and {1}"
+msgstr "kan inte installera både modulen {0} och {1}"
+
+#: base/solver_problems.cpp:94
+msgid "module {0} conflicts with {1} provided by {2}"
+msgstr "modulen {0} står i konflikt med {1} tillhandahållet av {2}"
+
+#: base/solver_problems.cpp:95
+msgid "module {0} obsoletes {1} provided by {2}"
+msgstr "modulen {0} fasar ut {1} tillhandahållet av {2}"
+
+#: base/solver_problems.cpp:96
+msgid "installed module {0} obsoletes {1} provided by {2}"
+msgstr "den installerade modulen {0} fasar ut {1} tillhandahållet av {2}"
+
+#: base/solver_problems.cpp:97
+msgid "module {0} implicitly obsoletes {1} provided by {2}"
+msgstr "modulen {0} fasar implicit ut {1} tillhandahållet av {2}"
+
+#: base/solver_problems.cpp:98
+msgid "module {1} requires {0}, but none of the providers can be installed"
+msgstr "modulen {1} kräver {0}, men ingen av leverantörerna kan installeras"
+
+#: base/solver_problems.cpp:99
+msgid "module {1} conflicts with {0} provided by itself"
+msgstr "modulen {1} står i konflikt med {0} som tillhandahålls av sig själv"
+
+#: base/solver_problems.cpp:100
+msgid "both module {0} and {2} obsolete {1}"
+msgstr "både modulen {0} och {2} fasar ut {1}"
+
+#: base/solver_problems.cpp:290
+msgid "Problem: "
+msgstr "Problem: "
+
+#: base/solver_problems.cpp:294
+msgid "Problem {}: "
+msgstr "Problem {}: "
+
+#: base/transaction.cpp:80
+msgid "This transaction has been already run before."
+msgstr "Denna transaktion har redan körts tidigare."
+
+#: base/transaction.cpp:81
+msgid "Cannot run transaction with resolving problems."
+msgstr "Det går inte att köra transaktionen för att lösa problem."
+
+#: base/transaction.cpp:82
+msgid "Rpm transaction check failed."
+msgstr "Rpm transaktionskontroll misslyckades."
+
+#: base/transaction.cpp:84
+msgid ""
+"Failed to obtain rpm transaction lock. Another transaction is in progress."
+msgstr ""
+"Misslyckades att erhålla rpm-transaktionslås. Ytterligare en transaktion "
+"pågår."
+
+#: base/transaction.cpp:85
+msgid "Rpm transaction failed."
+msgstr "Rpm-transaktion misslyckades."
+
+#: base/transaction.cpp:86
+msgid "Signature verification failed."
+msgstr "Signaturverifiering misslyckades."
+
+#: base/transaction.cpp:90
+msgid "The repository does not have any OpenPGP keys configured."
+msgstr "Förrådet har inga OpenPGP-nycklar konfigurerade."
+
+#: base/transaction.cpp:91
+msgid "Public key is not installed."
+msgstr "Publik nyckel är inte installerad."
+
+#: base/transaction.cpp:92
+msgid "Canceled by the user."
+msgstr "Avbröts av användaren."
+
+#: base/transaction.cpp:93
+msgid "Public key import failed."
+msgstr "Import av publik nyckel misslyckades."
+
+#: base/transaction.cpp:980
+msgid "Invalid tsflag: {}"
+msgstr "Ogiltig tsflag: {}"
+
+#: base/transaction.cpp:1314
+msgid "Public key \"{}\" is already present, not importing."
+msgstr "Publik nyckel \"{}\" finns redan, importerar inte."
+
+#: base/transaction.cpp:1335
+msgid "An error occurred importing key \"{}\": {}"
+msgstr "Ett fel uppstod vid import av nyckeln \"{}\": {}"
+
+#: base/transaction.cpp:1369
+msgid "OpenPGP check for package \"{}\" ({}) from repo \"{}\" has failed: "
+msgstr ""
+"OpenPGP-kontroll för paket \"{}\" ({}) från förråd \"{}\" har misslyckats: "
+
+#: base/transaction.cpp:1397
+msgid "Import of the key didn't help, wrong key?"
+msgstr "Importen av nyckeln hjälpte inte, fel nyckel?"
+
+#: base/transaction.cpp:1416
+msgctxt "It is a joining character for repositories IDs"
+msgid ", "
+msgstr ", "
+
+#: base/transaction.cpp:1419
+msgid "Warning: skipped OpenPGP checks for {0} package from repository: {1}"
+msgid_plural ""
+"Warning: skipped OpenPGP checks for {0} packages from repository: {1}"
+msgstr[0] ""
+"Varning: hoppade över OpenPGP-kontroller för paketet {0} från förråd: {1}"
+msgstr[1] ""
+"Varning: hoppade över OpenPGP-kontroller för {0} paket från flera förråd: {1}"
+
+#: base/transaction.cpp:1422
+msgid "Warning: skipped OpenPGP checks for {0} package from repositories: {1}"
+msgid_plural ""
+"Warning: skipped OpenPGP checks for {0} packages from repositories: {1}"
+msgstr[0] ""
+"Varning: hoppade över OpenPGP-kontroller för {0} paket från förråd: {1}"
+msgstr[1] ""
+"Varning: hoppade över OpenPGP-kontroller för {0} paket från flera förråd: {1}"
+
+#: common/exception.cpp:78
+msgid "System error"
+msgstr "Systemfel"
+
+#: common/exception.cpp:199
+msgid "General RuntimeError exception"
+msgstr "Allmänt körtidsfel undantag"
+
+#: common/sack/query.cpp:27
+msgid "Query must contain exactly one object."
+msgstr "Frågan måste innehålla exakt ett objekt."
+
+#: common/xdg.cpp:43
+msgid "get_user_home_dir(): Cannot determine the user's home directory"
+msgstr "get_user_home_dir(): Kan inte fastställa användarens hemkatalog"
+
+#: common/xdg.cpp:98
+msgid "get_user_runtime_dir(): Cannot determine the user's runtime directory"
+msgstr "get_user_runtime_dir(): Kan inte bestämma användarens körtidskatalog"
+
+#: comps/environment/environment.cpp:325
+msgid "failed to save xml document for comps"
+msgstr "misslyckades att spara xml dokument för composes"
+
+#: comps/group/group.cpp:373
+msgid "Failed to save xml document for group \"{}\" to file \"{}\": {}"
+msgstr "Misslyckades att spara xml dokument för grupp \"{} till fil \"{}: {}"
+
+#: comps/group/package.cpp:118 comps/group/package.cpp:121
+msgid "Invalid package type: {}"
+msgstr "Ogiltig paket typ: {}"
+
+#: conf/config_main.cpp:57
+msgid "Input is empty. Must contain a value."
+msgstr "Indata är tom. Måste innehålla ett värde."
+
+#: conf/config_main.cpp:63
+msgid "Input value '{}' must not be negative"
+msgstr "Indatavärdet '{}' får inte vara negativt"
+
+#: conf/config_main.cpp:68
+msgid "Could not convert '{}' to bytes"
+msgstr "Kan inte konvertera '{}' till bytes"
+
+#: conf/config_main.cpp:84
+msgid "Unknown unit '{}'"
+msgstr "Okänd enhet '{}'"
+
+#: conf/config_main.cpp:281
+msgid "The throttle value {} is outside the allowed range {} ... {}"
+msgstr "Spjällvärdet {} är utanför det tillåtna intervallet {} ... {}"
+
+#: conf/config_parser.cpp:54
+msgid "Section \"{}\" not found"
+msgstr "Avsnitt \"{}\" hittades inte"
+
+#: conf/config_parser.cpp:59
+msgid "Section \"{}\" does not contain option \"{}\""
+msgstr "Avsnitt \"{}\" innehåller inte alternativet \"{}\""
+
+#: conf/config_parser.cpp:96
+msgid "Configuration file \"{}\" not found"
+msgstr "Konfigurationsfil \"{}\" hittades inte"
+
+#: conf/config_parser.cpp:99
+msgid "Unable to access configuration file \"{}\""
+msgstr "Kan inte komma åt konfigurationsfil \"{}\""
+
+#: conf/config_parser.cpp:102
+msgid "Error in configuration file \"{}\""
+msgstr "Fel i konfigurationsfil \"{}\""
+
+#: conf/option_binds.cpp:29
+msgid "Option \"{}\" not found"
+msgstr "Alternativ \"{}\" hittades inte"
+
+#: conf/option_binds.cpp:32
+msgid "Option \"{}\" already exists"
+msgstr "Alternativ \"{}\" existerar redan"
+
+#: conf/option_bool.cpp:82
+msgid "Invalid boolean value \"{}\""
+msgstr "Ogiltigt booleskt värde \"{}\""
+
+#: conf/option_enum.cpp:68
+msgid "Enum option value \"{}\" not allowed"
+msgstr "Enum-alternativvärdet \"{}\" tillåts inte"
+
+#: conf/option_number.cpp:99
+msgid "Input value {} is outside the allowed range {} ... {}"
+msgstr "Indatavärdet {} ligger utanför det tillåtna intervallet {} ... {}"
+
+#: conf/option_number.cpp:112
+msgid "Invalid number option value \"{}\""
+msgstr "Ogiltigt nummeralternativvärde \"{}\""
+
+#: conf/option_path.cpp:93
+msgid "Only absolute paths allowed, relative path \"{}\" detected"
+msgstr "Endast absoluta sökvägar tillåtna, relativ sökväg \"{}\" upptäckt"
+
+#: conf/option_path.cpp:98
+msgid "Path \"{}\" does not exist"
+msgstr "Sökväg \"{}\" existerar inte"
+
+#: conf/option_seconds.cpp:38
+msgid "Empty time option value"
+msgstr "Tom tid alternativ värde"
+
+#: conf/option_seconds.cpp:50
+msgid "Invalid time option value \"{}\", number or \"never\" expected"
+msgstr ""
+"Ogiltigt tidsalternativsvärde \"{}\", ett tal eller \"never\" förväntades"
+
+#: conf/option_seconds.cpp:54
+msgid ""
+"Invalid time option value \"{}\", negative values except \"-1\" not allowed"
+msgstr ""
+"Ogiltigt tidsalternativvärde \"{}\", negativa värden förutom \"-1\" är inte "
+"tillåtna"
+
+#: conf/option_seconds.cpp:59
+msgid "Unknown time format \"{}\""
+msgstr "Okänt tidsformat \"{}\""
+
+#: conf/option_seconds.cpp:78
+msgid "Unknown time unit '{}'"
+msgstr "Okänd tidsenhet '{}'"
+
+#: conf/option_string.cpp:89
+msgid ""
+"Input value \"{}\" not allowed, allowed values for this option are defined "
+"by regular expression \"{}\""
+msgstr ""
+"Indatavärde \"{}\" är inte tillåtet, tillåtna värden för detta alternativ "
+"definieras av det reguljära uttrycket \"{}\""
+
+#. TODO(jrohel): We don't know the option name at this time. Add a text name to the options
+#. or extend exception (add name) in upper layer.
+#: conf/option_string.cpp:114
+msgid "Option value is not set"
+msgstr "Alternativvärdet är inte inställt"
+
+#: conf/option_string_list.cpp:175
+msgid ""
+"Input item value \"{}\" not allowed, allowed values for this option are "
+"defined by regular expression \"{}\""
+msgstr ""
+"Inmatningsobjektets värde \"{}\" är inte tillåtet, tillåtna värden för det "
+"här alternativet definieras av reguljärt uttryck \"{}\""
+
+#: conf/vars.cpp:313 conf/vars.cpp:353
+msgid "Variable \"{}\" is read-only"
+msgstr "Variabeln \"{}\" är skrivskyddad"
+
+#: logger/rotating_file_logger.cpp:65
+msgid "Cannot open log file"
+msgstr "Kan inte öppna logg fil"
+
+#: module/module_db.cpp:76 module/module_db.cpp:85 module/module_sack.cpp:767
+msgid "No such module: {}"
+msgstr "Ingen sådan modul: {}"
+
+#: module/module_db.cpp:268
+msgid "Cannot enable multiple streams for module '{}'"
+msgstr "Kan inte aktivera flera strömmar för modul '{}'"
+
+#. TODO(pkratoch) replace with a proper and descriptive exception
+#. TODO(jmracek) else if (removalOfProtected && removalOfProtected->size()) {
+#. throw Goal::Error(_("no solution, cannot remove protected package"),
+#. DNF_ERROR_REMOVAL_OF_PROTECTED_PKG);
+#. }
+#. TODO(lukash) replace with a proper and descriptive exception
+#: module/module_goal_private.cpp:83 rpm/solv/goal_private.cpp:342
+#: rpm/solv/goal_private.cpp:764
+msgid "no solution possible"
+msgstr "ingen lösning möjlig"
+
+#: module/module_metadata.cpp:102
+msgid "Failed to update from string: {}"
+msgstr "Misslyckades med att uppdatera från sträng:{}"
+
+#: module/module_metadata.cpp:129
+msgid "Failed to resolve module metadata: {}"
+msgstr "Misslyckades med att lösa modul metadata: {}"
+
+#: module/module_metadata.cpp:140
+msgid "Failed to upgrade defaults: {}"
+msgstr "Misslyckades med att uppdatera standard: {}"
+
+#: module/module_metadata.cpp:144
+msgid "Failed to upgrade streams: {}"
+msgstr "Misslyckades med att uppgradera strömmar: {}"
+
+#: module/module_sack.cpp:93
+msgid "Failed to load module metadata for repository \"{}\": {}"
+msgstr "Misslyckades att ladda modul metadata för förråd \"{}\": {}"
+
+#: module/module_sack.cpp:594
+msgid "Missing '='"
+msgstr "Saknar '='"
+
+#: module/module_sack.cpp:598 module/module_sack.cpp:606
+msgid "Missing '\"' in the value"
+msgstr "Saknar '\"' i värdet"
+
+#: module/module_sack.cpp:602
+msgid "Missing ':' in the value"
+msgstr "Saknar ':' i värdet"
+
+#: module/module_sack.cpp:911
+msgid "Invalid module status: {}"
+msgstr "Ogiltig modul status: {}"
+
+#: plugin/plugins.cpp:67
+msgid ""
+"Unsupported plugin API combination. API version provided by plugin "
+"\"{}\" (\"{}\") is \"{}.{}\". API version in libdnf is \"{}.{}\"."
+msgstr ""
+"Plugin-API-kombination som inte stöds. API-version som tillhandahålls av "
+"plugin \"{}\" (\"{}\") är \"{}.{}\". API-versionen i libdnf är \"{}.{}\"."
+
+#: plugin/plugins.cpp:92
+msgid "Failed to create a libdnf plugin instance"
+msgstr "Misslyckades med att skapa en instans av en insticksmodul till libdnf"
+
+#: plugin/plugins.cpp:146
+msgid "Cannot find plugin library \"{}\""
+msgstr "Kan inte hitta plugin-bibliotek \"{}\""
+
+#: plugin/plugins.cpp:213
+msgid "Invalid option value: enabled={}"
+msgstr "Ogiltigt alternativvärde: enabled={}"
+
+#: plugin/plugins.cpp:237
+msgid "Plugins::load_plugins(): config_dir_path cannot be empty"
+msgstr "Plugins::load_plugins(): config_dir_path kan inte vara tom"
+
+#: plugin/plugins.cpp:253
+msgid "Cannot load libdnf plugin enabled from: {}"
+msgstr "Kan inte ladda libdnf plugin aktiverat från: {}"
+
+#: repo/config_repo.cpp:581
+msgid "get_unique_id(): Computation of SHA256 failed"
+msgstr "get_unique_id(): Beräkning av SHA256 misslyckades"
+
+#: repo/file_downloader.cpp:154
+msgid "Cannot download files, cacheonly option is activated."
+msgstr "Kan inte ladda ner filer, alternativet cacheonly är aktiverat."
+
+#: repo/file_downloader.cpp:216
+msgid "Failed to download files"
+msgstr "Misslyckades med att ladda ner filer"
+
+#: repo/librepo.cpp:118
+msgid ""
+"Maximum download speed is lower than minimum, please change configuration of "
+"minrate or throttle"
+msgstr ""
+"Maximal nedladdningshastighet är lägre än minimum, vänligen ändra "
+"konfigurationen av minrate eller throttle"
+
+#: repo/librepo.cpp:181
+msgid "'proxy_username' is set but not 'proxy_password'"
+msgstr "”proxy_username” är satt men inte ”proxy_password”"
+
+#: repo/package_downloader.cpp:154
+msgid "Cannot download the \"{0}\" package, cacheonly option is activated."
+msgstr ""
+"Kunde inte ladda ner paketet \"{0}\", alternativet cacheonly är aktiverat."
+
+#: repo/package_downloader.cpp:231
+msgid "Already downloaded"
+msgstr "Redan hämtat"
+
+#: repo/package_downloader.cpp:279
+msgid "Failed to download packages"
+msgstr "Misslyckades med att ladda ner paket"
+
+#: repo/repo.cpp:61
+msgid "Failed to load RPM \"{}\": doesn't have the \".rpm\" extension"
+msgstr "Misslyckades med att ladda RPM \"{}\": har inte tillägget \".rpm\""
+
+#: repo/repo.cpp:65
+msgid "Failed to access RPM \"{}\": {}"
+msgstr "Misslyckades att få tillgång till RPM \"{}\": {}"
+
+#: repo/repo.cpp:107
+msgid "Invalid repository id \"{}\": unexpected character '{}'"
+msgstr "Ogiltigt förråds-id \"{}\": oväntat tecken '{}'"
+
+#: repo/repo.cpp:150
+msgid "Repository \"{}\" has no source (baseurl, mirrorlist or metalink) set."
+msgstr ""
+"Förrådet \"{}\" har ingen källa (baseurl, mirrorlist eller metalink) satt."
+
+#: repo/repo.cpp:161
+msgid "Repository \"{}\" has unsupported type \"{}\", skipping."
+msgstr "Förråd \"{}\" har ostödd typ \"{}\", hoppar över."
+
+#: repo/repo.cpp:221 repo/repo.cpp:241 repo/repo_sack.cpp:368
+msgid "Failed to download metadata ({}: \"{}\") for repository \"{}\": {}"
+msgstr "Misslyckades att ladda ner metadata ({}: \"{}\") för förråd \"{}\" {}"
+
+#: repo/repo.cpp:439
+msgid ""
+"Failed to load repository: \"primary\" data not present or in unsupported "
+"format"
+msgstr ""
+"Misslyckades att ladda förrådet : \"primär\" data finns inte eller i format "
+"som inte stöds"
+
+#: repo/repo.cpp:505
+msgid "Failed to load comps \"{}\": doesn't have the \".xml\" extension"
+msgstr "Misslyckades med att ladda compose \"{}\": har inte \".xml\" tillägget"
+
+#: repo/repo.cpp:512
+msgid "Failed to load xml Comps \"{}\": {}"
+msgstr "Misslyckades att ladda xml compose \"{}\": {}"
+
+#: repo/repo.cpp:530
+msgid "Failed to load RPM \"{}\": {}"
+msgstr "Misslyckades att ladda RPM \"{}\": {}"
+
+#: repo/repo_cache.cpp:255
+msgid "Unable to determine id of the repository in the cache."
+msgstr "Det går inte att bestämma id för förråd i cache."
+
+#: repo/repo_cache_private.hpp:59
+msgid "Empty path to the repository cache directory."
+msgstr "Tom sökväg till förrådets cachekatalog."
+
+#: repo/repo_downloader.cpp:214
+msgid "Librepo error: {}"
+msgstr "Librepo fel: {}"
+
+#: repo/repo_downloader.cpp:258
+msgid "Failed to set up metadata download"
+msgstr "Misslyckades med att ställa in metadatanedladdning"
+
+#: repo/repo_downloader.cpp:312 repo/repo_downloader.cpp:362
+msgid "Failed to download metadata"
+msgstr "Misslyckades med att ladda ner metadata"
+
+#: repo/repo_downloader.cpp:426
+msgid "Error checking if metalink \"{}\" is in sync for repository \"{}\""
+msgstr ""
+"Fel vid kontroll av om metalink \"{}\" är synkroniserat för förrådet \"{}\""
+
+#: repo/repo_downloader.cpp:446
+msgid "Error checking if repomd ({}: \"{}\") is in sync for repository \"{}\""
+msgstr ""
+"Fel vid kontroll av om repomd ({}: \"{}\") är synkroniserat för förrådet "
+"\"{}\""
+
+#: repo/repo_downloader.cpp:515
+msgid "Error loading local metadata for repository \"{}\""
+msgstr "Fel vid laddning av lokal metadata för förråd \"{}\""
+
+#: repo/repo_downloader.cpp:597
+msgid ""
+"No valid source (baseurl, mirrorlist or metalink) found for repository \"{}\""
+msgstr ""
+"Ingen giltig källa (baseurl, mirrorlist eller metalink) hittades för "
+"förrådet \"{}\""
+
+#: repo/repo_pgp.cpp:60
+msgid "Failed to import OpenPGP keys into temporary keyring: {}"
+msgstr ""
+"Misslyckades att importera OpenPGP nycklar till tillfällig nyckelring: {}"
+
+#: repo/repo_pgp.cpp:66 repo/repo_pgp.cpp:93
+msgid "Failed to list OpenPGP keys: {}"
+msgstr "Misslyckades att lista OpenPGP nycklar: {}"
+
+#: repo/repo_pgp.cpp:141
+msgid "Failed to import OpenPGP keys: {}"
+msgstr "Misslyckades att importera OpenPGP nycklar: {}"
+
+#: repo/repo_sack.cpp:159
+msgid ""
+"Failed to create repo \"{}\": Id is present more than once in the "
+"configuration"
+msgstr ""
+"Misslyckades att skapa förråd \"{}\": Id finns mer än en gång i "
+"konfigurationen"
+
+#: repo/repo_sack.cpp:631
+msgid "Cache-only enabled but no cache for repository \"{}\""
+msgstr "Endast cache aktiverat men ingen cache för förråd \"{}\""
+
+#: repo/solv_repo.cpp:267
+msgid "Failed to load repomd for repo \"{}\" from \"{}\": {}."
+msgstr "Misslyckades att ladda repomd för förråd \"{}\" från \"{}\": {}."
+
+#: repo/solv_repo.cpp:275
+msgid "Failed to load primary for repo \"{}\" from \"{}\": {}."
+msgstr "Misslyckades att ladda primärt för förråd \"{}\" från \"{}\": {}."
+
+#: repo/solv_repo.cpp:323
+msgid "Unsupported extended repodata type for the system repo: \"{}\"."
+msgstr "Utvidgad repodatatyp som inte stöds för systemförråd: \"{}\"."
+
+#: repo/solv_repo.cpp:395
+msgid "Failed to load {} extension for repo \"{}\" from \"{}\": {}"
+msgstr "Misslyckades att ladda {} utökning för förråd \"{}\" från \"{}\": {}"
+
+#: repo/solv_repo.cpp:431
+msgid "Failed to load system repo from root \"{}\": {}"
+msgstr "Misslyckades att ladda systemförråd från root \"{}\": {}"
+
+#: repo/solv_repo.cpp:532
+msgid "Failed to load {} cache for repo \"{}\" from \"{}\": {}"
+msgstr "Misslyckades att ladda {} cache för förråd \"{}\" från \"{}\": {}"
+
+#: repo/solv_repo.cpp:586
+msgid "Failed to write primary cache for repo \"{}\" to \"{}\": {}"
+msgstr "Misslyckades att skriva primärcache för förråd \"{}\" till \"{}\": {}"
+
+#: repo/solv_repo.cpp:608
+msgid "Failed to re-load primary cache for repo \"{}\" from \"{}\": {}"
+msgstr ""
+"Misslyckades att ladda om primär cache för förråd \"{}\" från \"{}\": {}"
+
+#: repo/solv_repo.cpp:673
+msgid "Failed to write {} cache for repo \"{}\" to \"{}\": {}"
+msgstr "Misslyckades att skriva {} cache för förråd \"{}\" till \"{}\": {}"
+
+#: repo/solv_repo.cpp:694
+msgid "Failed to re-load {} cache for repo \"{}\" from \"{}\": {}"
+msgstr "Misslyckades att ladda om {} cache för förråd \"{}\" från \"{}\": {}"
+
+#: repo/temp_files_memory.cpp:52
+msgid ""
+"An error occurred when parsing the temporary files memory file at '{}': {}"
+msgstr ""
+"Ett fel uppstod när den temporära filminnesfilen analyserades på '{}': {}"
+
+#: rpm/nevra.cpp:82
+msgid "NEVRA string \"{}\" contains ':' multiple times"
+msgstr "NEVRA-sträng\"{}\" innehåller ':' flera gånger"
+
+#: rpm/nevra.cpp:86
+msgid "Invalid character '{}' in NEVRA string \"{}\""
+msgstr "Ogiltigt tecken '{}' i NEVRA-sträng \"{}\""
+
+#: rpm/package.cpp:81
+msgid "Package with rpmdbid was not found"
+msgstr "Paketet med rpmdbid hittades inte"
+
+#: rpm/package.cpp:478
+msgid "<unknown>"
+msgstr "<okänd>"
+
+#: rpm/reldep.cpp:116 rpm/reldep.cpp:123
+msgid "Cannot parse a dependency string"
+msgstr "Kan inte tolka en beroendesträng"
+
+#: rpm/rpm_signature.cpp:45
+msgid "No corresponding key was found."
+msgstr "Ingen motsvarande nyckel hittades."
+
+#: rpm/rpm_signature.cpp:46
+msgid "The signature is valid, but the key is not trusted."
+msgstr "Signaturen är giltig, men nyckeln är inte pålitlig."
+
+#: rpm/rpm_signature.cpp:47
+msgid "The package is not signed."
+msgstr "Paketet är inte signerat."
+
+#: rpm/rpm_signature.cpp:48
+msgid "Problem occurred when opening the package."
+msgstr "Ett problem uppstod när paketet öppnades."
+
+#: rpm/rpm_signature.cpp:64
+msgid "Failed to set rpm transaction rootDir \"{}\"."
+msgstr "Misslyckades att tälla in rootKat för rpm-transaktionen \"{}\"."
+
+#: rpm/rpm_signature.cpp:290
+msgid "\"{}\": key is not an armored public key."
+msgstr "\"{}\": nyckel är inte en bepansrad publik nyckel."
+
+#: rpm/rpm_signature.cpp:295
+msgid "Failed to import public key \"{}\" to rpmdb: {}"
+msgstr "Misslyckades att importera publik nyckel \"{}\" till rpmdb: {}"
+
+#. TODO(jrohel): Why? Librpm does not provide this information.
+#: rpm/transaction.cpp:114
+msgid "Cannot set root directory \"{}\""
+msgstr "Kunde inte ställa in root katalog \"{}\""
+
+#: rpm/transaction.cpp:125
+#, c-format
+msgid "Error %i opening rpm database"
+msgstr "Fel %i vid öppnande av rpm databas"
+
+#: rpm/transaction.cpp:134
+msgid "The rpmdbCookie() function did not return cookie of rpm database."
+msgstr "Funktionen rpmdbCookie() returnerade inte kakan för rpm-databasen."
+
+#: rpm/transaction.cpp:199
+msgid "Failed to order the rpm transaction."
+msgstr "Misslyckades med att sortera rpm-transaktionen."
+
+#: rpm/transaction.cpp:235
+msgid ""
+"Failed to set scriptlet output file, cannot duplicate file descriptor: {}"
+msgstr ""
+"Misslyckades att ställa in utdatafil för scriptlet, kan inte duplicera "
+"filbeskrivning: {}"
+
+#: rpm/transaction.cpp:254
+msgid "Failed to set scriptlet output file, cannot open file \"{}\": {}"
+msgstr ""
+"Misslyckades att ställa in skriptutdatafilen, kan inte öppna fil \"{}\": {}"
+
+#: rpm/transaction.cpp:275
+msgid "Failed to read package header, cannot open file \"{}\": {}"
+msgstr "Misslyckades med att läsa pakethuvud, kunde inte öppna fil \"{}\": {}"
+
+#: rpm/transaction.cpp:292
+msgid "Failed to read package header from file \"{}\""
+msgstr "Misslyckades med att läsa pakethuvud från fil \"{}\""
+
+#: rpm/transaction.cpp:305
+msgid "Cannot init rpm database iterator"
+msgstr "Kunde inte starta rpm databas iterator"
+
+#: rpm/transaction.cpp:309
+msgid "Package was not found in rpm database"
+msgstr "Paketet hittades inte i rpm databasen"
+
+#. TODO(jrohel): Why? Librpm does not provide this information.
+#: rpm/transaction.cpp:325
+msgid "Cannot reinstall package \"{}\""
+msgstr "Kunde inte installera om paket \"{}\""
+
+#. TODO(jrohel): Why? Librpm does not provide this information.
+#: rpm/transaction.cpp:343
+msgid "Cannot remove package \"{}\""
+msgstr "Kunde inte ta bort paket \"{}\""
+
+#: rpm/transaction.cpp:362
+msgid "Cannot upgrade package \"{}\""
+msgstr "Kan inte uppgradera paket \"{}\""
+
+#: rpm/transaction.cpp:366
+msgid "Cannot downgrade package \"{}\""
+msgstr "Kunde inte nergradera paket \"{}\""
+
+#: rpm/transaction.cpp:370
+msgid "Cannot install package \"{}\""
+msgstr "Kan inte installera paket \"{}\""
+
+#: rpm/versionlock_config.cpp:284 system/state.cpp:605
+msgid "{}"
+msgstr "{}"
+
+#. TODO(lukash) throw proper exception class
+#: solv/pool.cpp:174
+msgid "Failed to convert epoch \"{}\" to number"
+msgstr "Misslyckades att konvertera epok \"{}\" till nummer"
+
+#: solv/solver.cpp:79
+msgid "Writing debugsolver data into \"{}\" failed: {}"
+msgstr "Misslyckades att skriva felsökningsdata till \"{}\": {}"
+
+#: system/state.cpp:282 system/state.cpp:291
+msgid "Invalid TOML version \"{}\", \"MAJOR.MINOR\" expected"
+msgstr "Ogiltig TOML version \"{}\", \"HUVUD.SMÄRRE\" förväntas"
+
+#: system/state.cpp:299
+msgid "{} state for \"{}\" not found."
+msgstr "{} tillstånd för \"{}\" hittades inte."
+
+#: system/state.cpp:303
+msgid "Loading system state TOML file {} failed (see dnf5-system-state(7)): {}"
+msgstr ""
+"Laddar systemstatus TOML-fil {} misslyckades (se dnf5-system-state(7)): {}"
+
+#: system/state.cpp:640
+msgid "Unsupported TOML version \"{}\", maximum supported version is \"{}\""
+msgstr "Ostödd TOML-version \"{}\", maximalt stödd version är \"{}\""
+
+#: transaction/Swdb.cpp:91
+msgid "In progress"
+msgstr "Pågående"
+
+#: transaction/Swdb.cpp:99 transaction/Swdb.cpp:126 transaction/Swdb.cpp:136
+#: transaction/Swdb.cpp:150 transaction/Swdb.cpp:273 transaction/Swdb.cpp:281
+msgid "Not in progress"
+msgstr "Pågår inte"
+
+#: transaction/Swdb.cpp:158
+msgid "No transaction in progress"
+msgstr "Ingen transaktion pågår"
+
+#: transaction/Transformer.cpp:647
+msgid "Transformer: can't open history persist dir"
+msgstr "Transformer: kan inte öppna historiken kvarstår katalog"
+
+#: transaction/Transformer.cpp:660
+msgid "Couldn't find a history database"
+msgstr "Kunde inte hitta en historik databas"
+
+#. TODO(dmach): replace with a better exception class
+#: transaction/db/comps_environment_group.cpp:100
+msgid ""
+"Failed to insert record into table 'comps_environment_group' in history "
+"database"
+msgstr ""
+"Misslyckades att infoga posten i tabellen 'comps_environment_group' i "
+"historikdatabasen"
+
+#: transaction/db/db.cpp:71
+msgid "Unable to get 'version' from table 'config'"
+msgstr "Misslyckades att hämta 'version' från tabellen 'config'"
+
+#. TODO(dmach): replace with a better exception class
+#: transaction/db/item.cpp:43
+msgid "Failed to insert record into table 'item' in history database"
+msgstr "Misslyckades att infoga post i tabellen \"item\" i historikdatabasen"
+
+#: transaction/offline.cpp:195
+msgid "error reading offline state file"
+msgstr "fel vid läsning av offlinetillståndsfilen"
+
+#: transaction/offline.cpp:200
+msgid "incompatible version of state data"
+msgstr "inkompatibel version av tillståndsdata"
+
+#: transaction/transaction.cpp:96
+msgid "Invalid transaction state: {}"
+msgstr "Ogiltig transaktionstillstånd: {}"
+
+#: transaction/transaction.cpp:279
+msgid "Transaction has already started!"
+msgstr "Transaktionen har redan börjat!"
+
+#: transaction/transaction_item_action.cpp:28
+msgid "Invalid transaction item action: {}"
+msgstr "Ogiltig transaktionsobjektåtgärd: {}"
+
+#: transaction/transaction_item_reason.cpp:28
+msgid "Invalid transaction item reason: {}"
+msgstr "Ogiltig transaktionsobjekt anledning: {}"
+
+#: transaction/transaction_item_state.cpp:28
+msgid "Invalid transaction item state: {}"
+msgstr "Ogiltigt transaktionsobjekts tillstånd: {}"
+
+#: transaction/transaction_item_type.cpp:28
+msgid "Invalid transaction item type: {}"
+msgstr "Ogiltig transaktionsobjektstyp: {}"
+
+#: transaction/transaction_merge.cpp:102
+msgid ""
+"Action '{0}' '{1}' cannot be merged after it was '{2}' in preceding "
+"transactions -> setting '{0}'."
+msgstr ""
+"Åtgärd '{0}' '{1}' kan inte slås samman efter det att det gjordes '{2}' i "
+"föregående transaktioner -> inställning '{0}'."
+
+#: transaction/transaction_merge.cpp:116
+msgid ""
+"Action 'Upgrade' '{0}' cannot be merged because it is not present at that "
+"point -> setting 'Install'."
+msgstr ""
+"Åtgärd 'Uppgradera' '{0}' kan inte slås samman eftersom det inte är "
+"närvarande vid den punkten -> inställningen 'Installera'."
+
+#: transaction/transaction_merge.cpp:174 transaction/transaction_merge.cpp:231
+msgid ""
+"Action 'Reinstall' '{0}' cannot be merged because it is not present at that "
+"point -> setting 'Install'."
+msgstr ""
+"Åtgärd 'Installera om' '{0}' kan inte slås samman eftersom det inte är "
+"närvarande vid den punkten -> inställningen 'Installera'."
+
+#: transaction/transaction_merge.cpp:194
+msgid ""
+"Action '{0}' '{1}' cannot be merged after it was '{2}' in preceding "
+"transaction -> setting '{0}'."
+msgstr ""
+"Åtgärd '{0}' '{1}' kan inte slås samman efter att det var '{2}' i föregående "
+"transaktion -> inställning '{0}'."
+
+#: transaction/transaction_merge.cpp:215
+msgid "Unexpected action encountered: '{0}' during transaction merge."
+msgstr "Oväntad åtgärd påträffades: '{0}' under transaktionssammanslagningen."
+
+#: transaction/transaction_merge.cpp:224
+msgid ""
+"Action '{0}' '{1}' cannot be merged because it is not present at that point -"
+"> skipping it."
+msgstr ""
+"Åtgärd '{0}' '{1}' kan inte slås samman eftersom den inte är närvarande vid "
+"den punkten -> hoppar över den."
+
+#: transaction/transaction_merge.cpp:245
+msgid ""
+"Action '{0}' '{1}' cannot be merged because it is not present at that point -"
+"> setting 'INSTALL'."
+msgstr ""
+"Åtgärd '{0}' '{1}' kan inte slås samman eftersom den inte är närvarande vid "
+"den punkten -> inställningen 'INSTALLERA'."
+
+#: transaction/transaction_merge.cpp:266
+msgid ""
+"Action '{0}' '{1}' cannot be merged because it is not present at that point "
+"(present versions are: {2}) -> skipping it."
+msgstr ""
+"Åtgärd '{0}' '{1}' kan inte slås samman eftersom det inte är närvarande vid "
+"den tidpunkten (nuvarande versioner är: {2}) -> hoppar över det."
+
+#: transaction/transaction_merge.cpp:277
+msgid ""
+"Action '{0}' '{1}' cannot be merged because it is already present at that "
+"point -> skipping it."
+msgstr ""
+"Åtgärd '{0}' '{1}' kan inte slås samman eftersom det redan finns vid den "
+"punkten -> hoppar över det."
+
+#: transaction/transaction_merge.cpp:294
+msgid ""
+"Action '{0}' '{1}' cannot be merged because it is already installed in "
+"version '{2}' -> keeping the action from older transaction with '{1}'."
+msgstr ""
+"Åtgärd '{0}' '{1}' kan inte slås samman eftersom det redan är installerat i "
+"version '{2}' -> behåller åtgärden från äldre transaktion med '{1}'."
+
+#: transaction/transaction_merge.cpp:304
+msgid "Invalid action encountered: '{0}' during transaction merge."
+msgstr "Ogiltig åtgärd påträffad: '{0}' under transaktionssammanslagning."
+
+#: transaction/transaction_sr.cpp:49
+msgid "Transaction replay JSON serialized transaction input is empty"
+msgstr "Transaktionsuppspelning JSON-serialiserad transaktionsindata är tom"
+
+#: transaction/transaction_sr.cpp:58
+msgid "Error during transaction replay JSON parsing : {}"
+msgstr "Fel under JSON-tolkning av transaktionsuppspelning: {}"
+
+#: transaction/transaction_sr.cpp:68
+msgid "Unexpected version format: \"{}\", supported version is \"{}\""
+msgstr "Oväntat versionsformat: \"{}\", version som stöds är \"{}\""
+
+#: transaction/transaction_sr.cpp:74
+msgid "Incompatible major version: \"{}\", supported major version is \"{}\""
+msgstr "Inkompatibel huvudversion: \"{}\", stödd huvudversion är \"{}\""
+
+#: transaction/transaction_sr.cpp:81
+msgid "Invalid minor version: \"{}\", number expected"
+msgstr "Ogiltig underversion version: \"{}\", nummer förväntades"
+
+#: transaction/transaction_sr.cpp:84
+msgid "Missing key \"version\""
+msgstr "Saknar nyckel \"version\""
+
+#: transaction/transaction_sr.cpp:92
+msgid "Unexpected type of \"environments\", array expected"
+msgstr "Oväntad typ av \"environments\", en vektor förväntades"
+
+#: transaction/transaction_sr.cpp:105
+msgid "Missing object key \"id\" in an environment"
+msgstr "Saknar objekt nyckel \"id\" i en miljö"
+
+#: transaction/transaction_sr.cpp:110
+msgid "Missing object key \"action\" in an environment"
+msgstr "Saknar objekt nyckel \"action\" i en miljö"
+
+#: transaction/transaction_sr.cpp:129
+msgid "Unexpected type of \"groups\", array expected"
+msgstr "Oväntad typ av \"groups\", en vektor förväntades"
+
+#: transaction/transaction_sr.cpp:145
+msgid "Missing object key \"id\" in a group"
+msgstr "Saknar objekt nyckel \"id\" i en grupp"
+
+#: transaction/transaction_sr.cpp:150
+msgid "Missing object key \"action\" in a group"
+msgstr "Saknar objektnyckel \"action\" i en grupp"
+
+#: transaction/transaction_sr.cpp:155
+msgid "Missing object key \"reason\" in a group"
+msgstr "Saknar objektnyckel \"reason\" i en grupp"
+
+#: transaction/transaction_sr.cpp:186
+msgid "Unexpected type of \"rpms\", array expected"
+msgstr "Oväntad typ av \"rpms\", array förväntad"
+
+#: transaction/transaction_sr.cpp:202
+msgid "Cannot parse NEVRA for rpm \"{}\""
+msgstr "Kan inte analysera NEVRA för rpm \"{}\""
+
+#: transaction/transaction_sr.cpp:210
+msgid "Either \"nevra\" or \"package_path\" object key is required in an rpm"
+msgstr "Antingen \"nevra\" eller \"package_path\" objektnyckel krävs i en rpm"
+
+#: transaction/transaction_sr.cpp:215
+msgid "Missing object key \"action\" in an rpm"
+msgstr "Saknar objektnyckel \"action\" i en rpm"
+
+#: transaction/transaction_sr.cpp:220
+msgid "Missing object key \"reason\" in an rpm"
+msgstr "Saknar objektnyckel \"reason\" i en rpm"
+
+#: transaction/transaction_sr.cpp:227
+msgid ""
+"Missing mandatory object key \"group_id\" in an rpm with reason \"Group\" "
+"and action \"Reason Change\""
+msgstr ""
+"Saknar den obligatoriska objektnyckeln \"group_id\" i en rpm med anledning "
+"\"Group\" och åtgärden \"Reason Change\""
+
+#: utils/fs/file.cpp:86
+msgid "cannot open file"
+msgstr "kan inte öppna fil"
+
+#: utils/fs/file.cpp:99
+msgid "cannot open file from fd"
+msgstr "kan inte öppna fil från fd"
+
+#: utils/fs/file.cpp:109
+msgid "cannot close file"
+msgstr "kan inte stänga fil"
+
+#: utils/fs/file.cpp:139 utils/fs/file.cpp:168
+msgid "error reading file"
+msgstr "fel vid läsning av fil"
+
+#: utils/fs/file.cpp:154 utils/fs/file.cpp:180
+msgid "error writing file"
+msgstr "fel vid skrivning av fil"
+
+#: utils/fs/file.cpp:189
+msgid "error flushing file"
+msgstr "fel vid tömning av fil"
+
+#: utils/fs/file.cpp:198
+msgid "error seeking in file"
+msgstr "fel vid sökning i fil"
+
+#: utils/fs/file.cpp:209
+msgid "error retrieving file position"
+msgstr "fel vid hämtning av filposition"
+
+#: utils/fs/file.cpp:297
+msgid "error reading a line from file"
+msgstr "fel vid läsning av en rad från fil"
+
+#: utils/fs/file.cpp:335
+msgid "error retrieving file descriptor"
+msgstr "fel vid hämtning av filbeskrivning"
+
+#: utils/fs/temp.cpp:42
+msgid "cannot create temporary directory"
+msgstr "kan inte skapa temporär katalog"
+
+#: utils/fs/temp.cpp:89
+msgid "cannot create temporary file"
+msgstr "kan inte skapa temporär fil"
+
+#: utils/fs/temp.cpp:142
+msgid "cannot close temporary file"
+msgstr "kan inte stänga temporär fil"
+
+#: utils/iniparser.cpp:126
+msgid "Missing ']' on line {}"
+msgstr "Saknar ']' på rad {}"
+
+#: utils/iniparser.cpp:129
+msgid "Empty section name on line {}"
+msgstr "Tomt avsnittsnamn på rad {}"
+
+#: utils/iniparser.cpp:137
+msgid "Text after section on line {}"
+msgstr "Text efter avsnitt på rad {}"
+
+#: utils/iniparser.cpp:147
+msgid "Missing section header on line {}"
+msgstr "Avsnittsrubrik saknas på rad {}"
+
+#: utils/iniparser.cpp:152
+msgid "Illegal continuation line on line {}"
+msgstr "Olaglig fortsättningslinje på rad {}"
+
+#: utils/iniparser.cpp:159
+msgid "Missing option name on line {}"
+msgstr "Alternativnamn saknas på rad {}"
+
+#: utils/iniparser.cpp:163
+msgid "Missing '=' on line {}"
+msgstr "Saknar '=' på rad {}"
+
+#. returns localized message, problem with later translation
+#: utils/library.cpp:34
+msgid "Cannot load shared library \"{}\": {}"
+msgstr "Kan inte ladda delat bibliotek \"{}\": {}"
+
+#: utils/library.cpp:48
+msgid "Cannot obtain address of symbol \"{}\": {}"
+msgstr "Kan inte erhålla adressen till symbol \"{}\": {}"
+
+#: utils/locale.cpp:57
+msgid "Cannot set the locale \"{}\": {}"
+msgstr "Det går inte att ställa in lokal \"{}:{}"
+
+#: utils/locker.cpp:45
+msgid "Failed to open lock file \"{}\""
+msgstr "Misslyckades med att öppna låsfil \"{}\""
+
+#: utils/locker.cpp:60
+msgid "Failed to obtain lock \"{}\""
+msgstr "Misslyckades att erhålla lås \"{}\""
+
+#: utils/locker.cpp:70
+msgid "Failed to close lock file \"{}\""
+msgstr "Misslyckades att stänga låsfil \"{}\""
+
+#: utils/locker.cpp:73
+msgid "Failed to delete lock file \"{}\""
+msgstr "Misslyckades att ta bort låsfil \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:29
+msgid "SQL statement compilation failed: \"{}\""
+msgstr "SQL-sats kompilering misslyckades: \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:31
+msgid "Binding integer value to SQL statement failed: \"{}\""
+msgstr "Bindning av heltalsvärde till SQL-sats misslyckades: \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:33
+msgid "Binding integer64 value to SQL statement failed: \"{}\""
+msgstr "Bindning av heltals64-värde till SQL-sats misslyckades: \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:35
+msgid "Binding unsigned integer32 value to SQL statement failed: \"{}\""
+msgstr ""
+"Bindning av osignerat heltal32-värde till SQL-sats misslyckades: \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:37
+msgid "Binding double value to SQL statement failed: \"{}\""
+msgstr "Bindning av dubbelt värde till SQL-sats misslyckades: \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:39
+msgid "Binding bool value to SQL statement failed: \"{}\""
+msgstr "Bindning av booleskt-värde till SQL-sats misslyckades: \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:40
+msgid "Binding text to SQL statement failed: \"{}\""
+msgstr "Bindning av text till SQL-sats misslyckades: \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:41
+msgid "Binding blob to SQL statement failed: \"{}\""
+msgstr "Bindning av blob till SQL-sats misslyckades: \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:42
+msgid "SQL statement evaluation failed: \"{}\""
+msgstr "SQL-satsutvärdering misslyckades: \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:44
+msgid "Insufficient memory or result exceed maximum SQLite3 string length"
+msgstr ""
+"Otillräckligt minne eller resultat överskrider maximal SQLite3-stränglängd"
+
+#: utils/sqlite3/sqlite3.cpp:46
+msgid "Column \"{}\" not found"
+msgstr "Kolumn \"{}\" hittades inte"
+
+#: utils/sqlite3/sqlite3.cpp:48
+msgid "SQL statement execution failed: \"{}\""
+msgstr "Exekvering av SQL-sats misslyckades: \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:68
+msgid "Failed to open database \"{}\""
+msgstr "Misslyckades med att öppna databas \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:105
+msgid "Failed to close database \"{}\""
+msgstr "Misslyckades med att stänga databas \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:117 utils/sqlite3/sqlite3.cpp:143
+msgid "Failed to open backup database \"{}\""
+msgstr "Misslyckades med att öppna backup databas \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:132
+msgid "Failed to backup database \"{}\" into \"{}\""
+msgstr "Misslyckades med att säkerhetskopiera databas \"{}\" till \"{}\""
+
+#: utils/sqlite3/sqlite3.cpp:158
+msgid "Failed to restore database \"{}\""
+msgstr "Misslyckades med att återställa databas \"{}\""
+
+#: utils/system.cpp:34
+msgid "failed to read rpm config files"
+msgstr "misslyckades att läsa rpm konfigurationsfiler"
+
+#: utils/system.cpp:52
+msgid "Failed to execute uname()"
+msgstr "Misslyckades med att köra uname()"
+
+#~ msgid "Warning: skipped PGP checks for 1 package from repository: {}"
+#~ msgstr "Varning: hoppade över PGP-kontroller för 1 paket från förråd: {}"
+
+#~ msgid "Cannot {} package \"{}\""
+#~ msgstr "Kan inte {} med paketet \"{}\""
+
+#~ msgid "packages"
+#~ msgstr "paket"
+
+#~ msgid "groups"
+#~ msgstr "grupper"
+
+#~ msgid "environmental groups"
+#~ msgstr "miljögrupper"
+
+#~ msgid "modules"
+#~ msgstr "moduler"
+
+#~ msgid "Failed to resolve modules."
+#~ msgstr "Misslyckades med att lösa moduler."
+
+#~ msgid "Invalid enum option value \"{}\""
+#~ msgstr "Ogiltigt enum-alternativvärde \"{}\""
+
+#~ msgid "Failed to resolve: {}"
+#~ msgstr "Misslyckades med att lösa: {}"
