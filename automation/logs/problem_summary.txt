@@ -1,0 +1,190 @@
+==================================== ERRORS ====================================
+_ ERROR collecting dnf5/doc/tutorial/tests/bindings/python3/test_api_changes_from_dnf4.py _
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/doc/tutorial/tests/bindings/python3/test_api_changes_from_dnf4.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'base_test_case'
+__ ERROR collecting dnf5/doc/tutorial/tests/bindings/python3/test_tutorial.py __
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/doc/tutorial/tests/bindings/python3/test_tutorial.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'base_test_case'
+_______ ERROR collecting dnf5/test/dnf5daemon-server/test_distro_sync.py _______
+E   KeyError: 'PROJECT_BINARY_DIR'
+________ ERROR collecting dnf5/test/dnf5daemon-server/test_downgrade.py ________
+E   KeyError: 'PROJECT_BINARY_DIR'
+__________ ERROR collecting dnf5/test/dnf5daemon-server/test_goal.py ___________
+E   KeyError: 'PROJECT_BINARY_DIR'
+_________ ERROR collecting dnf5/test/dnf5daemon-server/test_install.py _________
+E   KeyError: 'PROJECT_BINARY_DIR'
+________ ERROR collecting dnf5/test/dnf5daemon-server/test_reinstall.py ________
+E   KeyError: 'PROJECT_BINARY_DIR'
+_________ ERROR collecting dnf5/test/dnf5daemon-server/test_remove.py __________
+E   KeyError: 'PROJECT_BINARY_DIR'
+________ ERROR collecting dnf5/test/dnf5daemon-server/test_repolist.py _________
+E   KeyError: 'PROJECT_BINARY_DIR'
+________ ERROR collecting dnf5/test/dnf5daemon-server/test_repoquery.py ________
+E   KeyError: 'PROJECT_BINARY_DIR'
+_________ ERROR collecting dnf5/test/dnf5daemon-server/test_session.py _________
+E   KeyError: 'PROJECT_BINARY_DIR'
+_________ ERROR collecting dnf5/test/dnf5daemon-server/test_upgrade.py _________
+E   KeyError: 'PROJECT_BINARY_DIR'
+_____ ERROR collecting dnf5/test/python3/libdnf5/advisory/test_advisory.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/advisory/test_advisory.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/base/test_base.py _________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/base/test_base.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/base/test_goal.py _________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/base/test_goal.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_____ ERROR collecting dnf5/test/python3/libdnf5/base/test_transaction.py ______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/base/test_transaction.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_ ERROR collecting dnf5/test/python3/libdnf5/common/test_struct_attributes.py __
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/common/test_struct_attributes.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+___ ERROR collecting dnf5/test/python3/libdnf5/comps/test_comps_iterators.py ___
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/comps/test_comps_iterators.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+________ ERROR collecting dnf5/test/python3/libdnf5/comps/test_group.py ________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/comps/test_group.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+________ ERROR collecting dnf5/test/python3/libdnf5/conf/test_option.py ________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/conf/test_option.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/conf/test_vars.py _________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/conf/test_vars.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+___ ERROR collecting dnf5/test/python3/libdnf5/exceptions/test_exceptions.py ___
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/exceptions/test_exceptions.py'.
+Traceback:
+dnf5/test/python3/libdnf5/exceptions/test_exceptions.py:22: in <module>
+E   ModuleNotFoundError: No module named 'libdnf5'
+____ ERROR collecting dnf5/test/python3/libdnf5/logger/test_file_logger.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/logger/test_file_logger.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+___ ERROR collecting dnf5/test/python3/libdnf5/logger/test_global_logger.py ____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/logger/test_global_logger.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+______ ERROR collecting dnf5/test/python3/libdnf5/logger/test_loggers.py _______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/logger/test_loggers.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+___ ERROR collecting dnf5/test/python3/libdnf5/repo/test_file_downloader.py ____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/repo/test_file_downloader.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+__ ERROR collecting dnf5/test/python3/libdnf5/repo/test_package_downloader.py __
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/repo/test_package_downloader.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/repo/test_repo.py _________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/repo/test_repo.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+______ ERROR collecting dnf5/test/python3/libdnf5/repo/test_repo_query.py ______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/repo/test_repo_query.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_arch.py __________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_arch.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_nevra.py _________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_nevra.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_____ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_package_query.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_package_query.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_package_query_set_operators.py _
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_package_query_set_operators.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+______ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_reldep_list.py ______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_reldep_list.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_____ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_rpm_signature.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_rpm_signature.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_ ERROR collecting dnf5/test/python3/libdnf5/tutorial/test_api_changes_from_dnf4.py _
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/tutorial/test_api_changes_from_dnf4.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+_____ ERROR collecting dnf5/test/python3/libdnf5/tutorial/test_tutorial.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/tutorial/test_tutorial.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+______ ERROR collecting dnf5/test/python3/libdnf5/utils/test_patterns.py _______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/utils/test_patterns.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+______ ERROR collecting dnf5/test/python3/libdnf5_cli/test_placeholder.py ______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5_cli/test_placeholder.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5_cli'
+_ ERROR collecting dnf5/test/tutorial/bindings/python3/test_api_changes_from_dnf4.py _
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/tutorial/bindings/python3/test_api_changes_from_dnf4.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+____ ERROR collecting dnf5/test/tutorial/bindings/python3/test_tutorial.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/tutorial/bindings/python3/test_tutorial.py'.
+Traceback:
+E   ModuleNotFoundError: No module named 'libdnf5'
+ERROR dnf5/doc/tutorial/tests/bindings/python3/test_api_changes_from_dnf4.py
+ERROR dnf5/doc/tutorial/tests/bindings/python3/test_tutorial.py
+ERROR dnf5/test/dnf5daemon-server/test_distro_sync.py - KeyError: 'PROJECT_BI...
+ERROR dnf5/test/dnf5daemon-server/test_downgrade.py - KeyError: 'PROJECT_BINA...
+ERROR dnf5/test/dnf5daemon-server/test_goal.py - KeyError: 'PROJECT_BINARY_DIR'
+ERROR dnf5/test/dnf5daemon-server/test_install.py - KeyError: 'PROJECT_BINARY...
+ERROR dnf5/test/dnf5daemon-server/test_reinstall.py - KeyError: 'PROJECT_BINA...
+ERROR dnf5/test/dnf5daemon-server/test_remove.py - KeyError: 'PROJECT_BINARY_...
+ERROR dnf5/test/dnf5daemon-server/test_repolist.py - KeyError: 'PROJECT_BINAR...
+ERROR dnf5/test/dnf5daemon-server/test_repoquery.py - KeyError: 'PROJECT_BINA...
+ERROR dnf5/test/dnf5daemon-server/test_session.py - KeyError: 'PROJECT_BINARY...
+ERROR dnf5/test/dnf5daemon-server/test_upgrade.py - KeyError: 'PROJECT_BINARY...
+ERROR dnf5/test/python3/libdnf5/advisory/test_advisory.py
+ERROR dnf5/test/python3/libdnf5/base/test_base.py
+ERROR dnf5/test/python3/libdnf5/base/test_goal.py
+ERROR dnf5/test/python3/libdnf5/base/test_transaction.py
+ERROR dnf5/test/python3/libdnf5/common/test_struct_attributes.py
+ERROR dnf5/test/python3/libdnf5/comps/test_comps_iterators.py
+ERROR dnf5/test/python3/libdnf5/comps/test_group.py
+ERROR dnf5/test/python3/libdnf5/conf/test_option.py
+ERROR dnf5/test/python3/libdnf5/conf/test_vars.py
+ERROR dnf5/test/python3/libdnf5/exceptions/test_exceptions.py
+ERROR dnf5/test/python3/libdnf5/logger/test_file_logger.py
+ERROR dnf5/test/python3/libdnf5/logger/test_global_logger.py
+ERROR dnf5/test/python3/libdnf5/logger/test_loggers.py
+ERROR dnf5/test/python3/libdnf5/repo/test_file_downloader.py
+ERROR dnf5/test/python3/libdnf5/repo/test_package_downloader.py
+ERROR dnf5/test/python3/libdnf5/repo/test_repo.py
+ERROR dnf5/test/python3/libdnf5/repo/test_repo_query.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_arch.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_nevra.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_package_query.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_package_query_set_operators.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_reldep_list.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_rpm_signature.py
+ERROR dnf5/test/python3/libdnf5/tutorial/test_api_changes_from_dnf4.py
+ERROR dnf5/test/python3/libdnf5/tutorial/test_tutorial.py
+ERROR dnf5/test/python3/libdnf5/utils/test_patterns.py
+ERROR dnf5/test/python3/libdnf5_cli/test_placeholder.py
+ERROR dnf5/test/tutorial/bindings/python3/test_api_changes_from_dnf4.py
+ERROR dnf5/test/tutorial/bindings/python3/test_tutorial.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 41 errors during collection !!!!!!!!!!!!!!!!!!!
+41 errors in 2.69s
+PYTEST_FAILED

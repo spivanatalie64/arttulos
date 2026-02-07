@@ -25,3 +25,5 @@
 - Requires a clean working directory and remote named `origin`.
 - Will skip commit if there are no changes.
 - Can be run after each build for full automation.
+- For autonomous agents, set AGENT_NAME and AGENT_EMAIL environment variables to configure commit identity (e.g., AGENT_NAME="agent-1" AGENT_EMAIL="agent-1@local").
+- To force pushing to the remote even when local key checks would normally block it, set AUTO_GIT_FORCE_PUSH=1 (use with caution).

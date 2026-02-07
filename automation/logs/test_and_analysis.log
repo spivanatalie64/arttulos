@@ -1,0 +1,479 @@
+Started tests at 2026-02-07T03:27:42-08:00
+=== Git Status ===
+?? ai_assistant/requirements.txt
+?? automation/
+=== Make test ===
+No make test target found
+=== Python tests ===
+
+==================================== ERRORS ====================================
+_ ERROR collecting dnf5/doc/tutorial/tests/bindings/python3/test_api_changes_from_dnf4.py _
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/doc/tutorial/tests/bindings/python3/test_api_changes_from_dnf4.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/doc/tutorial/tests/bindings/python3/test_api_changes_from_dnf4.py:24: in <module>
+    import base_test_case
+E   ModuleNotFoundError: No module named 'base_test_case'
+__ ERROR collecting dnf5/doc/tutorial/tests/bindings/python3/test_tutorial.py __
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/doc/tutorial/tests/bindings/python3/test_tutorial.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/doc/tutorial/tests/bindings/python3/test_tutorial.py:24: in <module>
+    import base_test_case
+E   ModuleNotFoundError: No module named 'base_test_case'
+_______ ERROR collecting dnf5/test/dnf5daemon-server/test_distro_sync.py _______
+dnf5/test/dnf5daemon-server/test_distro_sync.py:24: in <module>
+    import support
+dnf5/test/dnf5daemon-server/support.py:27: in <module>
+    PROJECT_BINARY_DIR = os.environ["PROJECT_BINARY_DIR"]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen os>:709: in __getitem__
+    ???
+E   KeyError: 'PROJECT_BINARY_DIR'
+________ ERROR collecting dnf5/test/dnf5daemon-server/test_downgrade.py ________
+dnf5/test/dnf5daemon-server/test_downgrade.py:24: in <module>
+    import support
+dnf5/test/dnf5daemon-server/support.py:27: in <module>
+    PROJECT_BINARY_DIR = os.environ["PROJECT_BINARY_DIR"]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen os>:709: in __getitem__
+    ???
+E   KeyError: 'PROJECT_BINARY_DIR'
+__________ ERROR collecting dnf5/test/dnf5daemon-server/test_goal.py ___________
+dnf5/test/dnf5daemon-server/test_goal.py:22: in <module>
+    import support
+dnf5/test/dnf5daemon-server/support.py:27: in <module>
+    PROJECT_BINARY_DIR = os.environ["PROJECT_BINARY_DIR"]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen os>:709: in __getitem__
+    ???
+E   KeyError: 'PROJECT_BINARY_DIR'
+_________ ERROR collecting dnf5/test/dnf5daemon-server/test_install.py _________
+dnf5/test/dnf5daemon-server/test_install.py:22: in <module>
+    import support
+dnf5/test/dnf5daemon-server/support.py:27: in <module>
+    PROJECT_BINARY_DIR = os.environ["PROJECT_BINARY_DIR"]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen os>:709: in __getitem__
+    ???
+E   KeyError: 'PROJECT_BINARY_DIR'
+________ ERROR collecting dnf5/test/dnf5daemon-server/test_reinstall.py ________
+dnf5/test/dnf5daemon-server/test_reinstall.py:24: in <module>
+    import support
+dnf5/test/dnf5daemon-server/support.py:27: in <module>
+    PROJECT_BINARY_DIR = os.environ["PROJECT_BINARY_DIR"]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen os>:709: in __getitem__
+    ???
+E   KeyError: 'PROJECT_BINARY_DIR'
+_________ ERROR collecting dnf5/test/dnf5daemon-server/test_remove.py __________
+dnf5/test/dnf5daemon-server/test_remove.py:24: in <module>
+    import support
+dnf5/test/dnf5daemon-server/support.py:27: in <module>
+    PROJECT_BINARY_DIR = os.environ["PROJECT_BINARY_DIR"]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen os>:709: in __getitem__
+    ???
+E   KeyError: 'PROJECT_BINARY_DIR'
+________ ERROR collecting dnf5/test/dnf5daemon-server/test_repolist.py _________
+dnf5/test/dnf5daemon-server/test_repolist.py:23: in <module>
+    import support
+dnf5/test/dnf5daemon-server/support.py:27: in <module>
+    PROJECT_BINARY_DIR = os.environ["PROJECT_BINARY_DIR"]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen os>:709: in __getitem__
+    ???
+E   KeyError: 'PROJECT_BINARY_DIR'
+________ ERROR collecting dnf5/test/dnf5daemon-server/test_repoquery.py ________
+dnf5/test/dnf5daemon-server/test_repoquery.py:23: in <module>
+    import support
+dnf5/test/dnf5daemon-server/support.py:27: in <module>
+    PROJECT_BINARY_DIR = os.environ["PROJECT_BINARY_DIR"]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen os>:709: in __getitem__
+    ???
+E   KeyError: 'PROJECT_BINARY_DIR'
+_________ ERROR collecting dnf5/test/dnf5daemon-server/test_session.py _________
+dnf5/test/dnf5daemon-server/test_session.py:23: in <module>
+    import support
+dnf5/test/dnf5daemon-server/support.py:27: in <module>
+    PROJECT_BINARY_DIR = os.environ["PROJECT_BINARY_DIR"]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen os>:709: in __getitem__
+    ???
+E   KeyError: 'PROJECT_BINARY_DIR'
+_________ ERROR collecting dnf5/test/dnf5daemon-server/test_upgrade.py _________
+dnf5/test/dnf5daemon-server/test_upgrade.py:24: in <module>
+    import support
+dnf5/test/dnf5daemon-server/support.py:27: in <module>
+    PROJECT_BINARY_DIR = os.environ["PROJECT_BINARY_DIR"]
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+<frozen os>:709: in __getitem__
+    ???
+E   KeyError: 'PROJECT_BINARY_DIR'
+_____ ERROR collecting dnf5/test/python3/libdnf5/advisory/test_advisory.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/advisory/test_advisory.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/advisory/test_advisory.py:20: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/base/test_base.py _________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/base/test_base.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/base/test_base.py:22: in <module>
+    import libdnf5.base
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/base/test_goal.py _________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/base/test_goal.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/base/test_goal.py:22: in <module>
+    import libdnf5.base
+E   ModuleNotFoundError: No module named 'libdnf5'
+_____ ERROR collecting dnf5/test/python3/libdnf5/base/test_transaction.py ______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/base/test_transaction.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/base/test_transaction.py:20: in <module>
+    import libdnf5.base
+E   ModuleNotFoundError: No module named 'libdnf5'
+_ ERROR collecting dnf5/test/python3/libdnf5/common/test_struct_attributes.py __
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/common/test_struct_attributes.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/common/test_struct_attributes.py:22: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+___ ERROR collecting dnf5/test/python3/libdnf5/comps/test_comps_iterators.py ___
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/comps/test_comps_iterators.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/comps/test_comps_iterators.py:21: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+________ ERROR collecting dnf5/test/python3/libdnf5/comps/test_group.py ________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/comps/test_group.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/comps/test_group.py:23: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+________ ERROR collecting dnf5/test/python3/libdnf5/conf/test_option.py ________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/conf/test_option.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/conf/test_option.py:20: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/conf/test_vars.py _________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/conf/test_vars.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/conf/test_vars.py:20: in <module>
+    import base_test_case
+dnf5/test/python3/libdnf5/base_test_case.py:26: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+___ ERROR collecting dnf5/test/python3/libdnf5/exceptions/test_exceptions.py ___
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/exceptions/test_exceptions.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/exceptions/test_exceptions.py:22: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+____ ERROR collecting dnf5/test/python3/libdnf5/logger/test_file_logger.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/logger/test_file_logger.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/logger/test_file_logger.py:20: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+___ ERROR collecting dnf5/test/python3/libdnf5/logger/test_global_logger.py ____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/logger/test_global_logger.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/logger/test_global_logger.py:20: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+______ ERROR collecting dnf5/test/python3/libdnf5/logger/test_loggers.py _______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/logger/test_loggers.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/logger/test_loggers.py:23: in <module>
+    import libdnf5.logger
+E   ModuleNotFoundError: No module named 'libdnf5'
+___ ERROR collecting dnf5/test/python3/libdnf5/repo/test_file_downloader.py ____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/repo/test_file_downloader.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/repo/test_file_downloader.py:23: in <module>
+    import libdnf5.base
+E   ModuleNotFoundError: No module named 'libdnf5'
+__ ERROR collecting dnf5/test/python3/libdnf5/repo/test_package_downloader.py __
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/repo/test_package_downloader.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/repo/test_package_downloader.py:23: in <module>
+    import libdnf5.base
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/repo/test_repo.py _________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/repo/test_repo.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/repo/test_repo.py:22: in <module>
+    import libdnf5.base
+E   ModuleNotFoundError: No module named 'libdnf5'
+______ ERROR collecting dnf5/test/python3/libdnf5/repo/test_repo_query.py ______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/repo/test_repo_query.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/repo/test_repo_query.py:22: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_arch.py __________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_arch.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/rpm/test_arch.py:23: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+_________ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_nevra.py _________
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_nevra.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/rpm/test_nevra.py:22: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+_____ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_package_query.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_package_query.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/rpm/test_package_query.py:22: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+_ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_package_query_set_operators.py _
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_package_query_set_operators.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/rpm/test_package_query_set_operators.py:21: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+______ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_reldep_list.py ______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_reldep_list.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/rpm/test_reldep_list.py:22: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+_____ ERROR collecting dnf5/test/python3/libdnf5/rpm/test_rpm_signature.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/rpm/test_rpm_signature.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/rpm/test_rpm_signature.py:22: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+_ ERROR collecting dnf5/test/python3/libdnf5/tutorial/test_api_changes_from_dnf4.py _
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/tutorial/test_api_changes_from_dnf4.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/doc/tutorial/tests/bindings/python3/test_api_changes_from_dnf4.py:24: in <module>
+    import base_test_case
+dnf5/test/python3/libdnf5/base_test_case.py:26: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+_____ ERROR collecting dnf5/test/python3/libdnf5/tutorial/test_tutorial.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/tutorial/test_tutorial.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/doc/tutorial/tests/bindings/python3/test_tutorial.py:24: in <module>
+    import base_test_case
+dnf5/test/python3/libdnf5/base_test_case.py:26: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+______ ERROR collecting dnf5/test/python3/libdnf5/utils/test_patterns.py _______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5/utils/test_patterns.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5/utils/test_patterns.py:22: in <module>
+    import libdnf5.utils
+E   ModuleNotFoundError: No module named 'libdnf5'
+______ ERROR collecting dnf5/test/python3/libdnf5_cli/test_placeholder.py ______
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/python3/libdnf5_cli/test_placeholder.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/test/python3/libdnf5_cli/test_placeholder.py:3: in <module>
+    import libdnf5_cli
+E   ModuleNotFoundError: No module named 'libdnf5_cli'
+_ ERROR collecting dnf5/test/tutorial/bindings/python3/test_api_changes_from_dnf4.py _
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/tutorial/bindings/python3/test_api_changes_from_dnf4.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/doc/tutorial/tests/bindings/python3/test_api_changes_from_dnf4.py:24: in <module>
+    import base_test_case
+dnf5/test/python3/libdnf5/base_test_case.py:26: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+____ ERROR collecting dnf5/test/tutorial/bindings/python3/test_tutorial.py _____
+ImportError while importing test module '/home/natalie/Documents/arttulos/dnf5/test/tutorial/bindings/python3/test_tutorial.py'.
+Hint: make sure your test modules/packages have valid Python names.
+Traceback:
+/usr/lib/python3.14/importlib/__init__.py:88: in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+dnf5/doc/tutorial/tests/bindings/python3/test_tutorial.py:24: in <module>
+    import base_test_case
+dnf5/test/python3/libdnf5/base_test_case.py:26: in <module>
+    import libdnf5
+E   ModuleNotFoundError: No module named 'libdnf5'
+=========================== short test summary info ============================
+ERROR dnf5/doc/tutorial/tests/bindings/python3/test_api_changes_from_dnf4.py
+ERROR dnf5/doc/tutorial/tests/bindings/python3/test_tutorial.py
+ERROR dnf5/test/dnf5daemon-server/test_distro_sync.py - KeyError: 'PROJECT_BI...
+ERROR dnf5/test/dnf5daemon-server/test_downgrade.py - KeyError: 'PROJECT_BINA...
+ERROR dnf5/test/dnf5daemon-server/test_goal.py - KeyError: 'PROJECT_BINARY_DIR'
+ERROR dnf5/test/dnf5daemon-server/test_install.py - KeyError: 'PROJECT_BINARY...
+ERROR dnf5/test/dnf5daemon-server/test_reinstall.py - KeyError: 'PROJECT_BINA...
+ERROR dnf5/test/dnf5daemon-server/test_remove.py - KeyError: 'PROJECT_BINARY_...
+ERROR dnf5/test/dnf5daemon-server/test_repolist.py - KeyError: 'PROJECT_BINAR...
+ERROR dnf5/test/dnf5daemon-server/test_repoquery.py - KeyError: 'PROJECT_BINA...
+ERROR dnf5/test/dnf5daemon-server/test_session.py - KeyError: 'PROJECT_BINARY...
+ERROR dnf5/test/dnf5daemon-server/test_upgrade.py - KeyError: 'PROJECT_BINARY...
+ERROR dnf5/test/python3/libdnf5/advisory/test_advisory.py
+ERROR dnf5/test/python3/libdnf5/base/test_base.py
+ERROR dnf5/test/python3/libdnf5/base/test_goal.py
+ERROR dnf5/test/python3/libdnf5/base/test_transaction.py
+ERROR dnf5/test/python3/libdnf5/common/test_struct_attributes.py
+ERROR dnf5/test/python3/libdnf5/comps/test_comps_iterators.py
+ERROR dnf5/test/python3/libdnf5/comps/test_group.py
+ERROR dnf5/test/python3/libdnf5/conf/test_option.py
+ERROR dnf5/test/python3/libdnf5/conf/test_vars.py
+ERROR dnf5/test/python3/libdnf5/exceptions/test_exceptions.py
+ERROR dnf5/test/python3/libdnf5/logger/test_file_logger.py
+ERROR dnf5/test/python3/libdnf5/logger/test_global_logger.py
+ERROR dnf5/test/python3/libdnf5/logger/test_loggers.py
+ERROR dnf5/test/python3/libdnf5/repo/test_file_downloader.py
+ERROR dnf5/test/python3/libdnf5/repo/test_package_downloader.py
+ERROR dnf5/test/python3/libdnf5/repo/test_repo.py
+ERROR dnf5/test/python3/libdnf5/repo/test_repo_query.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_arch.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_nevra.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_package_query.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_package_query_set_operators.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_reldep_list.py
+ERROR dnf5/test/python3/libdnf5/rpm/test_rpm_signature.py
+ERROR dnf5/test/python3/libdnf5/tutorial/test_api_changes_from_dnf4.py
+ERROR dnf5/test/python3/libdnf5/tutorial/test_tutorial.py
+ERROR dnf5/test/python3/libdnf5/utils/test_patterns.py
+ERROR dnf5/test/python3/libdnf5_cli/test_placeholder.py
+ERROR dnf5/test/tutorial/bindings/python3/test_api_changes_from_dnf4.py
+ERROR dnf5/test/tutorial/bindings/python3/test_tutorial.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 41 errors during collection !!!!!!!!!!!!!!!!!!!
+41 errors in 2.69s
+PYTEST_FAILED
+=== Node tests ===
+No package.json; skipping node tests
+=== Shellcheck ===
+shellcheck not installed
+=== Flake8 ===
+flake8 not installed
+=== Bandit ===
+bandit not installed
+=== End log ===
+Creating issue: agent-1: Python pytest failures detected
+could not assign user: 'agent-2' not found
+gh issue create failed for agent-1: Python pytest failures detected
+could not add label: 'auto-detected' not found
+Failed creating status issue
+PROBLEMS_FOUND=1
