@@ -1,0 +1,27 @@
+name: Robotic Workforce
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  run-agents:
+    runs-on: ubuntu-latest
+    if: secrets.COPILOT_TOKEN != '' || secrets.OPENAI_API_KEY != ''
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install openai PyGithub
+      - name: Run robotic workforce
+        env:
+          COPILOT_TOKEN: ${{ secrets.COPILOT_TOKEN }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: python ai_assistant/robotic_workforce.py
