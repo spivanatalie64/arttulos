@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y podman rpm pacman nix
+          sudo apt-get install -y podman rpm
 
       - name: Build ISO in Docker
         run: |
@@ -27,10 +27,12 @@ jobs:
           bash build_system.sh
 
       - name: Upload ISO artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: arttulos-iso
-          path: arttulos-os/arttulos-2026.01.iso
+          path: arttulos-os/scripts/output_iso/
+          if-no-files-found: ignore
 
   test-packages:
     runs-on: ubuntu-latest
