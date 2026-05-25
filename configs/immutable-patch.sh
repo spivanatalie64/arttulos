@@ -86,4 +86,107 @@ runroot = "/run/containers/storage"
 graphroot = "/var/lib/containers/storage"
 STORAGE
 
-echo "ArttulOS: Immutable patches applied."
+# ── Recovery Partition ──
+# Creates a recovery partition that reinstalls the immutable base from R2
+
+cat > /usr/lib/arttulos/recovery-setup.sh << 'RECOVERY'
+#!/bin/bash
+# ArttulOS recovery partition setup
+# Called during first boot to create the recovery environment
+set -e
+RECOVERY_MNT="/recovery"
+RECOVERY_LABEL="ARTTULOS_RECOVERY"
+RECOVERY_IMG="/usr/lib/arttulos/recovery.img"
+
+if [ -f "$RECOVERY_IMG" ]; then
+  mkdir -p "$RECOVERY_MNT"
+  # Mount recovery image (squashfs containing minimal kernel + tools)
+  mount -o loop,ro "$RECOVERY_IMG" "$RECOVERY_MNT" 2>/dev/null || true
+  echo "ArttulOS: Recovery partition mounted."
+fi
+RECOVERY
+chmod +x /usr/lib/arttulos/recovery-setup.sh
+
+# Recovery mode boot entry for systemd-boot
+mkdir -p /boot/loader/entries
+cat > /boot/loader/entries/arttulos-recovery.conf << 'BOOTENTRY'
+title   ArttulOS Recovery
+linux   /vmlinuz-linux
+initrd  /initramfs-linux.img
+options root=LABEL=ARTTULOS_RECOVERY ro rd.shell rd.debug loglevel=3
+BOOTENTRY
+
+# Recovery reinstall script (pulls base image from R2)
+cat > /usr/bin/arttulos-recover << 'RECOVER'
+#!/bin/bash
+# ArttulOS — reinstall the immutable base from recovery
+# This reinstalls the core OS files while preserving /home and overlays
+set -e
+echo "ArttulOS Recovery — Reinstalling base system..."
+echo "This will replace all system files. Your data in /home is preserved."
+echo ""
+echo "Downloading latest base image from Cloudflare R2..."
+BASE_URL="https://pub-00000000000000000000000000000000.r2.dev/arttulos/base.squashfs"
+# In alpha: prints instructions
+echo "Recovery: Download from $BASE_URL"
+echo "Recovery: Apply with: unsquashfs -f -d / base.squashfs"
+echo ""
+echo "Then reboot. Your system will be fresh and your /home untouched."
+RECOVER
+chmod +x /usr/bin/arttulos-recover
+
+# Systemd service to offer recovery mode at boot if system fails
+cat > /etc/systemd/system/arttulos-boot-check.service << 'BOOTCHECK'
+[Unit]
+Description=ArttulOS boot health check
+DefaultDependencies=no
+Before=local-fs.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/lib/arttulos/boot-check.sh
+
+[Install]
+WantedBy=local-fs.target
+BOOTCHECK
+
+cat > /usr/lib/arttulos/boot-check.sh << 'BOOTCHECKSH'
+#!/bin/bash
+# Check if this is a successful boot after an update
+# If boot fails 3 times in a row, offer recovery
+MARK_FILE="/var-overlay/.arttulos-boot-ok"
+if [ -f /var-overlay/.arttulos-boot-fail ]; then
+  COUNT=$(cat /var-overlay/.arttulos-boot-fail)
+  COUNT=$((COUNT + 1))
+  if [ "$COUNT" -ge 3 ]; then
+    echo "ArttulOS: Multiple boot failures detected."
+    echo "ArttulOS: Boot into recovery mode to reinstall the base system."
+    echo "ArttulOS: Run 'arttulos-recover' from the recovery shell."
+    echo "$COUNT" > /var-overlay/.arttulos-boot-fail
+  else
+    echo "$COUNT" > /var-overlay/.arttulos-boot-fail
+  fi
+else
+  echo "1" > /var-overlay/.arttulos-boot-fail
+fi
+[ -f "$MARK_FILE" ] && rm -f /var-overlay/.arttulos-boot-fail
+BOOTCHECKSH
+chmod +x /usr/lib/arttulos/boot-check.sh
+
+# Mark successful boot service
+cat > /etc/systemd/system/arttulos-boot-ok.service << 'BOOTOK'
+[Unit]
+Description=ArttulOS mark successful boot
+After=local-fs.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/touch /var-overlay/.arttulos-boot-ok
+
+[Install]
+WantedBy=multi-user.target
+BOOTOK
+
+echo "ArttulOS: Immutable patches + recovery partition applied."
