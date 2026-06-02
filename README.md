@@ -23,3 +23,14 @@ See `docs/initial_action_plan.md` for the initial action plan and guidance for c
 ---
 
 ArttulOS is an independent project and is not affiliated with, endorsed by, or sponsored by Red Hat, the Linux Mint project, or any other upstream provider. All trademarks, service marks, and logos are the property of their respective owners.
+---
+
+## 🤖 Pullfrog AI Review
+
+This repository uses **Pullfrog AI** to automatically review pull requests.
+
+Pullfrog is an AI-powered code review agent that analyzes every PR for code quality,
+security issues, performance problems, and best practice violations. Reviews appear
+as inline PR comments and checks. Trigger manually by commenting `@pullfrog` on any PR.
+
+Powered by OpenRouter.
